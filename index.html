@@ -10,115 +10,90 @@
 </head>
 <body>
     <header>
-        <img src="My profile photo.jpg" alt="Yash Pandey" class="profile-img">
-        <h1>Yash Pandey</h1>
-        <p>🔬 Renewable Energy Researcher • 🌱 Sustainability Enthusiast • ⚡ Electrical Engineer</p>
+        <div class="hero">
+            <img src="My profile photo.jpg" alt="Yash Pandey" class="profile-img">
+            <h1>Yash Pandey</h1>
+            <p>🔬 Renewable Energy Researcher • 🌱 Sustainability Enthusiast • ⚡ Electrical Engineer</p>
+        </div>
     </header>
 
-    <section onclick="toggleSection(this)">
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="fade-in">
         <h2>🚀 About Me</h2>
-        <div class="content">
-            <p>🌟 I am someone who believes in the power of curiosity, resilience, and simplicity. My perspective on life revolves around continuous learning, self-improvement, and making meaningful contributions to society. I embrace challenges as opportunities to grow and strongly value authenticity in both personal and professional spheres. Technology and sustainability are at the core of my pursuits, and I find fulfillment in developing solutions that create a positive impact on both rural and urban communities.</p>
-            <p>📚 Currently, I am pursuing my Master's degree in Green Energy & Sustainability at National Shizuoka University, Japan. My research focuses on optimizing microgrid scalability, integrating PV and BESS for rural electrification, and analyzing the impact of load variability on system performance. Through my work, I strive to bridge the gap between technological advancements and sustainable energy accessibility in developing regions.</p>
-            <img src="Microgrid image.jpeg" alt="Microgrid" class="section-img">
-        </div>
+        <p>🌟 I am a passionate researcher dedicated to advancing sustainable energy solutions. My mission is to optimize microgrid systems, develop innovative PV-BESS integrations, and enhance rural electrification through data-driven strategies.</p>
     </section>
 
-    <section onclick="toggleSection(this)">
+    <section id="education" class="fade-in">
         <h2>🎓 Education</h2>
-        <div class="content">
-            <ul>
-                <li>📖 <img src="Shizuoka University Logo.jpeg" style="width:200px; border-radius:10px;"> M.Sc. Green Energy & Sustainability - Shizuoka University, Japan (Exp. 10/2025)</li>
-                <li>📖 <img src="Kiit logo.jpeg" style="width:200px; border-radius:10px;"> B.Tech Electrical & Electronics - KIIT University, Bhubaneswar, India</li>
-                <li>📖 <img src="RLI logo.jpeg" style="width:200px; border-radius:10px;"> Advanced Diploma in Industrial Safety - RLI Kolkata, India</li>
-            </ul>
-        </div>
+        <ul>
+            <li>📖 M.Sc. Green Energy & Sustainability - Shizuoka University, Japan</li>
+            <li>📖 B.Tech Electrical & Electronics - KIIT University, India</li>
+            <li>📖 Advanced Diploma in Industrial Safety - RLI Kolkata, India</li>
+        </ul>
     </section>
 
-    <section onclick="toggleSection(this)">
+    <section id="certifications" class="fade-in">
         <h2>🏆 Certifications</h2>
-        <div class="content">
-            <ul>
-                <li>🔖 Certified Industrial Safety Specialist - DGFASLI, India</li>
-                <li>🔖 Renewable Energy Systems - NPTEL Certification</li>
-                <li>🔖 Advanced Power Systems Analysis - IEEE</li>
-                <li>🔖 Fly Ash Utilization & Management - IIT Kanpur</li>
-            </ul>
-        </div>
-        <div class="content">
-            <ul>
-                <li>🔖 Certified Industrial Safety Specialist - DGFASLI, India</li>
-                <li>🔖 Renewable Energy Systems - NPTEL Certification</li>
-                <li>🔖 Advanced Power Systems Analysis - IEEE</li>
-            </ul>
-        </div>
+        <ul>
+            <li>🔖 Industrial Safety Specialist - DGFASLI, India</li>
+            <li>🔖 Renewable Energy Systems - NPTEL</li>
+            <li>🔖 Power Systems Analysis - IEEE</li>
+            <li>🔖 Fly Ash Utilization - IIT Kanpur</li>
+        </ul>
     </section>
 
-    <section onclick="toggleSection(this)">
+    <section id="experience" class="fade-in">
         <h2>🔬 Research & Experience</h2>
-        <div class="content">
-            <ul>
-                <li>📡 Teaching Assistant - National Shizuoka University, Japan</li>
-                <li>🛠️ Research Intern - Nanhua University, Taiwan</li>
-                <li>🔬 Research Intern - Asia University, Taiwan</li>
-                <li>⚡ Summer Intern - TATA Power, Odisha, India</li>
-                <li>📑 Research Intern - KIIT University, Odisha, India</li>
-                <li>👨‍💼 Consultant - Japan Development Pvt</li>
-                <li>👨‍💼 Consultant - SALA Group Japan</li>
-            </ul>
-            <img src="Floating Solar power1-750x430.jpg" alt="Floating Solar Power" class="section-img">
-        </div>
-        <div class="content">
-            <ul>
-                <li>📡 Teaching Assistant - National Shizuoka University, Japan</li>
-                <li>🛠️ Research Intern - Nanhua University, Taiwan</li>
-                <li>⚡ Summer Intern - TATA Power, Odisha, India</li>
-            </ul>
-            <img src="Floating Solar power1-750x430.jpg" alt="Floating Solar Power" class="section-img">
-        </div>
+        <ul>
+            <li>📡 Teaching Assistant - National Shizuoka University, Japan</li>
+            <li>🛠️ Research Intern - Nanhua University, Taiwan</li>
+            <li>👨‍💼 Consultant - Japan Development Pvt</li>
+            <li>👨‍💼 Consultant - SALA Group Japan</li>
+        </ul>
     </section>
 
-    <section onclick="toggleSection(this)">
+    <section id="research" class="fade-in">
         <h2>📚 Research Topics</h2>
-        <div class="content">
-            <ul>
-                <li>🌍 Microgrid Scalability and Optimization</li>
-                <li>🔋 Renewable Energy Integration in Remote Areas</li>
-                <li>⚡ Arc and Glow Discharge Plasma Studies</li>
-            </ul>
-            <img src="Arc discharge.jpg" alt="Arc Discharge Research" class="section-img">
-            <img src="Glow discharge.jpeg" alt="Glow Discharge Plasma" class="section-img">
-        </div>
+        <ul>
+            <li>🌍 Microgrid Scalability & Optimization</li>
+            <li>🔋 Renewable Energy in Remote Areas</li>
+            <li>⚡ Arc & Glow Discharge Plasma Studies</li>
+        </ul>
     </section>
 
-    <section onclick="toggleSection(this)">
-        <h2>📖 Conferences & Publications</h2>
-        <div class="content">
-            <ul>
-                <li>📌 JESE Conference - Impact of Load Variability on PV & BESS</li>
-                <li>📌 International Conference on Green Technology & Sustainability</li>
-                <li>📌 KOSMOS AR/VR in Industrial Application, Taiwan</li>
-                <li>📌 KIIT University International Conference, India</li>
-            </ul>
-        </div>
-    </section>
-
-    <section onclick="toggleSection(this)">
+    <section id="contact" class="fade-in">
         <h2>📞 Contact & Socials</h2>
-        <div class="content">
-            <p>📩 Emails: <a href="mailto:yashpdelhi@gmail.com">yashpdelhi@gmail.com</a> | <a href="mailto:yashpjapan@yahoo.com">yashpjapan@yahoo.com</a> | <a href="mailto:yashpjapan@shizuoka.ac.jp">yashpjapan@shizuoka.ac.jp</a></p>
-            <p>💻 GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
-            <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/yash-pandey-51b181162/">linkedin.com/in/yash-pandey-51b181162/</a></p>
-            <p>📷 Instagram: <a href="https://instagram.com/frombharat">instagram.com/frombharat</a></p>
-            <p>📚 Google Scholar: <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&authuser=1&hl=en&user=XkFi_YgAAAAJ&authuser=1">Google Scholar</a></p>
-            <p>❌ X: <a href="https://x.com/yashpdelhi">x.com/yashpdelhi</a></p>
-        </div>
+        <p>📩 Emails: <a href="mailto:yashpjapan@yahoo.com">yashpjapan@yahoo.com</a> | <a href="mailto:yashpjapan@shizuoka.ac.jp">yashpjapan@shizuoka.ac.jp</a></p>
+        <p>💻 GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
+        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/yash-pandey-51b181162/">linkedin.com/in/yash-pandey-51b181162/</a></p>
+        <p>📷 Instagram: <a href="https://instagram.com/frombharat">instagram.com/frombharat</a></p>
+        <p>📚 Google Scholar: <a href="https://scholar.google.com/citations?user=XkFi_YgAAAAJ">Google Scholar</a></p>
+        <p>❌ X: <a href="https://x.com/yashpdelhi">x.com/yashpdelhi</a></p>
     </section>
 
     <script>
-        function toggleSection(section) {
-            section.classList.toggle('active');
-        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".fade-in");
+            const options = { threshold: 0.3 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, options);
+            sections.forEach(section => observer.observe(section));
+        });
     </script>
 </body>
 </html>
