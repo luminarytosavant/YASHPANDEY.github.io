@@ -20,37 +20,46 @@
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#research">Research</a></li>
+            <li class="dropdown">
+                <a href="#">More <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="about" class="fade-in">
         <h2>🚀 About Me</h2>
-        <p>🌟 I am a passionate researcher dedicated to advancing sustainable energy solutions. My mission is to optimize microgrid systems, develop innovative PV-BESS integrations, and enhance rural electrification through data-driven strategies.</p>
+        <p>🌟 Passionate about sustainability, microgrids, and renewable energy solutions, I aim to optimize energy systems for a greener future.</p>
     </section>
 
-    <section id="education" class="fade-in">
-        <h2>🎓 Education</h2>
-        <ul>
-            <li>📖 M.Sc. Green Energy & Sustainability - Shizuoka University, Japan</li>
-            <li>📖 B.Tech Electrical & Electronics - KIIT University, India</li>
-            <li>📖 Advanced Diploma in Industrial Safety - RLI Kolkata, India</li>
-        </ul>
-    </section>
+    <div class="content-container">
+        <section id="education" class="fade-in">
+            <h2>🎓 Education</h2>
+            <ul>
+                <li>📖 M.Sc. Green Energy & Sustainability - Shizuoka University, Japan</li>
+                <li>📖 B.Tech Electrical & Electronics - KIIT University, India</li>
+                <li>📖 Advanced Diploma in Industrial Safety - RLI Kolkata, India</li>
+            </ul>
+        </section>
 
-    <section id="certifications" class="fade-in">
-        <h2>🏆 Certifications</h2>
-        <ul>
-            <li>🔖 Industrial Safety Specialist - DGFASLI, India</li>
-            <li>🔖 Renewable Energy Systems - NPTEL</li>
-            <li>🔖 Power Systems Analysis - IEEE</li>
-            <li>🔖 Fly Ash Utilization - IIT Kanpur</li>
-        </ul>
-    </section>
+        <section id="certifications" class="fade-in">
+            <h2>🏆 Certifications</h2>
+            <ul>
+                <li>🔖 Industrial Safety Specialist - DGFASLI, India</li>
+                <li>🔖 Renewable Energy Systems - NPTEL</li>
+                <li>🔖 Power Systems Analysis - IEEE</li>
+                <li>🔖 Fly Ash Utilization - IIT Kanpur</li>
+            </ul>
+        </section>
+    </div>
 
     <section id="experience" class="fade-in">
         <h2>🔬 Research & Experience</h2>
@@ -71,10 +80,36 @@
         </ul>
     </section>
 
+    <section id="hobbies" class="fade-in">
+        <h2>🎨 Hobbies & Interests</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>📷 Photography</h3>
+                <img src="photography image.jpg" class="section-img" alt="Photography">
+            </div>
+            <div class="card">
+                <h3>🎸 Guitar Playing</h3>
+                <img src="guitar image.jpeg" class="section-img" alt="Guitar Playing">
+            </div>
+            <div class="card">
+                <h3>📝 Poetry Writing</h3>
+                <img src="poetry image.jpeg" class="section-img" alt="Poetry Writing">
+            </div>
+            <div class="card">
+                <h3>🎮 Gaming</h3>
+                <img src="game image.avif" class="section-img" alt="Gaming">
+            </div>
+            <div class="card">
+                <h3>🌍 Traveling</h3>
+                <img src="travelling image.jpg" class="section-img" alt="Traveling">
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="fade-in">
         <h2>📞 Contact & Socials</h2>
-        <p>📩 Emails: <a href="mailto:yashpjapan@yahoo.com">yashpjapan@yahoo.com</a> | <a href="mailto:yashpjapan@shizuoka.ac.jp">yashpjapan@shizuoka.ac.jp</a></p>
-        <p>💻 GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
+        <p>📩 Emails: <a href="mailto:yashpjapan@yahoo.com">yashpjapan@yahoo.com</a> | <a href="mailto:pandey.yash.23@shizuoka.ac.jp">pandey.yash.23@shizuoka.ac.jp</a></p>
+        
         <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/yash-pandey-51b181162/">linkedin.com/in/yash-pandey-51b181162/</a></p>
         <p>📷 Instagram: <a href="https://instagram.com/frombharat">instagram.com/frombharat</a></p>
         <p>📚 Google Scholar: <a href="https://scholar.google.com/citations?user=XkFi_YgAAAAJ">Google Scholar</a></p>
@@ -84,15 +119,16 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const sections = document.querySelectorAll(".fade-in");
-            const options = { threshold: 0.3 };
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                    }
-                });
-            }, options);
-            sections.forEach(section => observer.observe(section));
+            sections.forEach(section => {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        }
+                    });
+                }, { threshold: 0.3 });
+                observer.observe(section);
+            });
         });
     </script>
 </body>
