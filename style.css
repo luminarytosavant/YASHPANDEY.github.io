@@ -11,6 +11,31 @@ body {
     line-height: 1.6;
 }
 
+.language-selector {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.language-selector button {
+    background: none;
+    border: none;
+    color: #1d1d1f;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.language-selector button:hover {
+    color: #007aff;
+}
+
 nav {
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
