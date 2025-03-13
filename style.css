@@ -103,6 +103,28 @@ section h2 {
     color: #007aff;
 }
 
+.education-content, .experience-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.education-text, .experience-text {
+    flex: 1;
+}
+
+.education-image, .experience-image {
+    flex: 1;
+    text-align: center;
+}
+
+.education-image img, .experience-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 ul {
     list-style: none;
     padding: 0 20px;
@@ -132,12 +154,21 @@ strong {
 }
 
 .category h3 {
-    color: #007aff;
+    color: #32CD32; /* Light green shade */
     margin-bottom: 10px;
 }
 
 .sub-category h4 {
-    color: #007aff;
+    color: #32CD32; /* Light green shade */
+    margin-bottom: 10px;
+}
+
+.bullet-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.bullet-list li {
     margin-bottom: 10px;
 }
 
@@ -173,6 +204,14 @@ strong {
 
     section h2 {
         font-size: 2rem;
+    }
+
+    .education-content, .experience-content {
+        flex-direction: column;
+    }
+
+    .education-image, .experience-image {
+        margin-top: 20px;
     }
 
     .skills-categories, .research-categories {
