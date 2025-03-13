@@ -89,6 +89,20 @@ section h2 {
     margin: 0 auto;
 }
 
+#about ul {
+    list-style: none;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+}
+
+#about strong {
+    color: #007aff;
+}
+
 ul {
     list-style: none;
     padding: 0 20px;
@@ -136,4 +150,37 @@ strong {
 
 #contact p {
     margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .skills-categories, .research-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        width: 90%;
+    }
 }
