@@ -1,200 +1,99 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Orbitron', sans-serif;
-  background-color: #121212;
-  color: #fff;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
 }
 
 nav {
-  background-color: #000;
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-nav li {
-  margin: 0 10px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #00ffea;
+    color: #2997ff;
 }
 
-#hero {
-  position: relative;
-  height: 100vh;
-  background-image: url('hero.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-content {
-  text-align: center;
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  color: #fff;
-  text-shadow: 0 0 10px #00ffea;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
-  font-size: 1.5rem;
-  color: #fff;
+    font-size: 1.5rem;
+    color: #e0e0e0;
 }
 
-section {
-  padding: 50px 0;
+.section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
 }
 
-section h2 {
-  color: #00ffea;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  text-shadow: 0 0 10px #00ffea;
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1d1d1f;
 }
 
-#about {
-  background-color: #1a1a1a;
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #2997ff;
+    display: block;
+    margin: 20px auto;
 }
 
-#about .profile {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-#about img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 5px solid #00ffea;
+li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-#about p {
-  text-align: center;
-  padding: 0 20px;
+.contact {
+    background: #000;
+    color: #fff;
+    padding: 40px 20px;
 }
 
-#education {
-  background-color: #222;
-}
-
-#education ul {
-  list-style: none;
-  padding: 0 20px;
-}
-
-#education li {
-  margin-bottom: 20px;
-}
-
-#education strong {
-  color: #00ffea;
-}
-
-#experience {
-  background-color: #1a1a1a;
-}
-
-#experience ul {
-  list-style: none;
-  padding: 0 20px;
-}
-
-#experience li {
-  margin-bottom: 20px;
-}
-
-#skills {
-  background-color: #222;
-}
-
-.skills-categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.category {
-  width: 300px;
-  margin: 20px;
-}
-
-.category h3 {
-  color: #00ffea;
-  margin-bottom: 10px;
-}
-
-.category ul {
-  list-style: none;
-}
-
-#research {
-  background-color: #1a1a1a;
-}
-
-.research-categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.research-categories .category {
-  width: 450px;
-  margin: 20px;
-}
-
-.sub-category h4 {
-  color: #00ffea;
-  margin-bottom: 10px;
-}
-
-#volunteer {
-  background-color: #222;
-}
-
-#references {
-  background-color: #1a1a1a;
-}
-
-#references ul {
-  list-style: none;
-  padding: 0 20px;
-}
-
-#references li {
-  margin-bottom: 10px;
-}
-
-#contact {
-  background-color: #000;
-  text-align: center;
-  padding: 20px 0;
+.contact p {
+    font-size: 1.2rem;
 }
