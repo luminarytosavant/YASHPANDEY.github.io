@@ -14,12 +14,13 @@ body {
 nav {
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
-    padding: 10px 20px;
+    padding: 15px 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -50,6 +51,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     color: white;
+    text-align: center;
 }
 
 .hero-content h1 {
@@ -78,6 +80,7 @@ section h2 {
     border-radius: 50%;
     display: block;
     margin: 0 auto 20px;
+    border: 4px solid #007aff;
 }
 
 #about p {
@@ -86,4 +89,51 @@ section h2 {
     margin: 0 auto;
 }
 
-/* Additional styles for other sections */
+ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+strong {
+    color: #007aff;
+}
+
+.skills-categories, .research-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category {
+    width: 300px;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    color: #007aff;
+    margin-bottom: 10px;
+}
+
+.sub-category h4 {
+    color: #007aff;
+    margin-bottom: 10px;
+}
+
+#contact {
+    text-align: center;
+    background: #007aff;
+    color: white;
+    padding: 40px 20px;
+}
+
+#contact p {
+    margin: 10px 0;
+}
