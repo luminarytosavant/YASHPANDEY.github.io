@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('ja')">日本語</button>
+        <button onclick="changeLanguage('zh')">中文</button>
+        <button onclick="changeLanguage('hi')">हिंदी</button>
+    </div>
+
     <!-- Navigation Bar -->
     <nav>
         <ul>
@@ -27,37 +35,37 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
-            <h1>Welcome to Yash Pandey's Portfolio</h1>
-            <p>Exploring Sustainable Energy and Beyond</p>
+            <h1 id="hero-title">Welcome to Yash Pandey's Portfolio</h1>
+            <p id="hero-subtitle">Exploring Sustainable Energy and Beyond</p>
         </div>
     </section>
 
-   <!-- About Me Section -->
-<section id="about">
-    <h2>About Me</h2>
-    <div class="profile">
-        <img src="My profile photo.jpg" alt="Profile Photo"> <!-- Replace with your profile picture -->
-    </div>
-    <p style="text-align: center;">I am Yash Pandey, a Master's student in Electronic & Electrical Engineering at National Shizuoka University, Japan, specializing in sustainable energy solutions for rural electrification. With a passion for renewable energy and a track record of research and internships in the field, I am dedicated to advancing green technologies and making a positive impact on society.</p>
-    <p style="text-align: center;"><strong>Hobbies:</strong> Playing Football, Poetry Writing, Guitar Playing, Novel Reading, Travelling, Photography, Cooking.</p>
-    <p style="text-align: center;"><strong>Affiliations:</strong></p>
-    <ul style="text-align: center; list-style: none; padding: 0;">
-        <li>IAAM: International Association of Advanced Materials, Sweden.</li>
-        <li>IIDL: Indian Institute of Democratic Leadership, India.</li>
-    </ul>
-    <p style="text-align: center;"><strong>Freelance Consulting:</strong></p>
-    <ul style="text-align: center; list-style: none; padding: 0;">
-        <li>Japan Development Private Limited, Lucknow, India.</li>
-        <li>SALA Energy Corporation, Hamamatsu, Japan.</li>
-    </ul>
-</section>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2 id="about-title">About Me</h2>
+        <div class="profile">
+            <img src="My profile photo.jpg" alt="Profile Photo">
+        </div>
+        <p id="about-text" style="text-align: center;">I am Yash Pandey, a Master's student in Electronic & Electrical Engineering at National Shizuoka University, Japan, specializing in sustainable energy solutions for rural electrification. With a passion for renewable energy and a track record of research and internships in the field, I am dedicated to advancing green technologies and making a positive impact on society.</p>
+        <p id="about-hobbies" style="text-align: center;"><strong>Hobbies:</strong> Playing Football, Poetry Writing, Guitar Playing, Novel Reading, Travelling, Photography, Cooking.</p>
+        <p id="about-affiliations" style="text-align: center;"><strong>Affiliations:</strong></p>
+        <ul id="about-affiliations-list" style="text-align: center; list-style: none; padding: 0;">
+            <li>IAAM: International Association of Advanced Materials, Sweden.</li>
+            <li>IIDL: Indian Institute of Democratic Leadership, India.</li>
+        </ul>
+        <p id="about-freelance" style="text-align: center;"><strong>Freelance Consulting:</strong></p>
+        <ul id="about-freelance-list" style="text-align: center; list-style: none; padding: 0;">
+            <li>Japan Development Private Limited, Lucknow, India.</li>
+            <li>SALA Energy Corporation, Hamamatsu, Japan.</li>
+        </ul>
+    </section>
 
     <!-- Education Section -->
     <section id="education">
-        <h2>Education</h2>
+        <h2 id="education-title">Education</h2>
         <div class="education-content">
             <div class="education-text">
-                <ul>
+                <ul id="education-list">
                     <li>
                         <strong>Master's degree in Electronic & Electrical Engineering</strong><br>
                         National Shizuoka University, October 2025 (expected)<br>
@@ -83,17 +91,17 @@
                 </ul>
             </div>
             <div class="education-image">
-                <img src="combined institution photo.png" alt="Education Institutions"> <!-- Replace with an education-related image -->
+                <img src="combined institution photo.png" alt="Education Institutions">
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
-        <h2>Experience</h2>
+        <h2 id="experience-title">Experience</h2>
         <div class="experience-content">
             <div class="experience-text">
-                <ul>
+                <ul id="experience-list">
                     <li>
                         <strong>Teaching Assistant</strong><br>
                         National Shizuoka University, August 2023 - Current<br>
@@ -122,18 +130,18 @@
                 </ul>
             </div>
             <div class="experience-image">
-                <img src="Experiences photo.png" alt="Experience Workplaces"> <!-- Replace with an experience-related image -->
+                <img src="Experiences photo.png" alt="Experience Workplaces">
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
+        <h2 id="skills-title">Skills</h2>
         <div class="skills-categories">
             <div class="category">
-                <h3>Languages</h3>
-                <ul class="bullet-list">
+                <h3 id="skills-languages-title">Languages</h3>
+                <ul id="skills-languages-list" class="bullet-list">
                     <li>English</li>
                     <li>Japanese (Basics)</li>
                     <li>Hindi</li>
@@ -141,8 +149,8 @@
                 </ul>
             </div>
             <div class="category">
-                <h3>Courses</h3>
-                <ul class="bullet-list">
+                <h3 id="skills-courses-title">Courses</h3>
+                <ul id="skills-courses-list" class="bullet-list">
                     <li>TCS ion course on making impactful presentations.</li>
                     <li>TCS ion course on learning Corporate Etiquette.</li>
                     <li>TCS ion course on writing an Effective Email.</li>
@@ -152,8 +160,8 @@
                 </ul>
             </div>
             <div class="category">
-                <h3>Certifications</h3>
-                <ul class="bullet-list">
+                <h3 id="skills-certifications-title">Certifications</h3>
+                <ul id="skills-certifications-list" class="bullet-list">
                     <li>Certificate from VV Giri National Labour Institute for code on Occupational Safety and Working Conditions.</li>
                     <li>Certificate from VV Giri National Labour Institute for Addressing Source State Vulnerability of Workers to Distress Migration, Trafficking, Child Labour and Bonded Labour.</li>
                     <li>Certificate from VV Giri National Labour Institute for Online Sensitization Programme on Prevention and Elimination of Bonded Labour and Child Bonded Labour.</li>
@@ -181,20 +189,20 @@
 
     <!-- Research and Publications Section -->
     <section id="research">
-        <h2>Research and Publications</h2>
+        <h2 id="research-title">Research and Publications</h2>
         <div class="research-categories">
             <div class="category">
-                <h3>Research Papers</h3>
+                <h3 id="research-papers-title">Research Papers</h3>
                 <div class="sub-category">
-                    <h4>Published</h4>
-                    <ul>
+                    <h4 id="research-published-title">Published</h4>
+                    <ul id="research-published-list">
                         <li>"Advancing Sustainable Energy: Exploring New Frontiers and Opportunities in Green Transition", Wiley Publications.</li>
                         <li>"Impact of Load Profile Variability on Optimal PV and BESS Capacities of Diesel Generator based Microgrid", JSES.</li>
                     </ul>
                 </div>
                 <div class="sub-category">
-                    <h4>Upcoming</h4>
-                    <ul>
+                    <h4 id="research-upcoming-title">Upcoming</h4>
+                    <ul id="research-upcoming-list">
                         <li>"Piezoelectric metamaterials for energy harvesting."</li>
                         <li>"Bridging Complexity and Accessibility: A Novel Model for PV and BESS Capacity Estimation in Rural Microgrids"</li>
                         <li>"Accelerating the Global Shift to Renewable Energy: Strategic Pathways for Achieving Net-Zero Emissions", Book of Abstracts, Arsenic, and other pollutants, Water Security and One Health under Global Climate Change Scenario (Extended Abstract)."</li>
@@ -202,8 +210,8 @@
                 </div>
             </div>
             <div class="category">
-                <h3>Conferences</h3>
-                <ul>
+                <h3 id="research-conferences-title">Conferences</h3>
+                <ul id="research-conferences-list">
                     <li>International conference on green technology and sustainability at Nanhua University, Taiwan.</li>
                     <li>KOSMOS conference on Augmented Reality and Virtual Reality, Kaohsiung Convention Centre, Taiwan.</li>
                     <li>JSES 2024, Paper presented on Load Variability And its effects on the component's capacity & NPC, Sapporo City University, Sapporo, Hokkaido, Japan.</li>
@@ -215,14 +223,14 @@
 
     <!-- Volunteer Work Section -->
     <section id="volunteer">
-        <h2>Volunteer Work</h2>
-        <p>ATTAC NGO: Build Web Site Content and worked as a Campaign Coordinator and Social Media Manager.</p>
+        <h2 id="volunteer-title">Volunteer Work</h2>
+        <p id="volunteer-text">ATTAC NGO: Build Web Site Content and worked as a Campaign Coordinator and Social Media Manager.</p>
     </section>
 
     <!-- References Section -->
     <section id="references">
-        <h2>References</h2>
-        <ul>
+        <h2 id="references-title">References</h2>
+        <ul id="references-list">
             <li>Prof. Satyendra Patnaik, Advisor to Founder, KIIT & KISS</li>
             <li>Dr. Jyoti Prakash Maity, MSc, PhD, Department of Earth and Environmental Science, National Chung Cheng University, School of Applied Sciences, KIIT University.</li>
             <li>Prof. Byamakesh Nayak, Dean of the School of Electrical Engineering, KIIT University.</li>
@@ -234,9 +242,12 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com</p>
-        <p>Institutional Email: pandey.yash.23@shizuoka.ac.jp</p>
+        <h2 id="contact-title">Contact</h2>
+        <p id="contact-email">Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com</p>
+        <p id="contact-institutional-email">Institutional Email: pandey.yash.23@shizuoka.ac.jp</p>
     </section>
+
+    <!-- JavaScript for Language Switching -->
+    <script src="script.js"></script>
 </body>
 </html>
