@@ -14,7 +14,8 @@ const content = {
         aboutFreelance: "Freelance Consulting:",
         aboutFreelanceList: [
             "Japan Development Private Limited, Lucknow, India.",
-            "SALA Energy Corporation, Hamamatsu, Japan."
+            "SALA Energy Corporation, Hamamatsu, Japan.",
+            "Akamatsu Electric Company Limited, Iwata, Japan."
         ],
         educationTitle: "Education",
         educationList: [
@@ -101,6 +102,7 @@ const content = {
             "Prof. Byamakesh Nayak, Dean of the School of Electrical Engineering, KIIT University.",
             "Dr. Congo Tak Shing CHING, Professor, Graduate Institute of Biomedical Engineering, National Chung Hsing University.",
             "Assoc. Professor Hironobu Matuso, Department of Electronics & Electrical Engineering, National Shizuoka University.",
+            "Dr. Sushil Yadav Yamamoto, Registered Consultant, Ministry of Agriculture, Forest and Fisheries, Japan.,
             "Mr. Sanatan, Deputy Secretary, Ministry of Skill Development and Entrepreneurship, Government of India"
         ],
         contactTitle: "Contact",
