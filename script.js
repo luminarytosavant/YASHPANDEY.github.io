@@ -123,7 +123,8 @@ const content = {
         aboutFreelance: "フリーランスコンサルティング:",
         aboutFreelanceList: [
             "Japan Development Private Limited、ラクナウ、インド。",
-            "SALA Energy Corporation、浜松、日本。"
+            "SALA Energy Corporation、浜松、日本。",
+            "Akamatsu Electric Company Limited, Iwata, Japan、磐田 日本。." 
         ],
         educationTitle: "学歴",
         educationList: [
@@ -210,6 +211,7 @@ const content = {
             "Prof. Byamakesh Nayak、電気工学部長、KIIT大学。",
             "Dr. Congo Tak Shing CHING、教授、生体医工学研究所、国立中興大学。",
             "Assoc. Professor Hironobu Matuso、電子電気工学科、静岡大学。",
+            "Dr. Sushil Yadav Yamamoto、農林水産省登録コンサルタント",
             "Mr. Sanatan、副長官、技能開発および起業家精神省、インド政府"
         ],
         contactTitle: "連絡先",
@@ -230,7 +232,8 @@ const content = {
         aboutFreelance: "自由职业咨询:",
         aboutFreelanceList: [
             "Japan Development Private Limited，勒克瑙，印度。",
-            "SALA Energy Corporation，滨松，日本。"
+            "SALA Energy Corporation，滨松，日本。",
+            "Akamatsu Electric Company Limited，磐田 日本。."
         ],
         educationTitle: "教育",
         educationList: [
@@ -317,6 +320,7 @@ const content = {
             "Prof. Byamakesh Nayak，电气工程学院院长，KIIT大学。",
             "Dr. Congo Tak Shing CHING，教授，生物医学工程研究所，国立中兴大学。",
             "Assoc. Professor Hironobu Matuso，电子与电气工程系，静冈大学。",
+            "Dr. Sushil Yadav Yamamoto，农林水产省注册咨询师",
             "Mr. Sanatan，副部长，技能发展与创业部，印度政府"
         ],
         contactTitle: "联系方式",
@@ -337,7 +341,8 @@ const content = {
         aboutFreelance: "फ्रीलांस परामर्श:",
         aboutFreelanceList: [
             "जापान डेवलपमेंट प्राइवेट लिमिटेड, लखनऊ, भारत।",
-            "SALA एनर्जी कॉर्पोरेशन, हमामात्सु, जापान।"
+            "SALA एनर्जी कॉर्पोरेशन, हमामात्सु, जापान।",
+            "अकामात्सु इलेक्ट्रिक कंपनी लिमिटेड, जापान"
         ],
         educationTitle: "शिक्षा",
         educationList: [
@@ -424,6 +429,7 @@ const content = {
             "प्रोफेसर ब्यामकेश नायक, इलेक्ट्रिकल इंजीनियरिंग स्कूल के डीन, KIIT विश्वविद्यालय।",
             "डॉ. कोंगो तक शिंग चिंग, प्रोफेसर, बायोमेडिकल इंजीनियरिंग संस्थान, राष्ट्रीय चुंग हिंग विश्वविद्यालय।",
             "एसोसिएट प्रोफेसर हिरोनोबु मात्सुओ, इलेक्ट्रॉनिक्स और इलेक्ट्रिकल इंजीनियरिंग विभाग, राष्ट्रीय शिज़ुओका विश्वविद्यालय।",
+            "डॉ. सुशील यादव यामामोटो, पंजीकृत सलाहकार, कृषि, वानिकी और मत्स्य मंत्रालय, जापान।",
             "श्री संतान, उप सचिव, कौशल विकास और उद्यमिता मंत्रालय, भारत सरकार"
         ],
         contactTitle: "संपर्क",
