@@ -4,7 +4,7 @@ const content = {
         heroTitle: "Welcome to Yash Pandey's Portfolio",
         heroSubtitle: "Exploring Sustainable Energy and Beyond",
         aboutTitle: "About Me",
-        aboutText: "I am Yash Pandey, a Master's student in Electronic & Electrical Engineering at National Shizuoka University, Japan, specializing in sustainable energy solutions for rural electrification. With a passion for renewable energy and a track record of research and internships in the field, I am dedicated to advancing green technologies and making a positive impact on society.",
+        aboutText: "I am Yash Pandey, a Master's in Electronic & Electrical Engineering at National Shizuoka University, Japan, specializing in sustainable energy solutions for rural electrification. With a passion for renewable energy and a track record of research and internships in the field, I am dedicated to advancing green technologies and making a positive impact on society.",
         aboutHobbies: "Hobbies: Playing Football, Poetry Writing, Guitar Playing, Novel Reading, Travelling, Photography, Cooking.",
         aboutAffiliations: "Affiliations:",
         aboutAffiliationsList: [
@@ -52,7 +52,7 @@ const content = {
         ],
         skillsCertificationsTitle: "Certifications",
         skillsCertificationsList: [
-            "Certificate from VV Giri National Labour Institute for code on Occupational Safety and Working Conditions.",
+            "Certificate from VV Giri National Labour Institute for Code on Occupational Safety and Working Conditions.",
             "Certificate from VV Giri National Labour Institute for Addressing Source State Vulnerability of Workers to Distress Migration, Trafficking, Child Labour and Bonded Labour.",
             "Certificate from VV Giri National Labour Institute for Online Sensitization Programme on Prevention and Elimination of Bonded Labour and Child Bonded Labour.",
             "Certificate from Directorate General of Factory Advice Services and Labour Institutes for Half Day Training Program on House Keeping and Cleanliness.",
