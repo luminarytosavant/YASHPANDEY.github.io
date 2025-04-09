@@ -97,13 +97,13 @@ const content = {
         volunteerText: "ATTAC NGO: Build Web Site Content and worked as a Campaign Coordinator and Social Media Manager.",
         referencesTitle: "References",
         referencesList: [
-            "Prof. Satyendra Patnaik, Advisor to Founder, KIIT & KISS",
+            "Prof. Satyendra Patnaik, Advisor to Founder, KIIT & KISS.",
             "Dr. Jyoti Prakash Maity, MSc, PhD, Department of Earth and Environmental Science, National Chung Cheng University, School of Applied Sciences, KIIT University.",
             "Prof. Byamakesh Nayak, Dean of the School of Electrical Engineering, KIIT University.",
             "Dr. Congo Tak Shing CHING, Professor, Graduate Institute of Biomedical Engineering, National Chung Hsing University.",
             "Assoc. Professor Hironobu Matuso, Department of Electronics & Electrical Engineering, National Shizuoka University.",
-            "Dr. Sushil Yadav Yamamoto, Registered Consultant, Ministry of Agriculture, Forest and Fisheries, Japan.,
-            "Mr. Sanatan, Deputy Secretary, Ministry of Skill Development and Entrepreneurship, Government of India"
+            "Dr. Sushil Yadav Yamamoto, Registered Consultant, Ministry of Agriculture, Forest and Fisheries, Japan.",
+            "Mr. Sanatan, Deputy Secretary, Ministry of Skill Development and Entrepreneurship, Government of India."
         ],
         contactTitle: "Contact",
         contactEmail: "Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
@@ -320,7 +320,7 @@ const content = {
             "Prof. Byamakesh Nayak，电气工程学院院长，KIIT大学。",
             "Dr. Congo Tak Shing CHING，教授，生物医学工程研究所，国立中兴大学。",
             "Assoc. Professor Hironobu Matuso，电子与电气工程系，静冈大学。",
-            "Dr. Sushil Yadav Yamamoto，农林水产省注册咨询师",
+            "Dr. Sushil Yadav Yamamoto，农林水产省注册咨询师 ",
             "Mr. Sanatan，副部长，技能发展与创业部，印度政府"
         ],
         contactTitle: "联系方式",
