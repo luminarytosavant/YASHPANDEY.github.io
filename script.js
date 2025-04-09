@@ -5,13 +5,13 @@ const content = {
         heroSubtitle: "Exploring Sustainable Energy and Beyond",
         aboutTitle: "About Me",
         aboutText: "I am Yash Pandey, a Master's in Electronic & Electrical Engineering at National Shizuoka University, Japan, specializing in sustainable energy solutions for rural electrification. With a passion for renewable energy and a track record of research and internships in the field, I am dedicated to advancing green technologies and making a positive impact on society.",
-        aboutHobbies: "Hobbies: Playing Football, Poetry Writing, Guitar Playing, Novel Reading, Travelling, Photography, Cooking.",
-        aboutAffiliations: "Affiliations:",
+        aboutHobbies: "<strong>Hobbies:</strong> Playing Football, Poetry Writing, Guitar Playing, Novel Reading, Travelling, Photography, Cooking",
+        aboutAffiliations: "<strong>Affiliations:</strong>",
         aboutAffiliationsList: [
             "IAAM: International Association of Advanced Materials, Sweden.",
             "IIDL: Indian Institute of Democratic Leadership, India."
         ],
-        aboutFreelance: "Freelance Consulting:",
+        aboutFreelance: "<strong>Freelance Consulting:</strong>",
         aboutFreelanceList: [
             "Japan Development Private Limited, Lucknow, India.",
             "SALA Energy Corporation, Hamamatsu, Japan.",
@@ -114,17 +114,17 @@ const content = {
         heroSubtitle: "持続可能なエネルギーとその先を探求する",
         aboutTitle: "私について",
         aboutText: "私はヤシュ・パンディです。静岡大学の電子電気工学の修士課程に在籍しており、農村電化のための持続可能なエネルギーソリューションを専門としています。再生可能エネルギーへの情熱と、この分野での研究やインターンシップの実績を持ち、グリーンテクノロジーの推進と社会へのポジティブな影響を与えることに専念しています。",
-        aboutHobbies: "趣味: サッカー、詩の執筆、ギターの演奏、小説の読書、旅行、写真、料理。",
-        aboutAffiliations: "所属:",
+        aboutHobbies: "<strong>趣味:</strong> サッカー、詩の執筆、ギターの演奏、小説の読書、旅行、写真、料理",
+        aboutAffiliations: "<strong>所属:</strong>",
         aboutAffiliationsList: [
             "IAAM: 国際先端材料協会、スウェーデン。",
             "IIDL: インド民主リーダーシップ研究所、インド。"
         ],
-        aboutFreelance: "フリーランスコンサルティング:",
+        aboutFreelance: "<strong>フリーランスコンサルティング:</strong>",
         aboutFreelanceList: [
             "Japan Development Private Limited、ラクナウ、インド。",
             "SALA Energy Corporation、浜松、日本。",
-            "Akamatsu Electric Company Limited, Iwata, Japan、磐田 日本。." 
+            "Akamatsu Electric Company Limited、磐田、日本。"
         ],
         educationTitle: "学歴",
         educationList: [
@@ -223,17 +223,17 @@ const content = {
         heroSubtitle: "探索可持续能源及更多",
         aboutTitle: "关于我",
         aboutText: "我是Yash Pandey，日本静冈大学电子与电气工程硕士生，专注于农村电气化的可持续能源解决方案。凭借对可再生能源的热情以及在该领域的研究和实习经历，我致力于推进绿色技术，为社会带来积极影响。",
-        aboutHobbies: "爱好: 踢足球、写诗、弹吉他、读小说、旅行、摄影、烹饪。",
-        aboutAffiliations: "隶属关系:",
+        aboutHobbies: "<strong>爱好:</strong> 踢足球、写诗、弹吉他、读小说、旅行、摄影、烹饪",
+        aboutAffiliations: "<strong>隶属关系:</strong>",
         aboutAffiliationsList: [
             "IAAM: 国际先进材料协会，瑞典。",
             "IIDL: 印度民主领导力研究所，印度。"
         ],
-        aboutFreelance: "自由职业咨询:",
+        aboutFreelance: "<strong>自由职业咨询:</strong>",
         aboutFreelanceList: [
             "Japan Development Private Limited，勒克瑙，印度。",
             "SALA Energy Corporation，滨松，日本。",
-            "Akamatsu Electric Company Limited，磐田 日本。."
+            "Akamatsu Electric Company Limited，磐田，日本。"
         ],
         educationTitle: "教育",
         educationList: [
@@ -320,7 +320,7 @@ const content = {
             "Prof. Byamakesh Nayak，电气工程学院院长，KIIT大学。",
             "Dr. Congo Tak Shing CHING，教授，生物医学工程研究所，国立中兴大学。",
             "Assoc. Professor Hironobu Matuso，电子与电气工程系，静冈大学。",
-            "Dr. Sushil Yadav Yamamoto，农林水产省注册咨询师 ",
+            "Dr. Sushil Yadav Yamamoto，农林水产省注册咨询师",
             "Mr. Sanatan，副部长，技能发展与创业部，印度政府"
         ],
         contactTitle: "联系方式",
@@ -332,17 +332,17 @@ const content = {
         heroSubtitle: "सतत ऊर्जा और उससे आगे की खोज",
         aboutTitle: "मेरे बारे में",
         aboutText: "मैं यश पांडे हूं, जापान के नेशनल शिज़ुओका विश्वविद्यालय में इलेक्ट्रॉनिक और इलेक्ट्रिकल इंजीनियरिंग के मास्टर छात्र हूं, जो ग्रामीण विद्युतीकरण के लिए सतत ऊर्जा समाधानों में विशेषज्ञता रखता हूं। नवीकरणीय ऊर्जा के प्रति जुनून और इस क्षेत्र में शोध और इंटर्नशिप के अनुभव के साथ, मैं हरित प्रौद्योगिकियों को आगे बढ़ाने और समाज पर सकारात्मक प्रभाव डालने के लिए समर्पित हूं।",
-        aboutHobbies: "शौक: फुटबॉल खेलना, कविता लेखन, गिटार बजाना, उपन्यास पढ़ना, यात्रा करना, फोटोग्राफी, खाना बनाना।",
-        aboutAffiliations: "संबद्धता:",
+        aboutHobbies: "<strong>शौक:</strong> फुटबॉल खेलना, कविता लेखन, गिटार बजाना, उपन्यास पढ़ना, यात्रा करना, फोटोग्राफी, खाना बनाना",
+        aboutAffiliations: "<strong>संबद्धता:</strong>",
         aboutAffiliationsList: [
             "IAAM: इंटरनेशनल एसोसिएशन ऑफ एडवांस्ड मैटेरियल्स, स्वीडन।",
             "IIDL: इंडियन इंस्टीट्यूट ऑफ डेमोक्रेटिक लीडरशिप, भारत।"
         ],
-        aboutFreelance: "फ्रीलांस परामर्श:",
+        aboutFreelance: "<strong>फ्रीलांस परामर्श:</strong>",
         aboutFreelanceList: [
             "जापान डेवलपमेंट प्राइवेट लिमिटेड, लखनऊ, भारत।",
             "SALA एनर्जी कॉर्पोरेशन, हमामात्सु, जापान।",
-            "अकामात्सु इलेक्ट्रिक कंपनी लिमिटेड, जापान"
+            "अकामात्सु इलेक्ट्रिक कंपनी लिमिटेड, इवाता, जापान।"
         ],
         educationTitle: "शिक्षा",
         educationList: [
@@ -375,7 +375,7 @@ const content = {
             "TCS आयन पाठ्यक्रम: प्रभावी ईमेल लिखना।",
             "TCS आयन पाठ्यक्रम: समूह चर्चा के लिए तैयार रहना।",
             "TCS आयन पाठ्यक्रम: उद्योग की आवश्यकताओं और मांगों के अनुसार सॉफ्ट स्किल्स विकसित करना।",
-            "IIT कानपुर: फ्लाई ऐश की संभावित उपयोगिता और इसे सफेद पॉलिमर जैसी संरचनाओं में विकसित करना।"
+            "IIT कानपुर: फ्लाई ऐश की संभावित उपयोगिता औरa और इसे सफेद पॉलिमर जैसी संरचनाओं में विकसित करना।"
         ],
         skillsCertificationsTitle: "प्रमाणपत्र",
         skillsCertificationsList: [
@@ -440,44 +440,44 @@ const content = {
 
 // Function to change language
 function changeLanguage(lang) {
-    const data = content[lang];
+    const data = content[lang] || content['en']; // Fallback to English if lang is invalid
 
-    // Update all text content
-    document.getElementById("hero-title").textContent = data.heroTitle;
-    document.getElementById("hero-subtitle").textContent = data.heroSubtitle;
-    document.getElementById("about-title").textContent = data.aboutTitle;
-    document.getElementById("about-text").textContent = data.aboutText;
-    document.getElementById("about-hobbies").innerHTML = `<strong>${data.aboutHobbies.split(":")[0]}:</strong> ${data.aboutHobbies.split(":")[1]}`;
-    document.getElementById("about-affiliations").innerHTML = `<strong>${data.aboutAffiliations}</strong>`;
+    // Use innerHTML consistently to preserve HTML tags
+    document.getElementById("hero-title").innerHTML = data.heroTitle;
+    document.getElementById("hero-subtitle").innerHTML = data.heroSubtitle;
+    document.getElementById("about-title").innerHTML = data.aboutTitle;
+    document.getElementById("about-text").innerHTML = data.aboutText;
+    document.getElementById("about-hobbies").innerHTML = data.aboutHobbies;
+    document.getElementById("about-affiliations").innerHTML = data.aboutAffiliations;
     document.getElementById("about-affiliations-list").innerHTML = data.aboutAffiliationsList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("about-freelance").innerHTML = `<strong>${data.aboutFreelance}</strong>`;
+    document.getElementById("about-freelance").innerHTML = data.aboutFreelance;
     document.getElementById("about-freelance-list").innerHTML = data.aboutFreelanceList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("education-title").textContent = data.educationTitle;
+    document.getElementById("education-title").innerHTML = data.educationTitle;
     document.getElementById("education-list").innerHTML = data.educationList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("experience-title").textContent = data.experienceTitle;
+    document.getElementById("experience-title").innerHTML = data.experienceTitle;
     document.getElementById("experience-list").innerHTML = data.experienceList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("skills-title").textContent = data.skillsTitle;
-    document.getElementById("skills-languages-title").textContent = data.skillsLanguagesTitle;
+    document.getElementById("skills-title").innerHTML = data.skillsTitle;
+    document.getElementById("skills-languages-title").innerHTML = data.skillsLanguagesTitle;
     document.getElementById("skills-languages-list").innerHTML = data.skillsLanguagesList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("skills-courses-title").textContent = data.skillsCoursesTitle;
+    document.getElementById("skills-courses-title").innerHTML = data.skillsCoursesTitle;
     document.getElementById("skills-courses-list").innerHTML = data.skillsCoursesList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("skills-certifications-title").textContent = data.skillsCertificationsTitle;
+    document.getElementById("skills-certifications-title").innerHTML = data.skillsCertificationsTitle;
     document.getElementById("skills-certifications-list").innerHTML = data.skillsCertificationsList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("research-title").textContent = data.researchTitle;
-    document.getElementById("research-papers-title").textContent = data.researchPapersTitle;
-    document.getElementById("research-published-title").textContent = data.researchPublishedTitle;
+    document.getElementById("research-title").innerHTML = data.researchTitle;
+    document.getElementById("research-papers-title").innerHTML = data.researchPapersTitle;
+    document.getElementById("research-published-title").innerHTML = data.researchPublishedTitle;
     document.getElementById("research-published-list").innerHTML = data.researchPublishedList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("research-upcoming-title").textContent = data.researchUpcomingTitle;
+    document.getElementById("research-upcoming-title").innerHTML = data.researchUpcomingTitle;
     document.getElementById("research-upcoming-list").innerHTML = data.researchUpcomingList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("research-conferences-title").textContent = data.researchConferencesTitle;
+    document.getElementById("research-conferences-title").innerHTML = data.researchConferencesTitle;
     document.getElementById("research-conferences-list").innerHTML = data.researchConferencesList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("volunteer-title").textContent = data.volunteerTitle;
-    document.getElementById("volunteer-text").textContent = data.volunteerText;
-    document.getElementById("references-title").textContent = data.referencesTitle;
+    document.getElementById("volunteer-title").innerHTML = data.volunteerTitle;
+    document.getElementById("volunteer-text").innerHTML = data.volunteerText;
+    document.getElementById("references-title").innerHTML = data.referencesTitle;
     document.getElementById("references-list").innerHTML = data.referencesList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("contact-title").textContent = data.contactTitle;
-    document.getElementById("contact-email").textContent = data.contactEmail;
-    document.getElementById("contact-institutional-email").textContent = data.contactInstitutionalEmail;
+    document.getElementById("contact-title").innerHTML = data.contactTitle;
+    document.getElementById("contact-email").innerHTML = data.contactEmail;
+    document.getElementById("contact-institutional-email").innerHTML = data.contactInstitutionalEmail;
 }
 
 // Set default language to English
