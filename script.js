@@ -1,3 +1,7 @@
+// =======================
+// 1) YOUR ORIGINAL CONTENT
+// =======================
+
 // Language content
 const content = {
     en: {
@@ -425,7 +429,7 @@ const content = {
         referencesTitle: "संदर्भ",
         referencesList: [
             "प्रोफेसर सत्येंद्र पटनायक, संस्थापक सलाहकार, KIIT & KISS",
-            "डॉ. ज्योति प्रकाश मैती, एमएससी, पीएचडी, पृथ्वी और पर्यावरण विज्ञान विभाग, राष्ट्रीय चुंग चेंग विश्वविद्यालय, एप्लाइड साइंसेज स्कूल, KIIT विश्वविद्यालय।",
+            "डॉ. ज्योति प्रकाश मैती, एमएससी, पीएचडी, पृथ्वी और पर्यावरण विज्ञान विभाग, राष्ट्रीय चुंग चेंग विश्वविद्यालय, एप्लाइड साइंसेज विद्यालय, KIIT विश्वविद्यालय।",
             "प्रोफेसर ब्यामकेश नायक, इलेक्ट्रिकल इंजीनियरिंग स्कूल के डीन, KIIT विश्वविद्यालय।",
             "डॉ. कोंगो तक शिंग चिंग, प्रोफेसर, बायोमेडिकल इंजीनियरिंग संस्थान, राष्ट्रीय चुंग हिंग विश्वविद्यालय।",
             "एसोसिएट प्रोफेसर हिरोनोबु मात्सुओ, इलेक्ट्रॉनिक्स और इलेक्ट्रिकल इंजीनियरिंग विभाग, राष्ट्रीय शिज़ुओका विश्वविद्यालय।",
@@ -443,42 +447,183 @@ function changeLanguage(lang) {
     const data = content[lang] || content['en']; // Fallback to English if lang is invalid
 
     // Use innerHTML consistently to preserve HTML tags
-    document.getElementById("hero-title").innerHTML = data.heroTitle;
-    document.getElementById("hero-subtitle").innerHTML = data.heroSubtitle;
-    document.getElementById("about-title").innerHTML = data.aboutTitle;
-    document.getElementById("about-text").innerHTML = data.aboutText;
-    document.getElementById("about-hobbies").innerHTML = data.aboutHobbies;
-    document.getElementById("about-affiliations").innerHTML = data.aboutAffiliations;
-    document.getElementById("about-affiliations-list").innerHTML = data.aboutAffiliationsList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("about-freelance").innerHTML = data.aboutFreelance;
-    document.getElementById("about-freelance-list").innerHTML = data.aboutFreelanceList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("education-title").innerHTML = data.educationTitle;
-    document.getElementById("education-list").innerHTML = data.educationList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("experience-title").innerHTML = data.experienceTitle;
-    document.getElementById("experience-list").innerHTML = data.experienceList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("skills-title").innerHTML = data.skillsTitle;
-    document.getElementById("skills-languages-title").innerHTML = data.skillsLanguagesTitle;
-    document.getElementById("skills-languages-list").innerHTML = data.skillsLanguagesList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("skills-courses-title").innerHTML = data.skillsCoursesTitle;
-    document.getElementById("skills-courses-list").innerHTML = data.skillsCoursesList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("skills-certifications-title").innerHTML = data.skillsCertificationsTitle;
-    document.getElementById("skills-certifications-list").innerHTML = data.skillsCertificationsList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("research-title").innerHTML = data.researchTitle;
-    document.getElementById("research-papers-title").innerHTML = data.researchPapersTitle;
-    document.getElementById("research-published-title").innerHTML = data.researchPublishedTitle;
-    document.getElementById("research-published-list").innerHTML = data.researchPublishedList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("research-upcoming-title").innerHTML = data.researchUpcomingTitle;
-    document.getElementById("research-upcoming-list").innerHTML = data.researchUpcomingList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("research-conferences-title").innerHTML = data.researchConferencesTitle;
-    document.getElementById("research-conferences-list").innerHTML = data.researchConferencesList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("volunteer-title").innerHTML = data.volunteerTitle;
-    document.getElementById("volunteer-text").innerHTML = data.volunteerText;
-    document.getElementById("references-title").innerHTML = data.referencesTitle;
-    document.getElementById("references-list").innerHTML = data.referencesList.map(item => `<li>${item}</li>`).join("");
-    document.getElementById("contact-title").innerHTML = data.contactTitle;
-    document.getElementById("contact-email").innerHTML = data.contactEmail;
-    document.getElementById("contact-institutional-email").innerHTML = data.contactInstitutionalEmail;
+    const setHTML = (id, html) => { const el = document.getElementById(id); if (el) el.innerHTML = html; };
+
+    setHTML("hero-title", data.heroTitle);
+    setHTML("hero-subtitle", data.heroSubtitle);
+    setHTML("about-title", data.aboutTitle);
+    setHTML("about-text", data.aboutText);
+    setHTML("about-hobbies", data.aboutHobbies);
+    setHTML("about-affiliations", data.aboutAffiliations);
+    const setList = (id, arr) => {
+        const el = document.getElementById(id);
+        if (el && Array.isArray(arr)) el.innerHTML = arr.map(item => `<li>${item}</li>`).join("");
+    };
+    setList("about-affiliations-list", data.aboutAffiliationsList);
+    setHTML("about-freelance", data.aboutFreelance);
+    setList("about-freelance-list", data.aboutFreelanceList);
+    setHTML("education-title", data.educationTitle);
+    setList("education-list", data.educationList);
+    setHTML("experience-title", data.experienceTitle);
+    setList("experience-list", data.experienceList);
+    setHTML("skills-title", data.skillsTitle);
+    setHTML("skills-languages-title", data.skillsLanguagesTitle);
+    setList("skills-languages-list", data.skillsLanguagesList);
+    setHTML("skills-courses-title", data.skillsCoursesTitle);
+    setList("skills-courses-list", data.skillsCoursesList);
+    setHTML("skills-certifications-title", data.skillsCertificationsTitle);
+    setList("skills-certifications-list", data.skillsCertificationsList);
+    setHTML("research-title", data.researchTitle);
+    setHTML("research-papers-title", data.researchPapersTitle);
+    setHTML("research-published-title", data.researchPublishedTitle);
+    setList("research-published-list", data.researchPublishedList);
+    setHTML("research-upcoming-title", data.researchUpcomingTitle);
+    setList("research-upcoming-list", data.researchUpcomingList);
+    setHTML("research-conferences-title", data.researchConferencesTitle);
+    setList("research-conferences-list", data.researchConferencesList);
+    setHTML("volunteer-title", data.volunteerTitle);
+    setHTML("volunteer-text", data.volunteerText);
+    setHTML("references-title", data.referencesTitle);
+    setList("references-list", data.referencesList);
+    setHTML("contact-title", data.contactTitle);
+    setHTML("contact-email", data.contactEmail);
+    setHTML("contact-institutional-email", data.contactInstitutionalEmail);
 }
 
 // Set default language to English
 changeLanguage('en');
+
+// Optional: wire up language buttons if present
+(function () {
+    const map = { enBtn: 'en', jpBtn: 'ja', zhBtn: 'zh', hiBtn: 'hi' };
+    Object.keys(map).forEach(id => {
+        const btn = document.getElementById(id);
+        if (btn) btn.addEventListener('click', () => changeLanguage(map[id]));
+    });
+})();
+
+
+// =======================
+// 2) 3D ENHANCEMENTS
+// =======================
+
+// ---- WebGL Background (Three.js) ----
+(function initWebGLBackground(){
+    const canvas = document.getElementById('bg-canvas');
+    if (!canvas || typeof THREE === 'undefined') return;
+
+    let renderer, scene, camera, points, running = true;
+
+    try {
+        renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+    } catch (e) {
+        // If WebGL fails, silently skip
+        return;
+    }
+
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.set(0, 0, 60);
+
+    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+    renderer.setPixelRatio(DPR);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    // Particles
+    const COUNT = 1400;
+    const geom = new THREE.BufferGeometry();
+    const pos = new Float32Array(COUNT * 3);
+    for (let i = 0; i < COUNT; i++) {
+        pos[i * 3 + 0] = (Math.random() - 0.5) * 160;
+        pos[i * 3 + 1] = (Math.random() - 0.5) * 90;
+        pos[i * 3 + 2] = (Math.random() - 0.5) * 40;
+    }
+    geom.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+    const mat = new THREE.PointsMaterial({ size: 0.9, transparent: true, opacity: 0.85, depthWrite: false });
+    points = new THREE.Points(geom, mat);
+    scene.add(points);
+
+    scene.fog = new THREE.FogExp2(0x0b0f1a, 0.018);
+
+    const mouse = { x: 0, y: 0 };
+    window.addEventListener('pointermove', (e) => {
+        mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+        mouse.y = (e.clientY / window.innerHeight) * 2 - 1;
+    }, { passive: true });
+
+    const clock = new THREE.Clock();
+    function tick() {
+        if (!running) { requestAnimationFrame(tick); return; }
+        const t = clock.getElapsedTime();
+
+        // subtle Y jiggle
+        const arr = geom.attributes.position.array;
+        for (let i = 0; i < COUNT; i++) {
+            const iy = i * 3 + 1;
+            arr[iy] += Math.sin((i * 0.1) + t * 0.4) * 0.002;
+        }
+        geom.attributes.position.needsUpdate = true;
+
+        // camera drift + mouse parallax
+        camera.position.x += (mouse.x * 6 - camera.position.x) * 0.02;
+        camera.position.y += (-mouse.y * 4 - camera.position.y) * 0.02;
+        camera.lookAt(0, 0, 0);
+
+        renderer.render(scene, camera);
+        requestAnimationFrame(tick);
+    }
+    tick();
+
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    document.addEventListener('visibilitychange', () => { running = !document.hidden; });
+})();
+
+
+// ---- 3D Tilt + Magnetic Glow ----
+(function initTilt(){
+    const addTilt = (el) => {
+        if (!el) return;
+        el.style.transformStyle = 'preserve-3d';
+        el.addEventListener('pointermove', (e) => {
+            const r = el.getBoundingClientRect();
+            const x = e.clientX - r.left, y = e.clientY - r.top;
+            const rx = ((y / r.height) - 0.5) * -10;
+            const ry = ((x / r.width) - 0.5) * 10;
+            el.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+            const glow = el.querySelector?.('.glow');
+            if (glow) {
+                glow.style.setProperty('--mx', `${x}px`);
+                glow.style.setProperty('--my', `${y}px`);
+            }
+        });
+        el.addEventListener('pointerleave', () => {
+            el.style.transform = 'rotateX(0) rotateY(0)';
+        });
+    };
+
+    // Apply to elements if they exist in your HTML/CSS
+    const selectors = ['.tilt', '.magnetic', '.category', '.education-image img', '.experience-image img'];
+    selectors.forEach(sel => document.querySelectorAll(sel).forEach(addTilt));
+})();
+
+
+// ---- Scroll Parallax for Sections ----
+(function initParallax(){
+    const sections = Array.from(document.querySelectorAll('section'));
+    if (!sections.length) return;
+
+    const onScroll = () => {
+        const st = window.scrollY || 0;
+        sections.forEach((sec, i) => {
+            const depth = (i + 1) * 0.6;
+            sec.style.transform = `translateZ(${depth}px) translateY(${st * 0.02 * (i % 2 ? 1 : -1)}px)`;
+        });
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+})();
