@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 3D Background -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="webgl-fallback" hidden></div>
+
     <!-- Language Selector -->
     <div class="language-selector">
         <button onclick="changeLanguage('en')">English</button>
@@ -34,9 +38,10 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="hero-content">
+        <div class="hero-content tilt magnetic">
             <h1 id="hero-title">Welcome to Yash Pandey's Portfolio</h1>
             <p id="hero-subtitle">Exploring Sustainable Energy and Beyond</p>
+            <span class="glow" aria-hidden="true"></span>
         </div>
     </section>
 
@@ -65,7 +70,7 @@
     <section id="education">
         <h2 id="education-title">Education</h2>
         <div class="education-content">
-            <div class="education-text">
+            <div class="education-text tilt magnetic">
                 <ul id="education-list">
                     <li>Master's degree in Electronic & Electrical Engineering<br>National Shizuoka University, October 2025 (expected)<br>Research Topic: Low-Cost Rural Electrification Using Renewable Energy, Hybrid Micro-Grid<br>Recipient of ABP Full Scholarship 2023-2025.</li>
                     <li>Advance Diploma in Industrial Safety<br>Regional Labour Institute, Kolkata, West Bengal, India, June 2022</li>
@@ -73,8 +78,9 @@
                     <li>12th Standard<br>Sir Padampat Singhania Education Centre, Kanpur, Uttar Pradesh, India, May 2016</li>
                     <li>10th Standard<br>Puranchandra Vidya Niketan, Kanpur, Uttar Pradesh, India, May 2014</li>
                 </ul>
+                <span class="glow" aria-hidden="true"></span>
             </div>
-            <div class="education-image">
+            <div class="education-image tilt">
                 <img src="combined institution photo.png" alt="Education Institutions">
             </div>
         </div>
@@ -84,7 +90,7 @@
     <section id="experience">
         <h2 id="experience-title">Experience</h2>
         <div class="experience-content">
-            <div class="experience-text">
+            <div class="experience-text tilt magnetic">
                 <ul id="experience-list">
                     <li>Teaching Assistant<br>National Shizuoka University, August 2023 - Current<br>Teaching Subject: Glow Discharge and Arc Discharge to bachelor's degree students.<br>Reporting Supervisor: Hironobu Matsuo.</li>
                     <li>Research Intern<br>Nanhua University, September 2019 - February 2020<br>School of Electrical Engineering and Computer Science under Prof. Shin Chi Lai.</li>
@@ -92,8 +98,9 @@
                     <li>Summer Intern<br>TATA POWER, May 2018 - June 2018</li>
                     <li>Research Intern<br>KIIT University, June 2017 - August 2018<br>School of Applied Sciences under Professor Dr. B.B Kar.</li>
                 </ul>
+                <span class="glow" aria-hidden="true"></span>
             </div>
-            <div class="experience-image">
+            <div class="experience-image tilt">
                 <img src="Experiences photo.png" alt="Experience Workplaces">
             </div>
         </div>
@@ -103,7 +110,7 @@
     <section id="skills">
         <h2 id="skills-title">Skills</h2>
         <div class="skills-categories">
-            <div class="category">
+            <div class="category magnetic">
                 <h3 id="skills-languages-title">Languages</h3>
                 <ul id="skills-languages-list" class="bullet-list">
                     <li>English</li>
@@ -111,8 +118,9 @@
                     <li>Hindi</li>
                     <li>Bhojpuri</li>
                 </ul>
+                <span class="glow" aria-hidden="true"></span>
             </div>
-            <div class="category">
+            <div class="category magnetic">
                 <h3 id="skills-courses-title">Courses</h3>
                 <ul id="skills-courses-list" class="bullet-list">
                     <li>TCS ion course on making impactful presentations.</li>
@@ -122,8 +130,9 @@
                     <li>TCS ion course on Developing Soft Skills that Industry Needs and Demands.</li>
                     <li>Potential Utility of Fly Ash and developing it into near whitened polymer like structures- IIT Kanpur.</li>
                 </ul>
+                <span class="glow" aria-hidden="true"></span>
             </div>
-            <div class="category">
+            <div class="category magnetic">
                 <h3 id="skills-certifications-title">Certifications</h3>
                 <ul id="skills-certifications-list" class="bullet-list">
                     <li>Certificate from VV Giri National Labour Institute for code on Occupational Safety and Working Conditions.</li>
@@ -147,6 +156,7 @@
                     <li>Certificate from the Central Vigilance Commission of India for commitment & upholding the highest Integrity.</li>
                     <li>Certificate from the Ministry of Labour and Employment for commitment and pledge to the No Child Labour policy.</li>
                 </ul>
+                <span class="glow" aria-hidden="true"></span>
             </div>
         </div>
     </section>
@@ -155,7 +165,7 @@
     <section id="research">
         <h2 id="research-title">Research and Publications</h2>
         <div class="research-categories">
-            <div class="category">
+            <div class="category magnetic">
                 <h3 id="research-papers-title">Research Papers</h3>
                 <div class="sub-category">
                     <h4 id="research-published-title">Published</h4>
@@ -172,8 +182,9 @@
                         <li>"Accelerating the Global Shift to Renewable Energy: Strategic Pathways for Achieving Net-Zero Emissions", Book of Abstracts, Arsenic, and other pollutants, Water Security and One Health under Global Climate Change Scenario (Extended Abstract)."</li>
                     </ul>
                 </div>
+                <span class="glow" aria-hidden="true"></span>
             </div>
-            <div class="category">
+            <div class="category magnetic">
                 <h3 id="research-conferences-title">Conferences</h3>
                 <ul id="research-conferences-list">
                     <li>International conference on green technology and sustainability at Nanhua University, Taiwan.</li>
@@ -181,6 +192,7 @@
                     <li>JSES 2024, Paper presented on Load Variability And its effects on the component's capacity & NPC, Sapporo City University, Sapporo, Hokkaido, Japan.</li>
                     <li>9th International Congress & Exhibition on Arsenic in the Environment, KIIT University, Bhubaneswar City, India.</li>
                 </ul>
+                <span class="glow" aria-hidden="true"></span>
             </div>
         </div>
     </section>
@@ -212,7 +224,13 @@
         <p id="contact-institutional-email">Institutional Email: pandey.yash.23@shizuoka.ac.jp</p>
     </section>
 
-    <!-- JavaScript for Language Switching -->
-    <script src="script.js"></script>
+    <!-- Footer (for auto year) -->
+    <footer style="text-align:center; padding: 20px 0;">
+        © <span id="year"></span> Yash Pandey
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/three@0.161.0/build/three.min.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 </html>
