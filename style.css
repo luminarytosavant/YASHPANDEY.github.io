@@ -1,250 +1,348 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!-- =============================
+ UPDATED 3D VERSION USING YOUR STRUCTURE
+ Files: style.css, index.html, script.js
+======================================= -->
 
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f5f5f7;
-    color: #1d1d1f;
-    line-height: 1.6;
+<!-- ===== style.css ===== -->
+<style id="__style_css__">
+:root{
+  --ink:#1d1d1f; --bg:#f5f5f7; --brand:#007aff; --accent1:#6e48aa; --accent2:#9d50bb; --lime:#32CD32;
 }
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{font-family:'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background-color:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
 
-.language-selector {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1001;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* === New: WebGL background === */
+#bg-canvas{position:fixed;inset:0;z-index:-2;display:block;background:radial-gradient(1200px 600px at 80% 20%,#1f2b4d 0%,#0b0f1a 48%,#060910 100%)}
+.webgl-fallback{position:fixed;inset:0;z-index:-2;background:linear-gradient(135deg,#1c2240,#0b0f1a);filter:contrast(1.05) saturate(1.05)}
+
+/* Language switcher (kept) */
+.language-selector{position:fixed;top:10px;right:10px;z-index:1002;background:rgba(255,255,255,0.9);padding:10px;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,.12);backdrop-filter:blur(8px)}
+.language-selector button{background:none;border:none;color:var(--ink);font-weight:600;cursor:pointer;margin:0 5px;transition:transform .2s ease,color .2s ease}
+.language-selector button:hover{color:var(--brand);transform:translateY(-1px)}
+
+/* Nav (kept, slight glass) */
+nav{background-color:rgba(255,255,255,0.85);backdrop-filter:blur(10px);padding:14px 20px;position:fixed;top:0;left:0;width:100%;z-index:1001;border-bottom:1px solid rgba(0,0,0,.06)}
+nav ul{list-style:none;display:flex;justify-content:center;gap:24px}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;letter-spacing:.2px;transition:color .25s ease}
+nav a:hover{color:var(--brand)}
+
+/* Hero: same colors, 3D feel */
+#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;color:white;text-align:center;position:relative;perspective:1200px}
+#hero::before{content:"";position:absolute;inset:0;background:linear-gradient(to right,var(--accent1),var(--accent2));opacity:.88;z-index:-1}
+.hero-content{transform-style:preserve-3d}
+.hero-content h1{font-size:clamp(2.6rem,6vw,4rem);margin-bottom:.5em;letter-spacing:.3px;text-shadow:0 10px 30px rgba(0,0,0,.35)}
+.hero-content p{font-size:clamp(1.1rem,2.2vw,1.5rem);opacity:.95}
+.hero-cta{margin-top:16px;display:flex;gap:12px;justify-content:center}
+.btn{padding:12px 18px;border-radius:14px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:#fff;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.35);background:rgba(255,255,255,.18)}
+
+/* Sections */
+section{padding:80px 20px;transform-style:preserve-3d}
+section h2{font-size:clamp(1.8rem,3.3vw,2.5rem);color:var(--ink);text-align:center;margin-bottom:1em}
+
+/* About */
+#about .profile img{width:150px;height:150px;border-radius:50%;display:block;margin:0 auto 20px;border:4px solid var(--brand);box-shadow:0 15px 40px rgba(0,0,0,.15)}
+#about p{text-align:center;max-width:720px;margin:0 auto}
+#about ul{list-style:none;padding:0;text-align:center}
+#about ul li{margin-bottom:10px}
+#about strong{color:var(--brand)}
+
+/* 3D containers */
+.tilt, .card3d, .category{transform-style:preserve-3d;will-change:transform}
+.magnetic{position:relative;isolation:isolate}
+.magnetic .glow{position:absolute;inset:-1px;border-radius:inherit;background:radial-gradient(600px 300px at var(--mx,50%) var(--my,50%),rgba(101,174,255,.16),transparent 50%);mix-blend-mode:screen;pointer-events:none}
+
+/* Education / Experience */
+.education-content,.experience-content{display:flex;justify-content:space-between;align-items:center;gap:40px}
+.education-text,.experience-text{flex:1}
+.education-image,.experience-image{flex:1;text-align:center}
+.education-image img,.experience-image img{max-width:100%;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.18);transform:translateZ(20px)}
+
+/* Lists */
+ul{list-style:none;padding:0 20px}
+li{margin-bottom:20px}
+strong{color:var(--brand)}
+
+/* Skills / Research categories: now 3D cards */
+.skills-categories,.research-categories{display:flex;flex-wrap:wrap;justify-content:space-around}
+.category{width:300px;margin:20px;background:rgba(255,255,255,0.9);padding:20px;border-radius:16px;border:1px solid rgba(0,0,0,.06);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 20px 60px rgba(0,0,0,.12);transition:transform .12s ease,box-shadow .2s ease}
+.category h3,.sub-category h4{color:var(--lime);margin-bottom:10px}
+.bullet-list{list-style:disc;padding-left:20px}
+.bullet-list li{margin-bottom:10px}
+
+/* Contact: gradient kept */
+#contact{text-align:center;background:linear-gradient(to right,var(--accent1),var(--accent2));color:white;padding:60px 20px;border-top:1px solid rgba(255,255,255,.2)}
+#contact p{margin:10px 0}
+
+/* Footer */
+footer{padding:40px 20px;text-align:center;opacity:.8}
+
+/* Responsive */
+@media (max-width:768px){
+  nav ul{flex-direction:column;align-items:center}
+  .hero-content h1{font-size:2.4rem}
+  .hero-content p{font-size:1.1rem}
+  section h2{font-size:2rem}
+  .education-content,.experience-content{flex-direction:column}
+  .education-image,.experience-image{margin-top:20px}
+  .skills-categories,.research-categories{flex-direction:column;align-items:center}
+  .category{width:90%}
 }
+</style>
 
-.language-selector button {
-    background: none;
-    border: none;
-    color: #1d1d1f;
-    font-weight: 500;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: color 0.3s ease;
-}
+<!-- ===== index.html ===== -->
+<!-- Note: paste this in your actual index.html (the <style> will be in style.css there) -->
+<div id="__index_html__">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — 3D Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 3D background -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="webgl-fallback" hidden></div>
 
-.language-selector button:hover {
-    color: #007aff;
-}
+    <div class="language-selector">
+      <button id="enBtn">EN</button>
+      <button id="jpBtn">日本語</button>
+    </div>
 
-nav {
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    padding: 15px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
+    <header id="hero">
+      <div class="hero-content tilt magnetic">
+        <h1>Hi, I’m Yash — Building Smarter Energy Systems</h1>
+        <p>Microgrids • PV • BESS • Optimization — now in 3D ✨</p>
+        <div class="hero-cta">
+          <a class="btn" href="#skills">See Skills</a>
+          <a class="btn" href="#research">See Research</a>
+        </div>
+        <span class="glow" aria-hidden="true"></span>
+      </div>
+    </header>
 
-nav li {
-    margin: 0 15px;
-}
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <div class="profile">
+          <img src="profile.jpg" alt="Profile" />
+        </div>
+        <p>I’m a Master’s student at Shizuoka University focusing on hybrid renewable microgrids. I love turning complex energy problems into clear, deployable solutions.</p>
+        <ul>
+          <li><strong>Focus:</strong> PV, BESS, DG, optimization, rural electrification</li>
+          <li><strong>Tools:</strong> HOMER Pro, Python, MATLAB</li>
+        </ul>
+      </section>
 
-nav a {
-    color: #1d1d1f;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
+      <section id="education">
+        <h2>Education</h2>
+        <div class="education-content">
+          <div class="education-text tilt magnetic">
+            <ul>
+              <li><strong>M.Eng.,</strong> Shizuoka University — Hybrid Microgrids</li>
+              <li><strong>B.Tech,</strong> KIIT University — EEE</li>
+            </ul>
+            <span class="glow" aria-hidden="true"></span>
+          </div>
+          <div class="education-image tilt"><img src="education.jpg" alt="Education" /></div>
+        </div>
+      </section>
 
-nav a:hover {
-    color: #007aff;
-}
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-content">
+          <div class="experience-text tilt magnetic">
+            <ul>
+              <li><strong>Researcher,</strong> Microgrid capacity estimation using GHI normalization</li>
+              <li><strong>Conference,</strong> PV–BESS sizing under variability</li>
+            </ul>
+            <span class="glow" aria-hidden="true"></span>
+          </div>
+          <div class="experience-image tilt"><img src="experience.jpg" alt="Experience" /></div>
+        </div>
+      </section>
 
-#hero {
-    height: 100vh;
-    background: linear-gradient(to right, #6e48aa, #9d50bb);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-categories" id="skillDeck">
+          <div class="category magnetic">
+            <h3>Modeling</h3>
+            <ul class="bullet-list">
+              <li>HOMER Pro scenarios</li>
+              <li>Regression & GHI normalization</li>
+              <li>Battery degradation basics</li>
+            </ul>
+            <span class="glow" aria-hidden="true"></span>
+          </div>
+          <div class="category magnetic">
+            <h3>Data & Code</h3>
+            <ul class="bullet-list">
+              <li>Python / MATLAB</li>
+              <li>Pandas / NumPy / Plotly</li>
+              <li>Git & Reproducibility</li>
+            </ul>
+            <span class="glow" aria-hidden="true"></span>
+          </div>
+          <div class="category magnetic">
+            <h3>Communication</h3>
+            <ul class="bullet-list">
+              <li>Academic writing</li>
+              <li>Conference talks</li>
+              <li>Visualization & reports</li>
+            </ul>
+            <span class="glow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
 
-.hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5em;
-}
+      <section id="research">
+        <h2>Research</h2>
+        <div class="research-categories">
+          <div class="category magnetic">
+            <h3>Load Variability</h3>
+            <p>Day‑to‑Day and Time‑Step Variability shaping PV/BESS sizing.</p>
+            <span class="glow" aria-hidden="true"></span>
+          </div>
+          <div class="category magnetic">
+            <h3>Climatic Zones</h3>
+            <p>GHIn vs GHInadj across Köppen‑Geiger climates.</p>
+            <span class="glow" aria-hidden="true"></span>
+          </div>
+          <div class="category magnetic">
+            <h3>TGY vs TMY</h3>
+            <p>When typical years help—and when multi‑year extremes matter.</p>
+            <span class="glow" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
 
-.hero-content p {
-    font-size: 1.5rem;
-}
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Let’s collaborate. Reach me on <a href="#">LinkedIn</a> or <a href="#">Email</a>.</p>
+      </section>
+    </main>
 
-section {
-    padding: 60px 20px;
-}
+    <footer>© <span id="year"></span> Yash Pandey</footer>
 
-section h2 {
-    font-size: 2.5rem;
-    color: #1d1d1f;
-    text-align: center;
-    margin-bottom: 1em;
-}
+    <!-- Scripts -->
+    <script src="https://unpkg.com/three@0.161.0/build/three.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+  </html>
+</div>
 
-#about .profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px;
-    border: 4px solid #007aff;
-}
+<!-- ===== script.js ===== -->
+<script type="module" id="__script_js__">
+// Year
+document.getElementById('year').textContent = new Date().getFullYear();
 
-#about p {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-}
+// ===== WebGL Background =====
+const canvas = document.getElementById('bg-canvas');
+let renderer, scene, camera, points; 
+let running = true;
 
-#about ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
+function initWebGL(){
+  try{ renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:true}); }
+  catch(e){ document.querySelector('.webgl-fallback')?.removeAttribute('hidden'); return; }
+  scene = new THREE.Scene();
+  camera = new THREE.PerspectiveCamera(60, innerWidth/innerHeight, 0.1, 1000);
+  camera.position.set(0,0,60);
 
-#about ul li {
-    margin-bottom: 10px;
-}
+  const DPR = Math.min(window.devicePixelRatio||1, 2);
+  renderer.setPixelRatio(DPR);
+  renderer.setSize(innerWidth, innerHeight);
 
-#about strong {
-    color: #007aff;
-}
+  // Particles (subtle, to keep your design primary)
+  const count = 1400;
+  const geom = new THREE.BufferGeometry();
+  const pos = new Float32Array(count*3);
+  for(let i=0;i<count;i++){
+    pos[i*3+0] = (Math.random()-0.5)*160;
+    pos[i*3+1] = (Math.random()-0.5)*90;
+    pos[i*3+2] = (Math.random()-0.5)*40;
+  }
+  geom.setAttribute('position', new THREE.BufferAttribute(pos,3));
+  const mat = new THREE.PointsMaterial({ size: 0.9, transparent:true, opacity:0.85, depthWrite:false });
+  points = new THREE.Points(geom, mat);
+  scene.add(points);
 
-.education-content, .experience-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
+  scene.fog = new THREE.FogExp2(0x0b0f1a, 0.018);
 
-.education-text, .experience-text {
-    flex: 1;
-}
+  const mouse = {x:0,y:0};
+  window.addEventListener('pointermove', (e)=>{
+    mouse.x = (e.clientX/innerWidth)*2-1;
+    mouse.y = (e.clientY/innerHeight)*2-1;
+  });
 
-.education-image, .experience-image {
-    flex: 1;
-    text-align: center;
-}
-
-.education-image img, .experience-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-ul {
-    list-style: none;
-    padding: 0 20px;
-}
-
-li {
-    margin-bottom: 20px;
-}
-
-strong {
-    color: #007aff;
-}
-
-.skills-categories, .research-categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.category {
-    width: 300px;
-    margin: 20px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.category h3 {
-    color: #32CD32; /* Light green shade */
-    margin-bottom: 10px;
-}
-
-.sub-category h4 {
-    color: #32CD32; /* Light green shade */
-    margin-bottom: 10px;
-}
-
-.bullet-list {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.bullet-list li {
-    margin-bottom: 10px;
-}
-
-#contact {
-    text-align: center;
-    background: linear-gradient(to right, #6e48aa, #9d50bb); /* Gradient matching the hero section */
-    color: white;
-    padding: 40px 20px;
-}
-
-#contact p {
-    margin: 10px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+  const clock = new THREE.Clock();
+  function tick(){
+    if(!running){ requestAnimationFrame(tick); return; }
+    const t = clock.getElapsedTime();
+    // gentle camera drift + mouse parallax
+    camera.position.x += (mouse.x*6 - camera.position.x)*0.02;
+    camera.position.y += (-mouse.y*4 - camera.position.y)*0.02;
+    camera.lookAt(0,0,0);
+    // very subtle particle animation
+    const arr = geom.attributes.position.array;
+    for(let i=0;i<count;i++){
+      const ix = i*3+1; // jiggle y only
+      arr[ix] += Math.sin((i*0.1)+t*0.4)*0.002;
     }
+    geom.attributes.position.needsUpdate = true;
+    renderer.render(scene,camera);
+    requestAnimationFrame(tick);
+  }
+  tick();
 
-    nav li {
-        margin: 10px 0;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
-    }
-
-    section h2 {
-        font-size: 2rem;
-    }
-
-    .education-content, .experience-content {
-        flex-direction: column;
-    }
-
-    .education-image, .experience-image {
-        margin-top: 20px;
-    }
-
-    .skills-categories, .research-categories {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .category {
-        width: 90%;
-    }
+  addEventListener('resize',()=>{
+    camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth,innerHeight);
+  });
+  document.addEventListener('visibilitychange',()=>{ running = !document.hidden; });
 }
+if(window.WebGLRenderingContext){ initWebGL(); }
+else{ document.querySelector('.webgl-fallback')?.removeAttribute('hidden'); }
+
+// ===== 3D Tilt + Magnetic Glow =====
+function addTilt(el){
+  el.addEventListener('pointermove',(e)=>{
+    const r = el.getBoundingClientRect();
+    const x = e.clientX - r.left; const y = e.clientY - r.top;
+    const rx = ((y/r.height)-.5)*-10; const ry=((x/r.width)-.5)*10;
+    el.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+    el.querySelector('.glow')?.style.setProperty('--mx',`${x}px`);
+    el.querySelector('.glow')?.style.setProperty('--my',`${y}px`);
+  });
+  el.addEventListener('pointerleave',()=>{ el.style.transform = 'rotateX(0) rotateY(0)'; });
+}
+
+document.querySelectorAll('.tilt, .category, .magnetic').forEach(addTilt);
+
+// Subtle parallax on sections while scrolling
+const sections = [...document.querySelectorAll('section')];
+addEventListener('scroll',()=>{
+  const st = scrollY;
+  sections.forEach((sec,i)=>{
+    const depth=(i+1)*0.6;
+    sec.style.transform=`translateZ(${depth}px) translateY(${st*0.02*(i%2?1:-1)}px)`;
+  });
+},{passive:true});
+</script>
