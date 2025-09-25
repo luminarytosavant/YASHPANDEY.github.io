@@ -83,7 +83,7 @@ const content = {
         researchUpcomingTitle: "Upcoming",
         researchUpcomingList: [
             "\"Piezoelectric metamaterials for energy harvesting.\"",
-            "\"Bridging Complexity and Accessibility: A Novel Model for PV and BESS Capacity Estimation in Rural Microgrids\"",
+            "\"Bridging Complexity and Accessibility: A Novel Model for PV and BESS Capacity Estimation in Rural Microgrids Near the Equatorial Region\"",
             "\"Accelerating the Global Shift to Renewable Energy: Strategic Pathways for Achieving Net-Zero Emissions\", Book of Abstracts, Arsenic, and other pollutants, Water Security and One Health under Global Climate Change Scenario (Extended Abstract).\""
         ],
         researchConferencesTitle: "Conferences",
@@ -482,4 +482,5 @@ function changeLanguage(lang) {
 
 // Set default language to English
 changeLanguage('en');
+
 
