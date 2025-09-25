@@ -17,14 +17,11 @@ const content = {
             "SALA Energy Corporation, Hamamatsu, Japan.",
             "Akamatsu Electric Company Limited, Iwata, Japan."
         ],
-        // NEW: address line in About section
         aboutAddress: "<strong>Current Address:</strong> Room 102, Akebono Ryō (Dorm), Shijimizuka, Hamamatsu City, Shizuoka Prefecture, Japan.",
         educationTitle: "Education",
         educationList: [
-            // NEW: PhD entry
             "Ph.D. degree (Expected Graduation: September 2028)<br>National Shizuoka University, School of Engineering, Department of Electrical & Electronic Engineering<br>Research Topic: A Dynamic Framework for Adaptive Hybrid Renewable Energy Microgrids: Integrating Socio-Economic Growth, Techno-Economic Optimization, and Resilience in Rural Electrification.",
-            // UPDATED: Master's entry + date + GPA
-            "Master's degree in Electronic & Electrical Engineering<br>National Shizuoka University, <strong>September 2025 (expected)</strong><br>Research Topic: A Study of Optimal Capacity and Planning for Rural Electrification using Hybrid Microgrid Across Load Variability and Climatic Zones<br>Recipient of ABP Full Scholarship 2023–2025. GPA: 2.9",
+            "Master's degree in Electronic & Electrical Engineering<br>National Shizuoka University, August 2025<br>Research Topic: A Study of Optimal Capacity and Planning for Rural Electrification using Hybrid Microgrid Across Load Variability and Climatic Zones<br>Recipient of ABP Full Scholarship 2023–2025. GPA: 2.9",
             "Advance Diploma in Industrial Safety<br>Regional Labour Institute, Kolkata, West Bengal, India, June 2022",
             "Bachelor of Technology in Electrical Engineering<br>Kalinga Institute of Industrial Technology, Bhubaneswar, Odisha, India, July 2020 (CGPA: 7.77)",
             "12th Standard<br>Sir Padampat Singhania Education Centre, Kanpur, Uttar Pradesh, India, May 2016 (70%)",
@@ -32,10 +29,8 @@ const content = {
         ],
         experienceTitle: "Experience",
         experienceList: [
-            // NEW: RA role
-            "Research Assistant (R.A.)<br>National Shizuoka University, <strong>Current</strong><br>Focus: Hybrid renewable energy microgrids, PV/BESS/DG sizing (HOMER Pro), GHI & load analytics, regression-based planning, figures & manuscripts, reviewer responses, and research coordination.<br>School of Electronics & Electrical Engineering — Reporting Supervisor: Hitoshi Haga.",
-            // UPDATED: TA end date
-            "Teaching Assistant<br>National Shizuoka University, <strong>August 2023 – September 2025</strong><br>Teaching Subject: Glow Discharge and Arc Discharge to bachelor's degree students.<br>Reporting Supervisor: Hironobu Matsuo.",
+            "Research Assistant (R.A.)<br>National Shizuoka University, Current<br>Focus: Hybrid renewable energy microgrids, PV/BESS/DG sizing (HOMER Pro), GHI & load analytics, regression-based planning, figures & manuscripts, reviewer responses, and research coordination.<br>School of Electronics & Electrical Engineering — Reporting Supervisor: Hitoshi Haga.",
+            "Teaching Assistant<br>National Shizuoka University, August 2023 – September 2025<br>Teaching Subject: Glow Discharge and Arc Discharge to bachelor's degree students.<br>Reporting Supervisor: Hironobu Matsuo.",
             "Research Intern<br>Nanhua University, September 2019 - February 2020<br>School of Electrical Engineering and Computer Science under Prof. Shin Chi Lai.",
             "Research Intern<br>Asia University, November 2019 - December 2019<br>School of Computer Science and Information Engineering under Prof. T. Chen.",
             "Summer Intern<br>TATA POWER, May 2018 - June 2018",
@@ -43,7 +38,6 @@ const content = {
         ],
         skillsTitle: "Skills",
         skillsLanguagesTitle: "Languages",
-        // UPDATED: added Bengali & Odia
         skillsLanguagesList: [
             "English",
             "Japanese (Basics)",
@@ -92,7 +86,6 @@ const content = {
             "\"Impact of Load Profile Variability on Optimal PV and BESS Capacities of Diesel Generator based Microgrid\", JSES."
         ],
         researchUpcomingTitle: "Upcoming",
-        // UPDATED: matches your latest HTML list
         researchUpcomingList: [
             "\"Piezoelectric metamaterials for energy harvesting.\" (Under peer review — Elsevier)",
             "\"Bridging Complexity and Accessibility: A Novel Model for PV and BESS Capacity Estimation in Rural Microgrids Near the Equatorial Region\" (e-Prime, Elsevier Publications)",
@@ -109,263 +102,353 @@ const content = {
         volunteerTitle: "Volunteer Work",
         volunteerText: "ATTAC NGO: Build Web Site Content and worked as a Campaign Coordinator and Social Media Manager.",
         referencesTitle: "References",
-        // UPDATED: references to match your HTML (emails included)
         referencesList: [
             "Dr. Sushil Yadav Yamamoto, Registered Consultant, Ministry of Agriculture, Forestry and Fisheries of Japan.",
-            "Prof. Satyendra Patnaik, Advisor to Founder, KIIT & KISS — satyendrapatnaik@kiit.ac.in; satyendra.patnaik@gmail.com",
-            "Prof. Dr. Jyoti Prakash Maity, Department of Earth and Environmental Science, National Chung Cheng University; School of Applied Sciences, KIIT University — jyoti_maity@yahoo.com; jpmaity@rediffmail.com",
-            "Prof. Byomkesh Nayak, Dean of the School of Electrical Engineering, KIIT University — dean.electrical@kiit.ac.in",
-            "Dr. Congo Tak Shing CHING, Professor, Graduate Institute of Biomedical Engineering, National Chung Hsing University — tsching@nchu.edu.tw",
-            "Assoc. Professor Hironobu Matsuo, Department of Electronics & Electrical Engineering, National Shizuoka University — matsuo.hironobu@shizuoka.ac.jp",
+            "Prof. Satyendra Patnaik, Advisor to Founder, KIIT & KISS.",
+            "Prof. Dr. Jyoti Prakash Maity, Department of Earth and Environmental Science, National Chung Cheng University; School of Applied Sciences, KIIT University.",
+            "Prof. Byomkesh Nayak, Dean of the School of Electrical Engineering, KIIT University.",
+            "Dr. Congo Tak Shing CHING, Professor, Graduate Institute of Biomedical Engineering, National Chung Hsing University.",
+            "Assoc. Professor Hironobu Matsuo, Department of Electronics & Electrical Engineering, National Shizuoka University.",
             "Mr. Sanatan, Deputy Secretary, Ministry of Skill Development and Entrepreneurship, Government of India."
         ],
         contactTitle: "Contact",
         contactEmail: "Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
         contactInstitutionalEmail: "Institutional Email: pandey.yash.23@shizuoka.ac.jp",
-        // NEW: phone & website to match HTML
         contactPhone: "Mobile: +81-7090976618, +91-9455918918",
-        contactWebsite: 'Website: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener">luminarytosavant.github.io/YASHPANDEY.github.io</a>'
+        contactWebsite: 'Website: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" style="color:#ffffff">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span style="color:#ffffff">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
     },
 
-    /* ——— Updated non-English to reflect Ph.D. & new fields; lists kept concise ——— */
     ja: {
         heroTitle: "ヤシュ・パンディのポートフォリオへようこそ",
         heroSubtitle: "持続可能なエネルギーとその先を探求する",
         aboutTitle: "私について",
-        aboutText: "私は静岡大学・電気電子工学の博士課程の学生で、農村電化のための持続可能なエネルギーソリューションを研究しています。",
+        aboutText: "私はヤシュ・パンディです。日本の静岡大学・電気電子工学専攻の博士課程に在籍し、農村電化のための持続可能なエネルギーソリューションに取り組んでいます。再生可能エネルギーへの情熱と、この分野での研究・インターンの実績を活かし、グリーンテクノロジーの進展と社会への貢献を目指しています。",
         aboutHobbies: "<strong>趣味:</strong> サッカー、詩の執筆、ギター、読書、旅行、写真、料理",
         aboutAffiliations: "<strong>所属:</strong>",
-        aboutAffiliationsList: ["IAAM: 国際先端材料協会、スウェーデン。","IIDL: インド民主リーダーシップ研究所、インド。"],
+        aboutAffiliationsList: [
+            "IAAM: 国際先端材料協会（スウェーデン）",
+            "IIDL: インド民主的リーダーシップ研究所（インド）"
+        ],
         aboutFreelance: "<strong>フリーランスコンサルティング:</strong>",
-        aboutFreelanceList: ["Japan Development Private Limited、ラクナウ、インド。","SALA Energy Corporation、浜松、日本。","Akamatsu Electric Company Limited、磐田、日本。"],
-        aboutAddress: "現住所：Room 102, Akebono Ryō (Dorm), Shijimizuka, Hamamatsu, Shizuoka, Japan.",
+        aboutFreelanceList: [
+            "Japan Development Private Limited（ラクナウ、インド）",
+            "SALA Energy Corporation（浜松、日本）",
+            "Akamatsu Electric Company Limited（磐田、日本）"
+        ],
+        aboutAddress: "<strong>現住所:</strong> Room 102, Akebono Ryō（寮）, Shijimizuka, 浜松市, 静岡県, 日本。",
         educationTitle: "学歴",
         educationList: [
-            "博士課程（2028年9月 修了予定）<br>静岡大学 工学部 電気電子工学専攻<br>研究テーマ：ハイブリッド再生可能エネルギー・マイクログリッドの動的最適化フレームワーク。",
-            "電子電気工学 修士（2025年9月 予定）<br>研究テーマ：負荷変動・気候帯を跨ぐ農村電化のためのハイブリッド・マイクログリッド最適計画（ABP全額奨学金、GPA 2.9）",
-            "産業安全 上級ディプロマ（2022年6月）",
-            "電気工学 学士（2020年7月、CGPA 7.77）",
-            "12年生（2016年5月、70%）",
-            "10年生（2014年5月、CGPA 6.8）"
+            "博士課程（2028年9月 修了予定）<br>静岡大学 工学部 電気電子工学専攻<br>研究テーマ：ハイブリッド再生可能エネルギー・マイクログリッドの動的フレームワーク（社会経済成長・テクノエコノミクス・レジリエンスの統合）。",
+            "電子電気工学 修士<br>静岡大学、2025年8月 修了<br>研究テーマ：負荷変動および気候帯を跨ぐ農村電化に向けたハイブリッド・マイクログリッドの最適容量・計画<br>ABP全額奨学金（2023–2025）、GPA：2.9",
+            "産業安全 上級ディプロマ（2022年6月）<br>地域労働研究所（コルカタ、インド）",
+            "電気工学 学士（2020年7月、CGPA：7.77）<br>カリンガ工科大学（ブバネーシュワル、インド）",
+            "12年生（2016年5月、70%）<br>Sir Padampat Singhania Education Centre（カンプル、インド）",
+            "10年生（2014年5月、CGPA：6.8）<br>Puranchandra Vidya Niketan（カンプル、インド）"
         ],
         experienceTitle: "経験",
         experienceList: [
-            "リサーチアシスタント（R.A.）<br>静岡大学（現在）<br>PV/BESS/DG設計、HOMER Pro、GHI/負荷解析、回帰計画、図表・原稿作成、査読対応、研究調整。",
-            "ティーチングアシスタント<br>静岡大学（2023年8月–2025年9月）<br>学部向け：グロー放電・アーク放電。",
-            "研究インターン（南華大学、2019年9月–2020年2月）",
-            "研究インターン（亜洲大学、2019年11月–2019年12月）",
-            "サマーインターン（TATA POWER、2018年5月–6月）",
-            "研究インターン（KIIT大学、2017年6月–2018年8月）"
+            "リサーチアシスタント（R.A.）<br>静岡大学、Current（在籍中）<br>業務：ハイブリッド再エネマイクログリッド、PV/BESS/DG容量設計（HOMER Pro）、GHI・負荷解析、回帰に基づく計画、図表・原稿作成、査読対応、研究調整。<br>所属：電子・電気工学系／上司：芳賀 仁志",
+            "ティーチングアシスタント<br>静岡大学、2023年8月 – 2025年9月<br>担当：学部生向け グロー放電・アーク放電。<br>上司：松尾 弘信",
+            "研究インターン<br>南華大学、2019年9月 – 2020年2月（指導：Shin Chi Lai 教授）",
+            "研究インターン<br>亜洲大学、2019年11月 – 2019年12月（指導：T. Chen 教授）",
+            "サマーインターン<br>TATA POWER、2018年5月 – 2018年6月",
+            "研究インターン<br>KIIT大学、2017年6月 – 2018年8月（指導：B.B Kar 教授）"
         ],
         skillsTitle: "スキル",
         skillsLanguagesTitle: "言語",
         skillsLanguagesList: ["英語","日本語（基礎）","ヒンディー語","ボージュプリー語","ベンガル語","オディア語"],
         skillsCoursesTitle: "コース",
         skillsCoursesList: [
-            "TCS ion：印象的なプレゼンの作成","TCS ion：コーポレート・エチケット","TCS ion：効果的なメール","TCS ion：GD準備",
-            "TCS ion：産業が求めるソフトスキル","IITカンプール：フライアッシュの活用"
+            "TCS ion：印象的なプレゼンテーションの作成",
+            "TCS ion：コーポレート・エチケット",
+            "TCS ion：効果的なメールの書き方",
+            "TCS ion：グループディスカッションの準備",
+            "TCS ion：産業が求めるソフトスキルの開発",
+            "IITカンプール：フライアッシュの有効利用（白色ポリマー様構造の開発）"
         ],
-        skillsCertificationsTitle: "認定",
+        skillsCertificationsTitle: "認定・証明",
         skillsCertificationsList: [
-            "VV Giri国立労働研究所：労働安全衛生法 ほか各種認定","TATA-POWERサマーインターン証明","IITカンプール認定","IEEE関連認定 など"
+            "VV Giri 国立労働研究所：労働安全衛生・労働条件に関する証明",
+            "同：移住・人身取引・児童／債務労働に関する脆弱性対策の証明",
+            "同：債務労働・児童労働防止のオンライン啓発プログラム証明",
+            "労働研究所：ハウスキーピング／清掃に関する半日研修証明",
+            "VV Giri：労働監査によるガバナンス向上研修証明",
+            "TATA-POWER サマーインターン証明",
+            "KITT FEST 2017 証明",
+            "IITカンプール フライアッシュ有用性 証明",
+            "Texas Instruments USA IICDC-2019 ビジネステスト証明",
+            "南華大学 セメスターコース修了証明",
+            "台湾 工業技術研究院 インダストリー・インターフェース証明",
+            "中正大学 ウィンタースクール証明",
+            "南華大学 研究インターン証明",
+            "NHU：台湾高校生向け指導証明",
+            "南華大学：優秀ライフエデュケーション人材・ナショナルライフ賞",
+            "南華大学：ニューサウスバウンド・ライフエデュケーション証明",
+            "IEEE：IoTの範囲と利点に関する証明",
+            "IEEE：グラデュエートメンバー証明",
+            "インド中央汚職防止委員会：最高の誠実性維持の誓約証明",
+            "インド労働雇用省：児童労働禁止方針の誓約証明"
         ],
         researchTitle: "研究と出版物",
         researchPapersTitle: "研究論文",
         researchPublishedTitle: "出版済み",
         researchPublishedList: [
-            "持続可能エネルギーの推進（Wiley）",
-            "負荷プロファイル変動とPV/BESS最適容量（JSES）"
+            "『持続可能エネルギーの推進：グリーントランジションの新たなフロンティアと機会』Wiley Publications",
+            "『負荷プロファイル変動がディーゼル発電機ベースのマイクログリッドにおけるPV/BESS最適容量に与える影響』JSES"
         ],
         researchUpcomingTitle: "今後の予定",
         researchUpcomingList: [
-            "エネルギー収集のための圧電メタマテリアル（査読中）",
-            "PV・BESS容量推定の新モデル（Elsevier e-Prime）",
-            "再生可能エネルギーへの移行戦略（抄録集）",
-            "PV–BESS容量推定の統合フレームワーク（IEEE Xplore 査読中）"
+            "『エネルギー収集のための圧電メタマテリアル』 （Elsevier 査読中）",
+            "『赤道域近傍の農村マイクログリッドにおけるPV・BESS容量推定モデル』 （Elsevier e-Prime）",
+            "『再生可能エネルギーへの世界的転換を加速する戦略』 （抄録集：ヒ素・水資源・One Health・気候変動）",
+            "『農村マイクログリッドのための統合PV–BESS容量推定フレームワーク：赤道から世界へ』 （IEEE Xplore 査読中）"
         ],
-        researchConferencesTitle: "会議",
+        researchConferencesTitle: "学会・会議",
         researchConferencesList: [
-            "南華大学：グリーンテクノロジーとサステナビリティ国際会議",
-            "KOSMOS：AR/VRと産業応用（高雄）",
-            "JSES 2024：札幌市立大学",
-            "第9回Arsenic in the Environment：KIIT大学"
+            "南華大学（台湾）：グリーンテクノロジーとサステナビリティ国際会議",
+            "KOSMOS：AR/VRの人間生活・産業応用（高雄コンベンションセンター、台湾）",
+            "JSES 2024：札幌市立大学（北海道）— 変動負荷が容量・NPCに与える影響",
+            "第9回 Arsenic in the Environment（KIIT大学、ブバネーシュワル、インド）"
         ],
         volunteerTitle: "ボランティア活動",
-        volunteerText: "ATTAC NGO：ウェブサイト作成、キャンペーン運営、SNS運用。",
+        volunteerText: "ATTAC NGO：ウェブサイトコンテンツ作成、キャンペーン運営、SNSマネジメント。",
         referencesTitle: "推薦者",
         referencesList: [
-            "Dr. Sushil Yadav Yamamoto（MAFF, Japan）",
-            "Prof. Satyendra Patnaik（KIIT & KISS）",
-            "Prof. Jyoti Prakash Maity（NCCU／KIIT）",
-            "Prof. Byomkesh Nayak（KIIT）",
-            "Dr. Congo Tak Shing CHING（NCHU）",
-            "Assoc. Prof. Hironobu Matsuo（Shizuoka Univ.）",
-            "Mr. Sanatan（GoI, MSDE）"
+            "Dr. Sushil Yadav Yamamoto（日本 農林水産省 登録コンサルタント）",
+            "Prof. Satyendra Patnaik（KIIT & KISS 創設者顧問）",
+            "Prof. Jyoti Prakash Maity（国立中正大学／KIIT大学）",
+            "Prof. Byomkesh Nayak（KIIT 大学院 電気工学部長）",
+            "Dr. Congo Tak Shing CHING（国立中興大学 生体医工学 主管教授）",
+            "Assoc. Prof. Hironobu Matsuo（静岡大学 電子・電気工学）",
+            "Mr. Sanatan（インド政府 技能開発・起業省 次官）"
         ],
         contactTitle: "連絡先",
         contactEmail: "メール: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
         contactInstitutionalEmail: "所属メール: pandey.yash.23@shizuoka.ac.jp",
         contactPhone: "電話: +81-7090976618, +91-9455918918",
-        contactWebsite: 'ウェブサイト: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener">luminarytosavant.github.io/YASHPANDEY.github.io</a>'
+        contactWebsite: 'ウェブサイト: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" style="color:#ffffff">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span style="color:#ffffff">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
     },
 
     zh: {
-        heroTitle: "欢迎来到Yash Pandey的作品集",
+        heroTitle: "欢迎来到 Yash Pandey 的作品集",
         heroSubtitle: "探索可持续能源及更多",
         aboutTitle: "关于我",
-        aboutText: "我是在日本静冈大学攻读电气与电子工程博士的研究生，专注于面向乡村电气化的可持续能源方案。",
+        aboutText: "我是 Yash Pandey，就读于日本静冈大学电气与电子工程博士项目，研究面向农村电气化的可持续能源解决方案。热爱可再生能源，拥有相关研究与实习经历，致力于推进绿色技术并产生积极社会影响。",
         aboutHobbies: "<strong>爱好:</strong> 踢足球、写诗、弹吉他、读小说、旅行、摄影、烹饪",
         aboutAffiliations: "<strong>隶属关系:</strong>",
-        aboutAffiliationsList: ["IAAM: 国际先进材料协会，瑞典。","IIDL: 印度民主领导力研究所，印度。"],
+        aboutAffiliationsList: [
+            "IAAM：国际先进材料协会（瑞典）",
+            "IIDL：印度民主领导力研究所（印度）"
+        ],
         aboutFreelance: "<strong>自由职业咨询:</strong>",
-        aboutFreelanceList: ["Japan Development Private Limited，勒克瑙，印度。","SALA Energy Corporation，滨松，日本。","Akamatsu Electric Company Limited，磐田，日本。"],
-        aboutAddress: "现住址：Room 102, Akebono Ryō (Dorm), Shijimizuka, Hamamatsu, Shizuoka, Japan.",
-        educationTitle: "教育",
+        aboutFreelanceList: [
+            "Japan Development Private Limited（勒克瑙，印度）",
+            "SALA Energy Corporation（滨松，日本）",
+            "Akamatsu Electric Company Limited（磐田，日本）"
+        ],
+        aboutAddress: "<strong>现住址:</strong> Room 102, Akebono Ryō（宿舍），Shijimizuka，滨松市，静冈县，日本。",
+        educationTitle: "教育背景",
         educationList: [
-            "博士（预计 2028年9月）<br>静冈大学 工学部 电气与电子工程系<br>研究课题：混合可再生能源微电网的动态优化框架。",
-            "电子与电气工程硕士（预计 2025年9月，GPA 2.9）",
-            "工业安全高级文凭（2022年6月）",
-            "电气工程学士（2020年7月，CGPA 7.77）",
-            "12年级（2016年5月，70%）",
-            "10年级（2014年5月，CGPA 6.8）"
+            "博士（预计 2028 年 9 月毕业）<br>静冈大学 工学部 电气与电子工程系<br>研究课题：面向农村电气化的混合可再生能源微电网动态框架（社会经济增长、技术经济优化与韧性一体化）。",
+            "电子与电气工程硕士<br>静冈大学，2025 年 8 月毕业<br>研究主题：跨负荷波动与气候带的农村电气化混合微电网最优容量与规划研究<br>ABP 全额奖学金（2023–2025），GPA：2.9",
+            "工业安全高级文凭（2022 年 6 月）<br>地区劳动研究所（加尔各答，印度）",
+            "电气工程学士（2020 年 7 月，CGPA：7.77）<br>卡林加工业技术学院（布巴内斯瓦尔，印度）",
+            "高中 12 年级（2016 年 5 月，70%）<br>Sir Padampat Singhania Education Centre（坎普尔，印度）",
+            "高中 10 年级（2014 年 5 月，CGPA：6.8）<br>Puranchandra Vidya Niketan（坎普尔，印度）"
         ],
         experienceTitle: "经历",
         experienceList: [
-            "研究助理（R.A.）— 静冈大学（目前）",
-            "助教 — 静冈大学（2023年8月–2025年9月）",
-            "研究实习生 — 南华大学（2019年9月–2020年2月）",
-            "研究实习生 — 亚洲大学（2019年11月–2019年12月）",
-            "暑期实习 — TATA POWER（2018年5月–6月）",
-            "研究实习生 — KIIT大学（2017年6月–2018年8月）"
+            "研究助理（R.A.）<br>静冈大学，Current（在职）<br>方向：混合可再生能源微电网，PV/BESS/DG 容量配置（HOMER Pro），GHI 与负荷分析，基于回归的规划，图表与论文撰写，审稿回复与研究协调。<br>学院：电气与电子工程；导师：Hitoshi Haga。",
+            "助教（Teaching Assistant）<br>静冈大学，2023 年 8 月 – 2025 年 9 月<br>授课：辉光放电与电弧放电（本科生）。<br>导师：Hironobu Matsuo。",
+            "研究实习生<br>南华大学，2019 年 9 月 – 2020 年 2 月（指导：Shin Chi Lai 教授）",
+            "研究实习生<br>亚洲大学，2019 年 11 月 – 2019 年 12 月（指导：T. Chen 教授）",
+            "暑期实习<br>TATA POWER，2018 年 5 月 – 2018 年 6 月",
+            "研究实习生<br>KIIT 大学，2017 年 6 月 – 2018 年 8 月（指导：B.B Kar 教授）"
         ],
         skillsTitle: "技能",
         skillsLanguagesTitle: "语言",
         skillsLanguagesList: ["英语","日语（基础）","印地语","博杰普尔语","孟加拉语","奥里亚语"],
         skillsCoursesTitle: "课程",
         skillsCoursesList: [
-            "TCS ion 课程：有影响力的演示","企业礼仪","高效邮件","小组讨论准备","软技能开发","IIT坎普尔：粉煤灰的潜在用途"
+            "TCS ion：有影响力的演示制作",
+            "TCS ion：企业礼仪",
+            "TCS ion：高效邮件写作",
+            "TCS ion：小组讨论准备",
+            "TCS ion：行业所需软技能",
+            "IIT 坎普尔：粉煤灰的潜在用途（近白聚合物结构开发）"
         ],
         skillsCertificationsTitle: "认证",
         skillsCertificationsList: [
-            "VV Giri 国家劳动研究所等多项认证","TATA-POWER 实习证书","IIT 坎普尔证书","IEEE 相关认证 等"
+            "VV Giri 国家劳动研究所：职业安全与工作条件法规等相关认证",
+            "关于移民脆弱性、人贩、童工与债务劳动的项目认证",
+            "在线防止与消除童工/债务劳动的培训认证",
+            "劳动研究所：家务管理与清洁半日培训认证",
+            "通过劳动检查实现良治的培训认证",
+            "TATA-POWER 暑期实习证书",
+            "KITT FEST 2017 证书",
+            "IIT 坎普尔 粉煤灰应用证书",
+            "Texas Instruments USA IICDC-2019 商业测试证书",
+            "南华大学 学期课程结业证书",
+            "台湾 工业技术研究院 行业接口证书",
+            "中正大学 冬季学校证书",
+            "南华大学 研究实习证书",
+            "NHU 台湾高中教学证书",
+            "南华大学：杰出生活教育人员与国家生活奖",
+            "南华大学：新南向生活教育计划证书",
+            "IEEE：物联网范围与益处证书",
+            "IEEE：毕业生会员证书",
+            "印度中央监察委员会：诚信承诺证书",
+            "印度劳动与就业部：反童工政策承诺证书"
         ],
         researchTitle: "研究与出版物",
         researchPapersTitle: "研究论文",
         researchPublishedTitle: "已发表",
         researchPublishedList: [
-            "推进可持续能源（Wiley）",
-            "负荷曲线变异性与PV/BESS容量（JSES）"
+            "《推进可持续能源：探索绿色转型的新前沿与机遇》Wiley Publications",
+            "《负荷曲线变异性对柴油机微电网中 PV 与 BESS 最优容量的影响》JSES"
         ],
         researchUpcomingTitle: "即将发表",
         researchUpcomingList: [
-            "用于能量采集的压电超材料（审稿中）",
-            "PV/BESS 容量估算新模型（Elsevier e-Prime）",
-            "可再生能源转型策略（摘要集）",
-            "统一的PV–BESS容量估算框架（IEEE Xplore 审稿中）"
+            "《用于能量采集的压电超材料》（Elsevier 审稿中）",
+            "《赤道区域农村微电网 PV/BESS 容量估算新模型》（Elsevier e-Prime）",
+            "《加速全球向可再生能源转型的战略路径》（摘要集：砷、水安全、One Health、气候变化）",
+            "《统一的 PV–BESS 容量估算框架：从赤道到全球》（IEEE Xplore 审稿中）"
         ],
         researchConferencesTitle: "会议",
         researchConferencesList: [
-            "南华大学：绿色技术与可持续性国际会议",
-            "KOSMOS：AR/VR 与工业应用（高雄）",
-            "JSES 2024：札幌市立大学",
-            "第九届 环境中的砷：KIIT大学"
+            "南华大学（台湾）：绿色技术与可持续性国际会议",
+            "KOSMOS：AR/VR 与产业可用性（高雄会议中心，台湾）",
+            "JSES 2024：札幌市立大学（北海道）— 负荷变动对容量与 NPC 的影响",
+            "第九届“环境中的砷”国际大会与展览（KIIT 大学，布巴内斯瓦尔，印度）"
         ],
         volunteerTitle: "志愿者工作",
-        volunteerText: "ATTAC NGO：网站内容、活动统筹与社媒管理。",
-        referencesTitle: "参考资料",
+        volunteerText: "ATTAC NGO：建设网站内容，并担任活动协调员与社交媒体管理员。",
+        referencesTitle: "参考人",
         referencesList: [
-            "Dr. Sushil Yadav Yamamoto（日本农林水产省）",
-            "Prof. Satyendra Patnaik（KIIT & KISS）",
-            "Prof. Jyoti Prakash Maity（NCCU／KIIT）",
-            "Prof. Byomkesh Nayak（KIIT）",
-            "Dr. Congo Tak Shing CHING（NCHU）",
-            "Assoc. Prof. Hironobu Matsuo（静冈大学）",
-            "Mr. Sanatan（印度技能发展与创业部）"
+            "Dr. Sushil Yadav Yamamoto（日本农林水产省 注册顾问）",
+            "Prof. Satyendra Patnaik（KIIT & KISS 创始人顾问）",
+            "Prof. Jyoti Prakash Maity（国立中正大学／KIIT 大学）",
+            "Prof. Byomkesh Nayak（KIIT 大学 电气工程学院院长）",
+            "Dr. Congo Tak Shing CHING（国立中兴大学 生物医学工程研究所 教授）",
+            "Assoc. Prof. Hironobu Matsuo（静冈大学 电子与电气工程）",
+            "Mr. Sanatan（印度政府 技能发展与创业部 副秘书）"
         ],
         contactTitle: "联系方式",
         contactEmail: "电子邮件: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
-        contactInstitutionalEmail: "机构电子邮件: pandey.yash.23@shizuoka.ac.jp",
+        contactInstitutionalEmail: "机构邮箱: pandey.yash.23@shizuoka.ac.jp",
         contactPhone: "电话: +81-7090976618, +91-9455918918",
-        contactWebsite: '网站: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener">luminarytosavant.github.io/YASHPANDEY.github.io</a>'
+        contactWebsite: '网站: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" style="color:#ffffff">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span style="color:#ffffff">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
     },
 
     hi: {
         heroTitle: "यश पांडे के पोर्टफोलियो में आपका स्वागत है",
         heroSubtitle: "सतत ऊर्जा और उससे आगे की खोज",
         aboutTitle: "मेरे बारे में",
-        aboutText: "मैं जापान के नेशनल शिज़ुओका विश्वविद्यालय में इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग के पीएच.डी. कार्यक्रम का छात्र हूँ, और ग्रामीण विद्युतीकरण हेतु सतत ऊर्जा समाधान पर कार्य करता हूँ।",
-        aboutHobbies: "<strong>शौक:</strong> फुटबॉल, कविता लेखन, गिटार, उपन्यास, यात्रा, फोटोग्राफी, खाना बनाना",
-        aboutAffiliations: "<strong>संबद्धता:</strong>",
-        aboutAffiliationsList: ["IAAM (स्वीडन)","IIDL (भारत)"],
-        aboutFreelance: "<strong>फ्रीलांस परामर्श:</strong>",
-        aboutFreelanceList: ["Japan Development Pvt. Ltd., लखनऊ","SALA Energy, हमामात्सु","Akamatsu Electric, इवाता"],
-        aboutAddress: "वर्तमान पता: Room 102, Akebono Ryō (Dorm), Shijimizuka, Hamamatsu, Shizuoka, Japan.",
+        aboutText: "मैं यश पांडे हूँ। जापान के नेशनल शिज़ुओका यूनिवर्सिटी में इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग के पीएच.डी. कार्यक्रम का छात्र हूँ। मेरा शोध ग्रामीण विद्युतीकरण हेतु सतत ऊर्जा समाधान और हाइब्रिड माइक्रोग्रिड पर केंद्रित है। नवीकरणीय ऊर्जा के प्रति गहरी रुचि और शोध/इंटर्नशिप के अनुभव के साथ, मैं हरित प्रौद्योगिकियों को आगे बढ़ाने और समाज पर सकारात्मक प्रभाव डालने के लिए प्रतिबद्ध हूँ।",
+        aboutHobbies: "<strong>शौक:</strong> फुटबॉल, कविता-लेखन, गिटार, उपन्यास-पठन, यात्रा, फोटोग्राफी, खाना बनाना",
+        aboutAffiliations: "<strong>संबद्धताएँ:</strong>",
+        aboutAffiliationsList: [
+            "IAAM: इंटरनेशनल एसोसिएशन ऑफ़ एडवांस्ड मटीरियल्स (स्वीडन)",
+            "IIDL: इंडियन इंस्टिट्यूट ऑफ़ डेमोक्रेटिक लीडरशिप (भारत)"
+        ],
+        aboutFreelance: "<strong>फ्रीलांस कंसल्टिंग:</strong>",
+        aboutFreelanceList: [
+            "Japan Development Private Limited, लखनऊ (भारत)",
+            "SALA Energy Corporation, हमामात्सु (जापान)",
+            "Akamatsu Electric Company Limited, इवाता (जापान)"
+        ],
+        aboutAddress: "<strong>वर्तमान पता:</strong> Room 102, Akebono Ryō (Dorm), Shijimizuka, Hamamatsu City, Shizuoka Prefecture, Japan.",
         educationTitle: "शिक्षा",
         educationList: [
-            "पीएच.डी. (अनुमानित समापन: सितंबर 2028)<br>नेशनल शिज़ुओका यूनिवर्सिटी — इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग",
-            "मास्टर — इलेक्ट्रॉनिक एवं इलेक्ट्रिकल इंजीनियरिंग (सितंबर 2025 अपेक्षित, GPA 2.9)",
-            "औद्योगिक सुरक्षा में उन्नत डिप्लोमा (जून 2022)",
-            "इलेक्ट्रिकल इंजीनियरिंग में बी.टेक (जुलाई 2020, CGPA 7.77)",
-            "12वीं (मई 2016, 70%)",
-            "10वीं (मई 2014, CGPA 6.8)"
+            "पीएच.डी. (अनुमानित समापन: सितंबर 2028)<br>नेशनल शिज़ुओका यूनिवर्सिटी, स्कूल ऑफ़ इंजीनियरिंग, इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग विभाग<br>अनुसंधान विषय: सामाजिक-आर्थिक विकास, टेक्नो-इकोनॉमिक ऑप्टिमाइज़ेशन और रेज़िलिएंस के एकीकरण के साथ हाइब्रिड नवीकरणीय ऊर्जा माइक्रोग्रिड हेतु गतिशील ढाँचा।",
+            "इलेक्ट्रॉनिक एवं इलेक्ट्रिकल इंजीनियरिंग में मास्टर डिग्री<br>नेशनल शिज़ुओका यूनिवर्सिटी, अगस्त 2025<br>अनुसंधान विषय: लोड परिवर्तनशीलता और जलवायवीय क्षेत्रों में ग्रामीण विद्युतीकरण हेतु हाइब्रिड माइक्रोग्रिड का इष्टतम क्षमता/योजना अध्ययन<br>ABP पूर्ण छात्रवृत्ति (2023–2025), GPA: 2.9",
+            "इंडस्ट्रियल सेफ़्टी में एडवांस डिप्लोमा (जून 2022) — रीजनल लेबर इंस्टीट्यूट, कोलकाता",
+            "इलेक्ट्रिकल इंजीनियरिंग में बी.टेक (जुलाई 2020, CGPA: 7.77) — KIIT यूनिवर्सिटी, भुवनेश्वर",
+            "12वीं (मई 2016, 70%) — Sir Padampat Singhania Education Centre, कानपुर",
+            "10वीं (मई 2014, CGPA: 6.8) — Puranchandra Vidya Niketan, कानपुर"
         ],
         experienceTitle: "अनुभव",
         experienceList: [
-            "रिसर्च असिस्टेंट (R.A.) — शिज़ुओका विश्वविद्यालय (वर्तमान)",
-            "टीचिंग असिस्टेंट — शिज़ुओका विश्वविद्यालय (अगस्त 2023–सितंबर 2025)",
-            "रिसर्च इंटर्न — नानहुआ विश्वविद्यालय (2019–2020)",
-            "रिसर्च इंटर्न — एशिया विश्वविद्यालय (2019)",
-            "समर इंटर्न — TATA POWER (2018)",
-            "रिसर्च इंटर्न — KIIT विश्वविद्यालय (2017–2018)"
+            "रिसर्च असिस्टेंट (R.A.)<br>नेशनल शिज़ुओका यूनिवर्सिटी, Current (वर्तमान)<br>कार्य क्षेत्र: हाइब्रिड नवीकरणीय ऊर्जा माइक्रोग्रिड, PV/BESS/DG साइज़िंग (HOMER Pro), GHI एवं लोड एनालिटिक्स, रिग्रेशन-आधारित योजना, फ़िगर्स/पांडुलिपि, रिव्यूअर जवाब और शोध समन्वय।<br>स्कूल ऑफ़ इलेक्ट्रॉनिक्स एवं इलेक्ट्रिकल इंजीनियरिंग — सुपरवाइज़र: हितोशी हागा।",
+            "टीचिंग असिस्टेंट<br>नेशनल शिज़ुओका यूनिवर्सिटी, अगस्त 2023 – सितंबर 2025<br>विषय: अंडरग्रेजुएट छात्रों को ग्लो डिस्चार्ज एवं आर्क डिस्चार्ज पढ़ाना।<br>सुपरवाइज़र: हिरोनोबु मात्सुओ।",
+            "रिसर्च इंटर्न — नानहुआ यूनिवर्सिटी (सितंबर 2019 – फ़रवरी 2020) — प्रो. शिन ची लाई के अंतर्गत",
+            "रिसर्च इंटर्न — एशिया यूनिवर्सिटी (नवंबर 2019 – दिसंबर 2019) — प्रो. टी. चेन के अंतर्गत",
+            "समर इंटर्न — TATA POWER (मई 2018 – जून 2018)",
+            "रिसर्च इंटर्न — KIIT यूनिवर्सिटी (जून 2017 – अगस्त 2018) — प्रो. बी.बी. कर के अंतर्गत"
         ],
         skillsTitle: "कौशल",
         skillsLanguagesTitle: "भाषाएँ",
         skillsLanguagesList: ["अंग्रेज़ी","जापानी (मूल)","हिंदी","भोजपुरी","बंगाली","ओड़िया"],
         skillsCoursesTitle: "पाठ्यक्रम",
         skillsCoursesList: [
-            "TCS आयन: प्रभावशाली प्रस्तुति","कॉर्पोरेट शिष्टाचार","प्रभावी ईमेल","ग्रुप डिस्कशन तैयारी","सॉफ्ट-स्किल विकास","IIT कानपुर: फ्लाई ऐश उपयोग"
+            "TCS आयन: प्रभावशाली प्रस्तुति बनाना",
+            "TCS आयन: कॉर्पोरेट शिष्टाचार",
+            "TCS आयन: प्रभावी ईमेल लेखन",
+            "TCS आयन: समूह चर्चा की तैयारी",
+            "TCS आयन: उद्योगोन्मुख सॉफ्ट-स्किल विकास",
+            "IIT कानपुर: फ़्लाई ऐश की संभावित उपयोगिता (सफ़ेद पॉलिमर-जैसी संरचना का विकास)"
         ],
         skillsCertificationsTitle: "प्रमाणपत्र",
         skillsCertificationsList: [
-            "VV Giri NLI व अन्य प्रमाणपत्र","TATA-POWER इंटर्नशिप","IIT कानपुर प्रमाणपत्र","IEEE संबद्ध प्रमाणपत्र आदि"
+            "VV Giri राष्ट्रीय श्रम संस्थान: व्यावसायिक सुरक्षा एवं कार्य परिस्थितियाँ",
+            "श्रमिकों की भेद्यताओं (प्रवासन/ट्रैफिकिंग/बाल एवं बंधुआ मज़दूरी) पर संवेदनशीलता कार्यक्रम",
+            "बंधुआ/बाल मज़दूरी की रोकथाम हेतु ऑनलाइन कार्यक्रम",
+            "डायरेक्टोरेट जनरल ऑफ़ फ़ैक्टरी एडवाइस सर्विसेज: हाउसकीपिंग एवं स्वच्छता प्रशिक्षण",
+            "श्रम निरीक्षण के माध्यम से सुशासन प्रशिक्षण",
+            "TATA-POWER समर इंटर्नशिप प्रमाणपत्र",
+            "KITT FEST 2017 प्रमाणपत्र",
+            "IIT कानपुर फ़्लाई ऐश प्रमाणपत्र",
+            "Texas Instruments USA IICDC-2019 बिज़नेस टेस्ट प्रमाणपत्र",
+            "नानहुआ यूनिवर्सिटी सेमेस्टर कोर्स पूर्णता प्रमाणपत्र",
+            "Industrial Technology Research Institute Taiwan: इंडस्ट्री इंटरफेस प्रमाणपत्र",
+            "चुंग चेंग यूनिवर्सिटी विंटर स्कूल प्रमाणपत्र",
+            "नानहुआ यूनिवर्सिटी रिसर्च इंटर्नशिप प्रमाणपत्र",
+            "NHU: ताइवान हाई-स्कूल शिक्षण प्रमाणपत्र",
+            "नानहुआ यूनिवर्सिटी: उत्कृष्ट लाइफ़-एजुकेशन पर्सनेल एवं नेशनल लाइफ़ अवार्ड",
+            "न्यू साउथ बाउंड लाइफ़ एजुकेशन प्रोग्राम प्रमाणपत्र",
+            "IEEE: IoT के दायरे और लाभ प्रमाणपत्र",
+            "IEEE: ग्रेजुएट मेंबरशिप प्रमाणपत्र",
+            "भारत का केंद्रीय सतर्कता आयोग: उच्चतम सत्यनिष्ठा प्रतिज्ञा",
+            "श्रम एवं रोजगार मंत्रालय: नो-चाइल्ड लेबर पॉलिसी प्रतिज्ञा"
         ],
         researchTitle: "अनुसंधान और प्रकाशन",
         researchPapersTitle: "अनुसंधान पत्र",
         researchPublishedTitle: "प्रकाशित",
         researchPublishedList: [
-            "सतत ऊर्जा (Wiley)","लोड प्रोफाइल परिवर्तनशीलता और PV/BESS क्षमता (JSES)"
+            "“सतत ऊर्जा का संवर्द्धन: ग्रीन ट्रांज़िशन में नए अवसर और सीमाएँ” — Wiley Publications",
+            "“डीजी-बेस्ड माइक्रोग्रिड में PV और BESS की इष्टतम क्षमता पर लोड प्रोफ़ाइल परिवर्तनशीलता का प्रभाव” — JSES"
         ],
         researchUpcomingTitle: "आगामी",
         researchUpcomingList: [
-            "ऊर्जा संचयन हेतु पाईज़ोइलेक्ट्रिक मेटामटेरियल (समीक्षा में)",
-            "PV–BESS क्षमता अनुमान का नया मॉडल (Elsevier e-Prime)",
-            "नेट-ज़ीरो हेतु रणनीतियाँ (सार-संग्रह)",
-            "एकीकृत PV–BESS क्षमता फ्रेमवर्क (IEEE Xplore समीक्षाधीन)"
+            "“ऊर्जा संचयन के लिए पायज़ोइलेक्ट्रिक मेटामटेरियल्स” (Elsevier, समीक्षाधीन)",
+            "“ग्रामीण माइक्रोग्रिड हेतु PV/BESS क्षमता अनुमान का नया मॉडल” (Elsevier e-Prime)",
+            "“नवीकरणीय ऊर्जा की ओर वैश्विक परिवर्तन को तेज़ करने की रणनीतियाँ” (अर्सेनिक, जल सुरक्षा, One Health, जलवायु परिवर्तन — सार-संग्रह)",
+            "“ग्रामीण माइक्रोग्रिड के लिए एकीकृत PV–BESS क्षमता अनुमान फ्रेमवर्क: भूमध्यरेखीय जड़ों से वैश्विक संदर्भ तक” (IEEE Xplore, समीक्षाधीन)"
         ],
         researchConferencesTitle: "सम्मेलन",
         researchConferencesList: [
-            "नानहुआ विश्वविद्यालय: ग्रीन टेक्नोलॉजी एवं सस्टेनेबिलिटी",
-            "KOSMOS: AR/VR (काउशुंग)",
-            "JSES 2024: सप्पोरो सिटी यूनिवर्सिटी",
-            "Arsenic in the Environment: KIIT विश्वविद्यालय"
+            "नानहुआ विश्वविद्यालय (ताइवान): ग्रीन टेक्नोलॉजी और सस्टेनेबिलिटी अंतर्राष्ट्रीय सम्मेलन",
+            "KOSMOS: AR/VR के मानव/औद्योगिक अनुप्रयोग (काऊशुंग कन्वेंशन सेंटर, ताइवान)",
+            "JSES 2024: सप्पोरो सिटी यूनिवर्सिटी (होक्काइदो) — लोड वैरिएबिलिटी का क्षमता एवं NPC पर प्रभाव",
+            "9वाँ अंतर्राष्ट्रीय कांग्रेस एवं प्रदर्शनी: ‘आर्सेनिक इन द एनवायरनमेंट’ (KIIT विश्वविद्यालय, भुवनेश्वर, भारत)"
         ],
-        volunteerTitle: "स्वयंसेवा कार्य",
-        volunteerText: "ATTAC NGO: वेबसाइट सामग्री, कैंपेन समन्वय, सोशल मीडिया प्रबंधन।",
+        volunteerTitle: "स्वयंसेवी कार्य",
+        volunteerText: "ATTAC NGO: वेबसाइट सामग्री निर्माण, अभियान समन्वयन और सोशल मीडिया प्रबंधन।",
         referencesTitle: "संदर्भ",
         referencesList: [
-            "Dr. Sushil Yadav Yamamoto (MAFF, Japan)",
-            "Prof. Satyendra Patnaik (KIIT & KISS)",
-            "Prof. Jyoti Prakash Maity (NCCU/KIIT)",
-            "Prof. Byomkesh Nayak (KIIT)",
-            "Dr. Congo Tak Shing CHING (NCHU)",
-            "Assoc. Prof. Hironobu Matsuo (Shizuoka Univ.)",
-            "Mr. Sanatan (MSDE, GoI)"
+            "Dr. Sushil Yadav Yamamoto (जापान, कृषि-वन-मत्स्य मंत्रालय — पंजीकृत सलाहकार)",
+            "Prof. Satyendra Patnaik (KIIT & KISS — संस्थापक सलाहकार)",
+            "Prof. Jyoti Prakash Maity (National Chung Cheng University / KIIT University)",
+            "Prof. Byomkesh Nayak (Dean, School of Electrical Engineering, KIIT University)",
+            "Dr. Congo Tak Shing CHING (Professor, Graduate Institute of Biomedical Engineering, National Chung Hsing University)",
+            "Assoc. Prof. Hironobu Matsuo (Department of Electronics & Electrical Engineering, National Shizuoka University)",
+            "Mr. Sanatan (Deputy Secretary, Ministry of Skill Development and Entrepreneurship, Government of India)"
         ],
         contactTitle: "संपर्क",
         contactEmail: "ईमेल: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
         contactInstitutionalEmail: "संस्थागत ईमेल: pandey.yash.23@shizuoka.ac.jp",
         contactPhone: "मोबाइल: +81-7090976618, +91-9455918918",
-        contactWebsite: 'वेबसाइट: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener">luminarytosavant.github.io/YASHPANDEY.github.io</a>'
+        contactWebsite: 'वेबसाइट: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" style="color:#ffffff">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span style="color:#ffffff">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
     }
 };
 
@@ -384,7 +467,6 @@ function changeLanguage(lang) {
     document.getElementById("about-affiliations-list").innerHTML = data.aboutAffiliationsList.map(item => `<li>${item}</li>`).join("");
     document.getElementById("about-freelance").innerHTML = data.aboutFreelance;
     document.getElementById("about-freelance-list").innerHTML = data.aboutFreelanceList.map(item => `<li>${item}</li>`).join("");
-    // NEW: About address
     if (document.getElementById("about-address") && data.aboutAddress) {
         document.getElementById("about-address").innerHTML = data.aboutAddress;
     }
@@ -421,7 +503,6 @@ function changeLanguage(lang) {
     document.getElementById("contact-title").innerHTML = data.contactTitle;
     document.getElementById("contact-email").innerHTML = data.contactEmail;
     document.getElementById("contact-institutional-email").innerHTML = data.contactInstitutionalEmail;
-    // NEW: phone + website (only if present)
     if (document.getElementById("contact-phone") && data.contactPhone) {
         document.getElementById("contact-phone").innerHTML = data.contactPhone;
     }
