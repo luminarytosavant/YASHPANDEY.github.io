@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yash Pandey's Portfolio</title>
 
@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 
+  <!-- Styles (we'll refine style.css next) -->
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -28,14 +29,14 @@
     <div class="nav-inner">
       <a class="brand" href="#hero" aria-label="Home">YP</a>
       <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#volunteer">Volunteer</a></li>
-        <li><a href="#references">References</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a data-i18n="nav.about" href="#about">About Me</a></li>
+        <li><a data-i18n="nav.education" href="#education">Education</a></li>
+        <li><a data-i18n="nav.experience" href="#experience">Experience</a></li>
+        <li><a data-i18n="nav.skills" href="#skills">Skills</a></li>
+        <li><a data-i18n="nav.research" href="#research">Research</a></li>
+        <li><a data-i18n="nav.volunteer" href="#volunteer">Volunteer</a></li>
+        <li><a data-i18n="nav.references" href="#references">References</a></li>
+        <li><a data-i18n="nav.contact" href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -46,7 +47,7 @@
     <div class="hero-content" data-parallax>
       <h1 id="hero-title">Welcome to Yash Pandey's Portfolio</h1>
       <p id="hero-subtitle">Exploring Sustainable Energy and Beyond</p>
-      <a href="#about" class="cta3d">Explore</a>
+      <a href="#about" class="cta3d" data-i18n="cta.explore">Explore</a>
     </div>
   </section>
 
@@ -62,6 +63,7 @@
           <p id="about-text">
             I am Yash Pandey, a Ph.D student in Electrical & Electronic Engineering at National Shizuoka University…
           </p>
+
           <p id="about-hobbies"><strong>Hobbies:</strong> …</p>
 
           <p id="about-affiliations"><strong>Affiliations:</strong></p>
