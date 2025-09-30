@@ -94,7 +94,6 @@ const content = {
     researchPapersTitle: "Research Papers",
     researchPublishedTitle: "Published",
     researchPublishedList: [
-      // Added De Gruyter chapter with DOI link:
       'Book Chapter: Importance of perovskite solar cells in sustainable energy solutions — <a href="https://doi.org/10.1515/9783111726847-012" target="_blank" rel="noopener">De Gruyter (DOI)</a>. Authors: Pravin Kumar Singh, Yash Pandey, Upendra Kulshrestha.',
       '"Advancing Sustainable Energy: Exploring New Frontiers and Opportunities in Green Transition", Wiley Publications.',
       '"Impact of Load Profile Variability on Optimal PV and BESS Capacities of Diesel Generator based Microgrid", JSES.'
@@ -464,7 +463,7 @@ const content = {
       "नानहुआ यूनिवर्सिटी: उत्कृष्ट लाइफ़-एजुकेशन पर्सनेल एवं नेशनल लाइफ़ अवार्ड",
       "न्यू साउथ बाउंड लाइफ़ एजुकेशन प्रोग्राम प्रमाणपत्र",
       "IEEE: IoT के दायरे और लाभ प्रमाणपत्र",
-      "IEEE: ग्रेजुएट मेंबरशिप प्रमाणपत्र",
+      "IEEE: ग्रेजेजुएट मेंबरशिप प्रमाणपत्र",
       "भारत का केंद्रीय सतर्कता आयोग: उच्चतम सत्यनिष्ठा प्रतिज्ञा",
       "श्रम एवं रोजगार मंत्रालय: नो-चाइल्ड लेबर पॉलिसी प्रतिज्ञा"
     ],
@@ -515,7 +514,7 @@ const content = {
       'वेबसाइट: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" style="color:#ffffff">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span style="color:#ffffff">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
   },
 
-  /* ---- Korean (NEW) ---- */
+  /* ---- Korean ---- */
   ko: {
     heroTitle: "야시 판데이의 포트폴리오에 오신 것을 환영합니다",
     heroSubtitle: "지속가능 에너지와 그 너머를 탐구하다",
@@ -682,13 +681,11 @@ function changeLanguage(lang) {
     ["contact-website", "contactWebsite"]
   ];
 
-  // Set simple fields
   map.forEach(([id, key]) => {
     const el = document.getElementById(id);
     if (el && data[key]) el.innerHTML = data[key];
   });
 
-  // Lists
   const lists = [
     ["about-affiliations-list", "aboutAffiliationsList"],
     ["about-freelance-list", "aboutFreelanceList"],
@@ -712,41 +709,52 @@ function changeLanguage(lang) {
 
   // Persist choice
   document.documentElement.lang = lang;
-  localStorage.setItem("lang", lang);
+  try { localStorage.setItem("lang", lang); } catch(e) {}
 }
 
 /* ---- Motion / UI polish ---- */
 function initSmoothScroll() {
-  // Native smooth scroll (CSS), but also prevent hash-jumps offset
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener("click", e => {
       const href = a.getAttribute("href");
       const target = document.querySelector(href);
       if (!target) return;
       e.preventDefault();
-      const y = target.getBoundingClientRect().top + window.pageYOffset - 80; // offset for fixed nav
+      const y = target.getBoundingClientRect().top + window.pageYOffset - 80;
       window.scrollTo({ top: y, behavior: "smooth" });
     });
   });
 }
 
+/* Safe reveal-on-scroll: visible by default; JS adds .reveal to animate in */
 function initRevealOnScroll() {
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (prefersReduced) return;
+  const nodes = Array.from(document.querySelectorAll("[data-animate]"));
+
+  // Add animation class only after JS is running
+  nodes.forEach(el => el.classList.add("reveal"));
+
+  if (prefersReduced || !("IntersectionObserver" in window)) {
+    nodes.forEach(el => el.classList.add("in"));
+    return;
+  }
 
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add("reveal--visible");
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          observer.unobserve(entry.target);
+        }
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0.15 }
   );
 
-  document.querySelectorAll("section, .category, .education-image img, .experience-image img").forEach(el => {
-    el.classList.add("reveal");
-    observer.observe(el);
-  });
+  nodes.forEach(el => observer.observe(el));
+
+  // Failsafe: ensure content shows even if IO never fires
+  setTimeout(() => nodes.forEach(el => el.classList.add("in")), 1500);
 }
 
 function initParallaxHero() {
@@ -757,38 +765,56 @@ function initParallaxHero() {
   window.addEventListener("scroll", () => {
     const sc = window.pageYOffset;
     hero.style.setProperty("--hero-shift", Math.min(sc * 0.2, 100) + "px");
-  });
+  }, { passive: true });
 }
 
 function initTilt() {
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (prefersReduced) return;
 
-  const tiltEls = document.querySelectorAll(".category, .education-image img, .experience-image img");
+  const tiltEls = document.querySelectorAll(".card3d[data-tilt]");
   tiltEls.forEach(el => {
     el.addEventListener("mousemove", e => {
       const rect = el.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width - 0.5;
       const y = (e.clientY - rect.top) / rect.height - 0.5;
-      el.style.transform = `perspective(1000px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) translateZ(0)`;
+      el.style.transform = `rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateZ(0)`;
     });
     el.addEventListener("mouseleave", () => {
-      el.style.transform = "perspective(1000px) rotateY(0) rotateX(0) translateZ(0)";
+      el.style.transform = "rotateY(0) rotateX(0) translateZ(0)";
     });
   });
 }
 
 /* ---- Init ---- */
 document.addEventListener("DOMContentLoaded", () => {
-  // Default language (persisted)
-  const saved = localStorage.getItem("lang") || "en";
-  changeLanguage(saved);
+  try {
+    const saved = localStorage.getItem("lang") || "en";
+    changeLanguage(saved);
+  } catch(e){
+    console.error(e);
+    changeLanguage("en");
+  }
 
-  // Effects
   initSmoothScroll();
   initRevealOnScroll();
   initParallaxHero();
   initTilt();
 
-  // (You already added the KO button in HTML; nothing else needed.)
+  // Optional non-blocking starfield
+  (function initStarfield(){
+    const field = document.querySelector(".starfield");
+    if (!field) return;
+    const count = 90;
+    for (let i = 0; i < count; i++) {
+      const s = document.createElement("span");
+      s.className = "star";
+      s.style.left = Math.random() * 100 + "%";
+      s.style.top = Math.random() * 100 + "%";
+      s.style.width = s.style.height = (Math.random() * 2 + 1) + "px";
+      s.style.opacity = (Math.random() * 0.8 + 0.2).toFixed(2);
+      s.style.animationDuration = (Math.random() * 3 + 2).toFixed(2) + "s";
+      field.appendChild(s);
+    }
+  })();
 });
