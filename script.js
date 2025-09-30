@@ -15,8 +15,8 @@ const content = {
       "<strong>Hobbies:</strong> Playing Football, Poetry Writing, Guitar Playing, Novel Reading, Travelling, Photography, Cooking",
     aboutAffiliations: "<strong>Affiliations:</strong>",
     aboutAffiliationsList: [
-      "IAAM: International Association of Advanced Materials, Sweden.",
-      "IIDL: Indian Institute of Democratic Leadership, India."
+      "IAAM: International Association of Advanced Materials, Sweden."
+      // IIDL removed
     ],
     aboutFreelance: "<strong>Freelance Consulting:</strong>",
     aboutFreelanceList: [
@@ -94,6 +94,8 @@ const content = {
     researchPapersTitle: "Research Papers",
     researchPublishedTitle: "Published",
     researchPublishedList: [
+      // Added De Gruyter chapter with DOI link:
+      'Book Chapter: Importance of perovskite solar cells in sustainable energy solutions — <a href="https://doi.org/10.1515/9783111726847-012" target="_blank" rel="noopener">De Gruyter (DOI)</a>. Authors: Pravin Kumar Singh, Yash Pandey, Upendra Kulshrestha.',
       '"Advancing Sustainable Energy: Exploring New Frontiers and Opportunities in Green Transition", Wiley Publications.',
       '"Impact of Load Profile Variability on Optimal PV and BESS Capacities of Diesel Generator based Microgrid", JSES.'
     ],
@@ -147,8 +149,8 @@ const content = {
       "<strong>趣味:</strong> サッカー、詩の執筆、ギター、読書、旅行、写真、料理",
     aboutAffiliations: "<strong>所属:</strong>",
     aboutAffiliationsList: [
-      "IAAM: 国際先端材料協会（スウェーデン）",
-      "IIDL: インド民主的リーダーシップ研究所（インド）"
+      "IAAM: 国際先端材料協会（スウェーデン）"
+      // IIDL removed
     ],
     aboutFreelance: "<strong>フリーランスコンサルティング:</strong>",
     aboutFreelanceList: [
@@ -219,6 +221,7 @@ const content = {
     researchPapersTitle: "研究論文",
     researchPublishedTitle: "出版済み",
     researchPublishedList: [
+      '書籍章：Importance of perovskite solar cells in sustainable energy solutions — <a href="https://doi.org/10.1515/9783111726847-012" target="_blank" rel="noopener">De Gruyter（DOI）</a>。著者：Pravin Kumar Singh, Yash Pandey, Upendra Kulshrestha。',
       "『持続可能エネルギーの推進：グリーントランジションの新たなフロンティアと機会』Wiley Publications",
       "『負荷プロファイル変動がディーゼル発電機ベースのマイクログリッドにおけるPV/BESS最適容量に与える影響』JSES"
     ],
@@ -272,8 +275,8 @@ const content = {
       "<strong>爱好:</strong> 踢足球、写诗、弹吉他、读小说、旅行、摄影、烹饪",
     aboutAffiliations: "<strong>隶属关系:</strong>",
     aboutAffiliationsList: [
-      "IAAM：国际先进材料协会（瑞典）",
-      "IIDL：印度民主领导力研究所（印度）"
+      "IAAM：国际先进材料协会（瑞典）"
+      // IIDL removed
     ],
     aboutFreelance: "<strong>自由职业咨询:</strong>",
     aboutFreelanceList: [
@@ -344,6 +347,7 @@ const content = {
     researchPapersTitle: "研究论文",
     researchPublishedTitle: "已发表",
     researchPublishedList: [
+      '书籍章节：Importance of perovskite solar cells in sustainable energy solutions — <a href="https://doi.org/10.1515/9783111726847-012" target="_blank" rel="noopener">De Gruyter（DOI）</a>。作者：Pravin Kumar Singh, Yash Pandey, Upendra Kulshrestha。',
       "《推进可持续能源：探索绿色转型的新前沿与机遇》Wiley Publications",
       "《负荷曲线变异性对柴油机微电网中 PV 与 BESS 最优容量的影响》JSES"
     ],
@@ -397,8 +401,8 @@ const content = {
       "<strong>शौक:</strong> फुटबॉल, कविता-लेखन, गिटार, उपन्यास-पठन, यात्रा, फोटोग्राफी, खाना बनाना",
     aboutAffiliations: "<strong>संबद्धताएँ:</strong>",
     aboutAffiliationsList: [
-      "IAAM: इंटरनेशनल एसोसिएशन ऑफ़ एडवांस्ड मटीरियल्स (स्वीडन)",
-      "IIDL: इंडियन इंस्टिट्यूट ऑफ़ डेमोक्रेटिक लीडरशिप (भारत)"
+      "IAAM: इंटरनेशनल एसोसिएशन ऑफ़ एडवांस्ड मटीरियल्स (स्वीडन)"
+      // IIDL removed
     ],
     aboutFreelance: "<strong>फ्रीलांस कंसल्टिंग:</strong>",
     aboutFreelanceList: [
@@ -469,6 +473,7 @@ const content = {
     researchPapersTitle: "अनुसंधान पत्र",
     researchPublishedTitle: "प्रकाशित",
     researchPublishedList: [
+      'पुस्तक अध्याय: Importance of perovskite solar cells in sustainable energy solutions — <a href="https://doi.org/10.1515/9783111726847-012" target="_blank" rel="noopener">De Gruyter (DOI)</a>. लेखक: Pravin Kumar Singh, Yash Pandey, Upendra Kulshrestha.',
       "“सतत ऊर्जा का संवर्द्धन: ग्रीन ट्रांज़िशन में नए अवसर और सीमाएँ” — Wiley Publications",
       "“डीजी-बेस्ड माइक्रोग्रिड में PV और BESS की इष्टतम क्षमता पर लोड प्रोफ़ाइल परिवर्तनशीलता का प्रभाव” — JSES"
     ],
@@ -522,8 +527,8 @@ const content = {
       "<strong>취미:</strong> 축구, 시 쓰기, 기타 연주, 소설 읽기, 여행, 사진, 요리",
     aboutAffiliations: "<strong>소속/회원:</strong>",
     aboutAffiliationsList: [
-      "IAAM: 국제신소재학회(스웨덴)",
-      "IIDL: 인도 민주적 리더십 연구소(인도)"
+      "IAAM: 국제신소재학회(스웨덴)"
+      // IIDL removed
     ],
     aboutFreelance: "<strong>프리랜스 컨설팅:</strong>",
     aboutFreelanceList: [
@@ -594,6 +599,7 @@ const content = {
     researchPapersTitle: "연구 논문",
     researchPublishedTitle: "게재됨",
     researchPublishedList: [
+      '도서 챕터: Importance of perovskite solar cells in sustainable energy solutions — <a href="https://doi.org/10.1515/9783111726847-012" target="_blank" rel="noopener">De Gruyter (DOI)</a>. 저자: Pravin Kumar Singh, Yash Pandey, Upendra Kulshrestha.',
       "“지속가능 에너지의 진전: 그린 트랜지션의 새로운 프런티어와 기회” — Wiley Publications",
       "“부하 변동성이 디젤 발전기 기반 마이크로그리드의 PV/BESS 최적 용량에 미치는 영향” — JSES"
     ],
@@ -703,6 +709,10 @@ function changeLanguage(lang) {
       el.innerHTML = data[key].map(item => `<li>${item}</li>`).join("");
     }
   });
+
+  // Persist choice
+  document.documentElement.lang = lang;
+  localStorage.setItem("lang", lang);
 }
 
 /* ---- Motion / UI polish ---- */
@@ -770,8 +780,9 @@ function initTilt() {
 
 /* ---- Init ---- */
 document.addEventListener("DOMContentLoaded", () => {
-  // Default language
-  changeLanguage("en");
+  // Default language (persisted)
+  const saved = localStorage.getItem("lang") || "en";
+  changeLanguage(saved);
 
   // Effects
   initSmoothScroll();
@@ -779,5 +790,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initParallaxHero();
   initTilt();
 
-  // If you add a Korean button in HTML: <button onclick="changeLanguage('ko')">한국어</button>
+  // (You already added the KO button in HTML; nothing else needed.)
 });
