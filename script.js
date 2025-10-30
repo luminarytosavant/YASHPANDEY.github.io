@@ -133,7 +133,7 @@ const content = {
     contactInstitutionalEmail: "Institutional Email: pandey.yash.23@shizuoka.ac.jp",
     contactPhone: "Mobile: +81-7090976618, +91-9455918918",
     contactWebsite:
-      'Website: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" style="color:#ffffff">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span style="color:#ffffff">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
+      'Website: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" class="link-white">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span class="footer-note">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
   },
 
   /* ---- Japanese ---- */
@@ -220,7 +220,7 @@ const content = {
     researchPapersTitle: "研究論文",
     researchPublishedTitle: "出版済み",
     researchPublishedList: [
-      '書籍章：Importance of perovskite solar cells in sustainable energy solutions — <a href="https://doi.org/10.1515/9783111726847-012" target="_blank" rel="noopener">De Gruyter（DOI）</a>。著者：Pravin Kumar Singh, Yash Pandey, Upendra Kulshrestha。',
+      '書籍章：Importance of perovskite solar cells in sustainable energy solutions — <a href="https://doi.org/10.1515/9783111726847-012" target="_blank" rel="noopener">De Gruyter（DOI）</a>。著者：Pravin Kumar Singh, Yash Pandey, Upendra Kulshrestha。",
       "『持続可能エネルギーの推進：グリーントランジションの新たなフロンティアと機会』Wiley Publications",
       "『負荷プロファイル変動がディーゼル発電機ベースのマイクログリッドにおけるPV/BESS最適容量に与える影響』JSES"
     ],
@@ -259,7 +259,7 @@ const content = {
     contactInstitutionalEmail: "所属メール: pandey.yash.23@shizuoka.ac.jp",
     contactPhone: "電話: +81-7090976618, +91-9455918918",
     contactWebsite:
-      'ウェブサイト: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" style="color:#ffffff">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span style="color:#ffffff">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
+      'ウェブサイト: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" class="link-white">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span class="footer-note">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
   },
 
   /* ---- Chinese ---- */
@@ -385,7 +385,7 @@ const content = {
     contactInstitutionalEmail: "机构邮箱: pandey.yash.23@shizuoka.ac.jp",
     contactPhone: "电话: +81-7090976618, +91-9455918918",
     contactWebsite:
-      '网站: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" style="color:#ffffff">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span style="color:#ffffff">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
+      '网站: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" class="link-white">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span class="footer-note">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
   },
 
   /* ---- Hindi ---- */
@@ -463,7 +463,7 @@ const content = {
       "नानहुआ यूनिवर्सिटी: उत्कृष्ट लाइफ़-एजुकेशन पर्सनेल एवं नेशनल लाइफ़ अवार्ड",
       "न्यू साउथ बाउंड लाइफ़ एजुकेशन प्रोग्राम प्रमाणपत्र",
       "IEEE: IoT के दायरे और लाभ प्रमाणपत्र",
-      "IEEE: ग्रेजेजुएट मेंबरशिप प्रमाणपत्र",
+      "IEEE: ग्रेजुएट मेंबरशिप प्रमाणपत्र",
       "भारत का केंद्रीय सतर्कता आयोग: उच्चतम सत्यनिष्ठा प्रतिज्ञा",
       "श्रम एवं रोजगार मंत्रालय: नो-चाइल्ड लेबर पॉलिसी प्रतिज्ञा"
     ],
@@ -511,7 +511,7 @@ const content = {
     contactInstitutionalEmail: "संस्थागत ईमेल: pandey.yash.23@shizuoka.ac.jp",
     contactPhone: "मोबाइल: +81-7090976618, +91-9455918918",
     contactWebsite:
-      'वेबसाइट: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" style="color:#ffffff">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span style="color:#ffffff">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
+      'वेबसाइट: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" class="link-white">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span class="footer-note">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
   },
 
   /* ---- Korean ---- */
@@ -637,7 +637,7 @@ const content = {
     contactInstitutionalEmail: "소속 이메일: pandey.yash.23@shizuoka.ac.jp",
     contactPhone: "전화: +81-7090976618, +91-9455918918",
     contactWebsite:
-      '웹사이트: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" style="color:#ffffff">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span style="color:#ffffff">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
+      '웹사이트: <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" class="link-white">luminarytosavant.github.io/YASHPANDEY.github.io</a><br><span class="footer-note">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>'
   }
 };
 
