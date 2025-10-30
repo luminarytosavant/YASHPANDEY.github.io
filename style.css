@@ -212,6 +212,7 @@ nav a:hover{ background: rgba(44,182,125,.14); transform: translateY(-1px); }
 .footer-grid{ display: grid; grid-template-columns: 1fr; max-width: 820px; margin: 0 auto; }
 .footer-card{ text-align: center; padding: 26px; }
 .footer-card a.link-white{ color: var(--link); text-underline-offset: 3px; }
+.footer-note { color: var(--muted); }
 
 /* =========
    Reveal (SAFE): visible by default; JS adds .reveal.in for animation
