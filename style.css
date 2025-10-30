@@ -47,7 +47,7 @@ body{
 .section { padding: 108px 24px; }
 .wrap { max-width: var(--container); margin: 0 auto; }
 .section-title{
-  font-size: clamp(2.1rem, 3.4vw, 2.8rem); /* slightly larger */
+  font-size: clamp(2.1rem, 3.4vw, 2.8rem);
   text-align: center; margin: 0 auto 32px;
   letter-spacing: .2px; font-weight: 800;
   background: linear-gradient(90deg, #1f7a4c, #3fbf94);
@@ -55,21 +55,47 @@ body{
 }
 
 /* =================
-   Language Selector
+   Language Selector (Revised – Vertical Slide)
    ================= */
-.language-selector{
-  position: fixed; top: 16px; right: 16px; z-index: 1100;
-  display: flex; gap: 6px;
-  padding: 10px 12px; border-radius: var(--radius-md);
-  backdrop-filter: blur(var(--blur)); -webkit-backdrop-filter: blur(var(--blur));
-  background: var(--card); border: 1px solid var(--hairline); box-shadow: var(--shadow);
+.language-selector {
+  position: fixed;
+  top: 50%;
+  right: -140px; /* hidden by default */
+  transform: translateY(-50%);
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  background: rgba(255,255,255,0.55);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--shadow);
+  transition: right 0.4s ease, background 0.3s ease;
+  opacity: 0.9;
 }
-.language-selector button{
-  background: transparent; border: 0; color: var(--text);
-  font-weight: 700; cursor: pointer; padding: 8px 12px;
-  border-radius: 10px; transition: all .25s ease;
+.language-selector:hover {
+  right: 8px;
+  background: rgba(255,255,255,0.85);
 }
-.language-selector button:hover{ background: rgba(44,182,125,.14); }
+.language-selector button {
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+.language-selector button:hover {
+  background: rgba(44,182,125,.18);
+  transform: translateX(-2px);
+}
 
 /* =============
    Nav (bigger)
@@ -139,7 +165,7 @@ nav a:hover{ background: rgba(44,182,125,.14); transform: translateY(-1px); }
 
 .hero-content{ position: relative; z-index: 2; }
 .hero-content h1{
-  font-size: clamp(2.8rem, 6.4vw, 4.6rem);   /* bigger headline */
+  font-size: clamp(2.8rem, 6.4vw, 4.6rem);
   letter-spacing: .4px; margin-bottom: .45em; font-weight: 900;
   color: #155c2c; text-shadow: 0 8px 30px rgba(21,92,44,.12);
 }
@@ -215,7 +241,7 @@ nav a:hover{ background: rgba(44,182,125,.14); transform: translateY(-1px); }
 .footer-note { color: var(--muted); }
 
 /* =========
-   Reveal (SAFE): visible by default; JS adds .reveal.in for animation
+   Reveal (SAFE)
    ========= */
 .reveal { opacity: 0; transform: translateY(18px) scale(.98);
   transition: opacity .6s cubic-bezier(.22,.61,.36,1), transform .6s cubic-bezier(.22,.61,.36,1);
