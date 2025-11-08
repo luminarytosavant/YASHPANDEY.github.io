@@ -4,6 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yash Pandey's Portfolio</title>
+  <meta name="description" content="Exploring Sustainable Energy and Beyond"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -11,10 +12,11 @@
 
   <link rel="stylesheet" href="style.css"/>
 
-  <!-- Minimal helper style to show the active language -->
+  <!-- Minimal helper to show active language -->
   <style>
-    .language-selector .chip { cursor: pointer; }
-    .language-selector .chip.is-active { outline: 2px solid currentColor; }
+    .language-selector{position:sticky;top:8px;z-index:20;display:flex;gap:.5rem;flex-wrap:wrap;padding:.5rem 1rem}
+    .language-selector .chip{cursor:pointer;padding:.35rem .75rem;border-radius:999px;border:1px solid rgba(0,0,0,.1);background:#fff;opacity:.9}
+    .language-selector .chip.is-active{outline:2px solid currentColor;opacity:1}
   </style>
 </head>
 <body>
@@ -51,7 +53,7 @@
     <div class="hero-content" data-parallax>
       <h1 id="hero-title">Welcome to Yash Pandey's Portfolio</h1>
       <p id="hero-subtitle">Exploring Sustainable Energy and Beyond</p>
-      <a href="#about" class="cta3d">Explore</a>
+      <a href="#about" class="cta3d" id="hero-cta">Explore</a>
     </div>
   </section>
 
@@ -61,7 +63,7 @@
       <h2 id="about-title" class="section-title">About Me</h2>
       <div class="about-grid">
         <div class="profile card3d" data-tilt>
-          <img src="My profile photo.jpg" alt="Profile Photo of Yash Pandey"/>
+          <img id="img-profile" src="My profile photo.jpg" alt="Profile Photo of Yash Pandey"/>
         </div>
         <div class="about-text card3d" data-tilt>
           <p id="about-text">
@@ -90,7 +92,7 @@
           <ul id="education-list" class="nice-list"></ul>
         </div>
         <div class="img-wrap card3d" data-tilt>
-          <img src="combined institution photo.png" alt="Education Institutions"/>
+          <img id="img-edu" src="combined institution photo.png" alt="Education Institutions"/>
         </div>
       </div>
     </div>
@@ -105,7 +107,7 @@
           <ul id="experience-list" class="nice-list"></ul>
         </div>
         <div class="img-wrap card3d" data-tilt>
-          <img src="Experiences photo.png" alt="Experience Workplaces"/>
+          <img id="img-exp" src="Experiences photo.png" alt="Experience Workplaces"/>
         </div>
       </div>
     </div>
@@ -205,7 +207,5 @@
 
   <!-- JS -->
   <script src="script.js"></script>
-  <!-- Make sure your script.js includes the language switcher wiring I sent:
-       initLanguageSwitcher(), setActiveChip(), setDocumentLang(), etc. -->
 </body>
 </html>
