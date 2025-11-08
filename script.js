@@ -1,12 +1,33 @@
-/* ===========================
-   Multilingual Content + Switcher
-   =========================== */
+/* ===============================
+   Multi-language content & logic
+   for Yash Pandey Portfolio
+   Default: English
+   =============================== */
 
-/** FULL CONTENT (EN + JA + ZH + HI + KO) **/
+/** Helper: Safe setters **/
+function setHTML(id, html) {
+  const el = document.getElementById(id);
+  if (el && typeof html === "string") el.innerHTML = html;
+}
+function setText(id, text) {
+  const el = document.getElementById(id);
+  if (el && typeof text === "string") el.textContent = text;
+}
+function setList(id, items) {
+  const el = document.getElementById(id);
+  if (el && Array.isArray(items)) {
+    el.innerHTML = items.map((item) => `<li>${item}</li>`).join("");
+  }
+}
+
+/* ===============================
+   CONTENT: Full data in 5 languages
+   (matches your existing sections/IDs)
+   =============================== */
 const content = {
-  /* ---------------- ENGLISH (default) ---------------- */
+  /* -------- ENGLISH -------- */
   en: {
-    langCode: "en",
+    docLang: "en",
     nav: {
       about: "About Me",
       education: "Education",
@@ -15,9 +36,8 @@ const content = {
       research: "Research",
       volunteer: "Volunteer",
       references: "References",
-      contact: "Contact",
+      contact: "Contact"
     },
-
     heroTitle: "Welcome to Yash Pandey's Portfolio",
     heroSubtitle: "Exploring Sustainable Energy and Beyond",
     heroCta: "Explore",
@@ -147,9 +167,9 @@ const content = {
     contactPhone: "Mobile: +81-7090976618, +91-9455918918"
   },
 
-  /* ---------------- JAPANESE ---------------- */
+  /* -------- JAPANESE -------- */
   ja: {
-    langCode: "ja",
+    docLang: "ja",
     nav: {
       about: "私について",
       education: "学歴",
@@ -157,10 +177,9 @@ const content = {
       skills: "スキル",
       research: "研究",
       volunteer: "ボランティア",
-      references: "参考（推薦者）",
-      contact: "連絡先",
+      references: "参考",
+      contact: "連絡先"
     },
-
     heroTitle: "ヤシュ・パンディのポートフォリオへようこそ",
     heroSubtitle: "持続可能なエネルギーとその先を探求する",
     heroCta: "もっと見る",
@@ -286,9 +305,9 @@ const content = {
     contactPhone: "携帯: +81-7090976618, +91-9455918918"
   },
 
-  /* ---------------- CHINESE (Simplified) ---------------- */
+  /* -------- CHINESE (Simplified) -------- */
   zh: {
-    langCode: "zh",
+    docLang: "zh",
     nav: {
       about: "关于我",
       education: "教育",
@@ -297,12 +316,11 @@ const content = {
       research: "研究",
       volunteer: "志愿工作",
       references: "推荐人",
-      contact: "联系方式",
+      contact: "联系方式"
     },
-
     heroTitle: "欢迎来到 Yash Pandey 的作品集",
     heroSubtitle: "探索可持续能源及更多",
-    heroCta: "探索",
+    heroCta: "了解更多",
 
     aboutTitle: "关于我",
     aboutText:
@@ -418,20 +436,19 @@ const content = {
     contactPhone: "电话: +81-7090976618, +91-9455918918"
   },
 
-  /* ---------------- HINDI ---------------- */
+  /* -------- HINDI -------- */
   hi: {
-    langCode: "hi",
+    docLang: "hi",
     nav: {
       about: "मेरे बारे में",
       education: "शिक्षा",
       experience: "अनुभव",
       skills: "कौशल",
       research: "अनुसंधान",
-      volunteer: "स्वयंसेवी कार्य",
+      volunteer: "स्वयंसेवा",
       references: "संदर्भ",
-      contact: "संपर्क",
+      contact: "संपर्क"
     },
-
     heroTitle: "यश पांडे के पोर्टफोलियो में आपका स्वागत है",
     heroSubtitle: "सतत ऊर्जा और उससे आगे की खोज",
     heroCta: "देखें",
@@ -557,23 +574,22 @@ const content = {
     contactPhone: "Mobile: +81-7090976618, +91-9455918918"
   },
 
-  /* ---------------- KOREAN ---------------- */
+  /* -------- KOREAN -------- */
   ko: {
-    langCode: "ko",
+    docLang: "ko",
     nav: {
       about: "소개",
       education: "학력",
       experience: "경력",
       skills: "보유 기술",
       research: "연구",
-      volunteer: "봉사 활동",
+      volunteer: "봉사",
       references: "추천인",
-      contact: "연락처",
+      contact: "연락처"
     },
-
     heroTitle: "야시 판데이의 포트폴리오에 오신 것을 환영합니다",
     heroSubtitle: "지속가능 에너지와 그 너머를 탐구하다",
-    heroCta: "살펴보기",
+    heroCta: "보러가기",
 
     aboutTitle: "소개",
     aboutText:
@@ -690,47 +706,31 @@ const content = {
   }
 };
 
-/* ===========================
-   DOM Update Helpers
-   =========================== */
-function setHTML(id, html) {
-  const el = document.getElementById(id);
-  if (el && typeof html === "string") el.innerHTML = html;
-}
-
-function setList(id, items) {
-  const el = document.getElementById(id);
-  if (el && Array.isArray(items)) {
-    el.innerHTML = items.map((item) => `<li>${item}</li>`).join("");
-  }
-}
-
-/* ===========================
-   Core: apply language to DOM
-   =========================== */
+/* ===============================
+   APPLY CONTENT TO DOM
+   =============================== */
 function changeLanguage(lang) {
   const data = content[lang] || content.en;
 
-  // Update <html lang="..">
-  document.documentElement.setAttribute("lang", data.langCode || lang || "en");
+  // Document language
+  setDocumentLang(data.docLang || "en");
 
-  // Nav labels (ids exist in your HTML)
+  // NAV labels
   if (data.nav) {
-    setHTML("nav-about", data.nav.about);
-    setHTML("nav-education", data.nav.education);
-    setHTML("nav-experience", data.nav.experience);
-    setHTML("nav-skills", data.nav.skills);
-    setHTML("nav-research", data.nav.research);
-    setHTML("nav-volunteer", data.nav.volunteer);
-    setHTML("nav-references", data.nav.references);
-    setHTML("nav-contact", data.nav.contact);
+    setText("nav-about", data.nav.about);
+    setText("nav-education", data.nav.education);
+    setText("nav-experience", data.nav.experience);
+    setText("nav-skills", data.nav.skills);
+    setText("nav-research", data.nav.research);
+    setText("nav-volunteer", data.nav.volunteer);
+    setText("nav-references", data.nav.references);
+    setText("nav-contact", data.nav.contact);
   }
 
   // Hero
   setHTML("hero-title", data.heroTitle);
   setHTML("hero-subtitle", data.heroSubtitle);
-  const heroCtaEl = document.querySelector(".cta3d");
-  if (heroCtaEl && data.heroCta) heroCtaEl.textContent = data.heroCta;
+  setText("hero-cta", data.heroCta || "Explore");
 
   // About
   setHTML("about-title", data.aboutTitle);
@@ -783,51 +783,53 @@ function changeLanguage(lang) {
   setHTML("contact-institutional-email", data.contactInstitutionalEmail);
   setHTML("contact-phone", data.contactPhone);
 
-  // Save choice
+  // Save preference
   try {
-    localStorage.setItem("lang", lang);
-  } catch (_) {}
+    localStorage.setItem("yp_lang", lang);
+  } catch (e) {}
+}
 
-  // Update active chip UI
+/* ===============================
+   LANGUAGE SWITCHER WIRING
+   =============================== */
+function setActiveChip(lang) {
+  const wrap = document.getElementById("lang-switcher");
+  if (!wrap) return;
+  [...wrap.querySelectorAll(".chip")].forEach((btn) => {
+    const isActive = btn.getAttribute("data-lang") === lang;
+    btn.classList.toggle("is-active", isActive);
+  });
+}
+function setDocumentLang(lang) {
+  const html = document.documentElement;
+  if (html) html.setAttribute("lang", lang || "en");
+}
+function initLanguageSwitcher() {
+  const wrap = document.getElementById("lang-switcher");
+  if (!wrap) return;
+
+  wrap.addEventListener("click", (e) => {
+    const btn = e.target.closest(".chip");
+    if (!btn) return;
+    const lang = btn.getAttribute("data-lang");
+    if (!lang) return;
+    changeLanguage(lang);
+    setActiveChip(lang);
+  });
+
+  // Initial language: saved -> English default
+  let lang = "en";
+  try {
+    lang = localStorage.getItem("yp_lang") || "en";
+  } catch (e) {}
+
+  changeLanguage(lang);
   setActiveChip(lang);
 }
 
-/* ===========================
-   Language Switcher Wiring
-   =========================== */
-function setActiveChip(lang) {
-  const chips = document.querySelectorAll("#lang-switcher .chip");
-  chips.forEach((btn) => {
-    const isActive = btn.getAttribute("data-lang") === lang;
-    btn.classList.toggle("is-active", isActive);
-    btn.setAttribute("aria-pressed", isActive ? "true" : "false");
-  });
-}
-
-function initLanguageSwitcher() {
-  const container = document.getElementById("lang-switcher");
-  if (!container) return;
-
-  container.addEventListener("click", (e) => {
-    const target = e.target.closest(".chip[data-lang]");
-    if (!target) return;
-    const lang = target.getAttribute("data-lang");
-    changeLanguage(lang);
-  });
-
-  // Load saved language or fallback to English
-  let lang = "en";
-  try {
-    lang = localStorage.getItem("lang") || "en";
-  } catch (_) {}
-  changeLanguage(lang);
-}
-
-/* ===========================
-   Init on DOM Ready
-   =========================== */
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initLanguageSwitcher);
-} else {
+/* ===============================
+   BOOT
+   =============================== */
+document.addEventListener("DOMContentLoaded", () => {
   initLanguageSwitcher();
-}
+});
