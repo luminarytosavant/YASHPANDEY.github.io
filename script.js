@@ -792,19 +792,18 @@ function initLanguageSwitcher() {
   });
 }
 
-/* ---------- Bootstrap ---------- */
+/* ---------- Bootstrap (force EN unless hash) ---------- */
 document.addEventListener("DOMContentLoaded", () => {
-  // Determine initial language:
-  // Priority: hash (#en/#ja/#zh/#hi/#ko) > localStorage (only if user previously clicked) > "en"
-  let initial = "en";
+  // 1) Always prefer URL hash if present
   const hash = (location.hash || "").replace("#", "").toLowerCase();
-  if (content[hash]) initial = hash;
-  else {
-    try {
-      const saved = localStorage.getItem("yp_lang");
-      if (content[saved]) initial = saved;
-    } catch (e) {}
-  }
+  let initial = content[hash] ? hash : "en";
+
+  // 2) One-time cleanup: if an old saved language exists, remove it
+  try {
+    if (localStorage.getItem("yp_lang")) {
+      localStorage.removeItem("yp_lang");
+    }
+  } catch (e) {}
 
   // Build selector (if not already present in HTML)
   ensureLanguageSelector();
@@ -814,9 +813,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setActiveChip(initial);
 
   // Only after user clicks will we honor saving in this session
-  try {
-    sessionStorage.removeItem("yp_allow_save");
-  } catch (e) {}
+  try { sessionStorage.removeItem("yp_allow_save"); } catch (e) {}
 
   // Wire the selector
   initLanguageSwitcher();
