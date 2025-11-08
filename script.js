@@ -1,27 +1,27 @@
-// ===== Language content (ALL strings wired) =====
+/* ===========================
+   Multilingual Content + Switcher
+   =========================== */
+
+/** FULL CONTENT (EN + JA + ZH + HI + KO) **/
 const content = {
+  /* ---------------- ENGLISH (default) ---------------- */
   en: {
-    // Meta
-    docTitle: "Yash Pandey's Portfolio",
-    metaDescription: "Exploring Sustainable Energy and Beyond",
-    // Nav
+    langCode: "en",
     nav: {
-      about: "About Me", education: "Education", experience: "Experience",
-      skills: "Skills", research: "Research", volunteer: "Volunteer",
-      references: "References", contact: "Contact"
+      about: "About Me",
+      education: "Education",
+      experience: "Experience",
+      skills: "Skills",
+      research: "Research",
+      volunteer: "Volunteer",
+      references: "References",
+      contact: "Contact",
     },
-    // Hero
+
     heroTitle: "Welcome to Yash Pandey's Portfolio",
     heroSubtitle: "Exploring Sustainable Energy and Beyond",
     heroCta: "Explore",
-    // Alts
-    alts: {
-      profile: "Profile Photo of Yash Pandey",
-      eduImg: "Education Institutions",
-      expImg: "Experience Workplaces"
-    },
 
-    // Sections
     aboutTitle: "About Me",
     aboutText:
       "I am Yash Pandey, a Ph.D. student (Electrical & Electronic Engineering) at National Shizuoka University, Japan. My work focuses on hybrid renewable energy microgrids and sustainable rural electrification. I combine HOMER Pro simulations, MATLAB analysis, and regression-based modeling to deliver practical, scalable solutions for underserved communities.",
@@ -63,7 +63,12 @@ const content = {
     skillsTitle: "Skills",
     skillsLanguagesTitle: "Languages",
     skillsLanguagesList: [
-      "English", "Japanese (Basic)", "Hindi", "Bhojpuri", "Bengali", "Odia"
+      "English",
+      "Japanese (Basic)",
+      "Hindi",
+      "Bhojpuri",
+      "Bengali",
+      "Odia"
     ],
     skillsCoursesTitle: "Courses",
     skillsCoursesList: [
@@ -135,28 +140,30 @@ const content = {
     ],
 
     contactTitle: "Contact",
-    contactEmail: "Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
-    contactInstitutionalEmail: "Institutional Email: pandey.yash.23@shizuoka.ac.jp",
+    contactEmail:
+      "Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
+    contactInstitutionalEmail:
+      "Institutional Email: pandey.yash.23@shizuoka.ac.jp",
     contactPhone: "Mobile: +81-7090976618, +91-9455918918"
   },
 
-  // ===== Japanese =====
+  /* ---------------- JAPANESE ---------------- */
   ja: {
-    docTitle: "ヤシュ・パンディ｜ポートフォリオ",
-    metaDescription: "持続可能なエネルギーとその先を探求する",
+    langCode: "ja",
     nav: {
-      about:"私について", education:"学歴", experience:"経験",
-      skills:"スキル", research:"研究", volunteer:"ボランティア",
-      references:"参考（推薦者）", contact:"連絡先"
+      about: "私について",
+      education: "学歴",
+      experience: "経験",
+      skills: "スキル",
+      research: "研究",
+      volunteer: "ボランティア",
+      references: "参考（推薦者）",
+      contact: "連絡先",
     },
+
     heroTitle: "ヤシュ・パンディのポートフォリオへようこそ",
     heroSubtitle: "持続可能なエネルギーとその先を探求する",
-    heroCta: "見る",
-    alts: {
-      profile: "ヤシュ・パンディのプロフィール写真",
-      eduImg: "学歴・所属機関の写真",
-      expImg: "職務経歴の関連写真"
-    },
+    heroCta: "もっと見る",
 
     aboutTitle: "私について",
     aboutText:
@@ -196,7 +203,14 @@ const content = {
 
     skillsTitle: "スキル",
     skillsLanguagesTitle: "言語",
-    skillsLanguagesList: ["英語","日本語（基礎）","ヒンディー語","ボージュプリー語","ベンガル語","オディア語"],
+    skillsLanguagesList: [
+      "英語",
+      "日本語（基礎）",
+      "ヒンディー語",
+      "ボージュプリー語",
+      "ベンガル語",
+      "オディア語"
+    ],
     skillsCoursesTitle: "コース",
     skillsCoursesList: [
       "TCS iON：インパクトのあるプレゼン",
@@ -209,7 +223,7 @@ const content = {
     skillsCertificationsTitle: "認定・証明",
     skillsCertificationsList: [
       "VV Giri 国立労働研究所：労働安全衛生関連",
-      "同：移住・人身売買・児童/債務労働の脆弱性対応",
+      "同：移住・人身取引・児童/債務労働の脆弱性対応",
       "同：児童/債務労働の防止オンライン研修",
       "DGFASLI：ハウスキーピング／清潔研修",
       "同：労働検査によるガバナンス強化",
@@ -251,7 +265,8 @@ const content = {
     ],
 
     volunteerTitle: "ボランティア活動",
-    volunteerText: "ATTAC NGO：Webコンテンツ作成、キャンペーン調整、SNS運用",
+    volunteerText:
+      "ATTAC NGO：Webコンテンツ作成、キャンペーン調整、SNS運用",
 
     referencesTitle: "参考（推薦者）",
     referencesList: [
@@ -271,23 +286,23 @@ const content = {
     contactPhone: "携帯: +81-7090976618, +91-9455918918"
   },
 
-  // ===== Chinese (Simplified) =====
+  /* ---------------- CHINESE (Simplified) ---------------- */
   zh: {
-    docTitle: "Yash Pandey 的作品集",
-    metaDescription: "探索可持续能源及更多",
+    langCode: "zh",
     nav: {
-      about:"关于我", education:"教育", experience:"经历",
-      skills:"技能", research:"研究", volunteer:"志愿工作",
-      references:"推荐人", contact:"联系方式"
+      about: "关于我",
+      education: "教育",
+      experience: "经历",
+      skills: "技能",
+      research: "研究",
+      volunteer: "志愿工作",
+      references: "推荐人",
+      contact: "联系方式",
     },
+
     heroTitle: "欢迎来到 Yash Pandey 的作品集",
     heroSubtitle: "探索可持续能源及更多",
-    heroCta: "了解更多",
-    alts: {
-      profile:"Yash Pandey 的个人照片",
-      eduImg:"教育机构照片",
-      expImg:"工作经历相关照片"
-    },
+    heroCta: "探索",
 
     aboutTitle: "关于我",
     aboutText:
@@ -327,7 +342,7 @@ const content = {
 
     skillsTitle: "技能",
     skillsLanguagesTitle: "语言",
-    skillsLanguagesList: ["英语","日语（基础）","印地语","博杰普尔语","孟加拉语","奥里亚语"],
+    skillsLanguagesList: ["英语", "日语（基础）", "印地语", "博杰普尔语", "孟加拉语", "奥里亚语"],
     skillsCoursesTitle: "课程",
     skillsCoursesList: [
       "TCS iON：高影响力演示",
@@ -382,7 +397,8 @@ const content = {
     ],
 
     volunteerTitle: "志愿工作",
-    volunteerText: "ATTAC NGO：网站内容建设、活动统筹与社媒管理。",
+    volunteerText:
+      "ATTAC NGO：网站内容建设、活动统筹与社媒管理。",
 
     referencesTitle: "推荐人",
     referencesList: [
@@ -402,23 +418,23 @@ const content = {
     contactPhone: "电话: +81-7090976618, +91-9455918918"
   },
 
-  // ===== Hindi =====
+  /* ---------------- HINDI ---------------- */
   hi: {
-    docTitle: "यश पांडे — पोर्टफोलियो",
-    metaDescription: "सतत ऊर्जा और उससे आगे की खोज",
+    langCode: "hi",
     nav: {
-      about:"मेरे बारे में", education:"शिक्षा", experience:"अनुभव",
-      skills:"कौशल", research:"अनुसंधान", volunteer:"स्वयंसेवी कार्य",
-      references:"संदर्भ", contact:"संपर्क"
+      about: "मेरे बारे में",
+      education: "शिक्षा",
+      experience: "अनुभव",
+      skills: "कौशल",
+      research: "अनुसंधान",
+      volunteer: "स्वयंसेवी कार्य",
+      references: "संदर्भ",
+      contact: "संपर्क",
     },
+
     heroTitle: "यश पांडे के पोर्टफोलियो में आपका स्वागत है",
     heroSubtitle: "सतत ऊर्जा और उससे आगे की खोज",
     heroCta: "देखें",
-    alts: {
-      profile:"यश पांडे की प्रोफ़ाइल फ़ोटो",
-      eduImg:"शिक्षण संस्थानों की छवि",
-      expImg:"कार्य अनुभव से संबंधित छवि"
-    },
 
     aboutTitle: "मेरे बारे में",
     aboutText:
@@ -458,7 +474,14 @@ const content = {
 
     skillsTitle: "कौशल",
     skillsLanguagesTitle: "भाषाएँ",
-    skillsLanguagesList: ["अंग्रेज़ी","जापानी (मूल)","हिंदी","भोजपुरी","बंगाली","ओड़िया"],
+    skillsLanguagesList: [
+      "अंग्रेज़ी",
+      "जापानी (मूल)",
+      "हिंदी",
+      "भोजपुरी",
+      "बंगाली",
+      "ओड़िया"
+    ],
     skillsCoursesTitle: "पाठ्यक्रम",
     skillsCoursesList: [
       "TCS iON — प्रभावशाली प्रस्तुति",
@@ -513,7 +536,8 @@ const content = {
     ],
 
     volunteerTitle: "स्वयंसेवी कार्य",
-    volunteerText: "ATTAC NGO: वेबसाइट कंटेंट निर्माण, कैंपेन समन्वय एवं सोशल-मीडिया प्रबंधन।",
+    volunteerText:
+      "ATTAC NGO: वेबसाइट कंटेंट निर्माण, कैंपेन समन्वय एवं सोशल-मीडिया प्रबंधन।",
 
     referencesTitle: "संदर्भ",
     referencesList: [
@@ -533,23 +557,23 @@ const content = {
     contactPhone: "Mobile: +81-7090976618, +91-9455918918"
   },
 
-  // ===== Korean =====
+  /* ---------------- KOREAN ---------------- */
   ko: {
-    docTitle: "야시 판데이 — 포트폴리오",
-    metaDescription: "지속가능 에너지와 그 너머를 탐구하다",
+    langCode: "ko",
     nav: {
-      about:"소개", education:"학력", experience:"경력",
-      skills:"보유 기술", research:"연구", volunteer:"봉사 활동",
-      references:"추천인", contact:"연락처"
+      about: "소개",
+      education: "학력",
+      experience: "경력",
+      skills: "보유 기술",
+      research: "연구",
+      volunteer: "봉사 활동",
+      references: "추천인",
+      contact: "연락처",
     },
+
     heroTitle: "야시 판데이의 포트폴리오에 오신 것을 환영합니다",
     heroSubtitle: "지속가능 에너지와 그 너머를 탐구하다",
-    heroCta: "둘러보기",
-    alts: {
-      profile:"야시 판데이의 프로필 사진",
-      eduImg:"학력 관련 이미지",
-      expImg:"경력 관련 이미지"
-    },
+    heroCta: "살펴보기",
 
     aboutTitle: "소개",
     aboutText:
@@ -589,7 +613,7 @@ const content = {
 
     skillsTitle: "보유 기술",
     skillsLanguagesTitle: "언어",
-    skillsLanguagesList: ["영어","일본어(기초)","힌디어","보즈푸리어","벵골어","오리아어"],
+    skillsLanguagesList: ["영어", "일본어(기초)", "힌디어", "보즈푸리어", "벵골어", "오리아어"],
     skillsCoursesTitle: "이수 과정",
     skillsCoursesList: [
       "TCS iON — 임팩트 있는 프레젠테이션",
@@ -644,7 +668,8 @@ const content = {
     ],
 
     volunteerTitle: "봉사 활동",
-    volunteerText: "ATTAC NGO: 웹 콘텐츠 제작, 캠페인 코디네이션, SNS 운영",
+    volunteerText:
+      "ATTAC NGO: 웹 콘텐츠 제작, 캠페인 코디네이션, SNS 운영",
 
     referencesTitle: "추천인",
     referencesList: [
@@ -665,49 +690,47 @@ const content = {
   }
 };
 
-// ===== Utilities =====
-const $ = (q) => document.querySelector(q);
-const setHTML = (id, html) => { const el = document.getElementById(id); if (el && typeof html === "string") el.innerHTML = html; };
-const setText = (id, text) => { const el = document.getElementById(id); if (el && typeof text === "string") el.textContent = text; };
-const setList = (id, items) => {
+/* ===========================
+   DOM Update Helpers
+   =========================== */
+function setHTML(id, html) {
   const el = document.getElementById(id);
-  if (el && Array.isArray(items)) el.innerHTML = items.map((item)=>`<li>${item}</li>`).join("");
-};
-const setAttr = (q, attr, val) => { const el = $(q); if (el && typeof val === "string") el.setAttribute(attr, val); };
+  if (el && typeof html === "string") el.innerHTML = html;
+}
 
-// ===== Apply language =====
-function applyLanguage(lang){
+function setList(id, items) {
+  const el = document.getElementById(id);
+  if (el && Array.isArray(items)) {
+    el.innerHTML = items.map((item) => `<li>${item}</li>`).join("");
+  }
+}
+
+/* ===========================
+   Core: apply language to DOM
+   =========================== */
+function changeLanguage(lang) {
   const data = content[lang] || content.en;
 
-  // <html lang>, <title>, meta description
-  document.documentElement.setAttribute("lang", lang);
-  if (data.docTitle) document.title = data.docTitle;
-  const meta = document.querySelector('meta[name="description"]');
-  if (meta && data.metaDescription) meta.setAttribute("content", data.metaDescription);
+  // Update <html lang="..">
+  document.documentElement.setAttribute("lang", data.langCode || lang || "en");
 
-  // Nav
-  if (data.nav){
-    setText("nav-about", data.nav.about);
-    setText("nav-education", data.nav.education);
-    setText("nav-experience", data.nav.experience);
-    setText("nav-skills", data.nav.skills);
-    setText("nav-research", data.nav.research);
-    setText("nav-volunteer", data.nav.volunteer);
-    setText("nav-references", data.nav.references);
-    setText("nav-contact", data.nav.contact);
+  // Nav labels (ids exist in your HTML)
+  if (data.nav) {
+    setHTML("nav-about", data.nav.about);
+    setHTML("nav-education", data.nav.education);
+    setHTML("nav-experience", data.nav.experience);
+    setHTML("nav-skills", data.nav.skills);
+    setHTML("nav-research", data.nav.research);
+    setHTML("nav-volunteer", data.nav.volunteer);
+    setHTML("nav-references", data.nav.references);
+    setHTML("nav-contact", data.nav.contact);
   }
 
   // Hero
   setHTML("hero-title", data.heroTitle);
   setHTML("hero-subtitle", data.heroSubtitle);
-  const cta = $("#hero-cta"); if (cta && data.heroCta) cta.textContent = data.heroCta;
-
-  // Alts
-  if (data.alts){
-    setAttr("#img-profile", "alt", data.alts.profile);
-    setAttr("#img-edu", "alt", data.alts.eduImg);
-    setAttr("#img-exp", "alt", data.alts.expImg);
-  }
+  const heroCtaEl = document.querySelector(".cta3d");
+  if (heroCtaEl && data.heroCta) heroCtaEl.textContent = data.heroCta;
 
   // About
   setHTML("about-title", data.aboutTitle);
@@ -759,33 +782,52 @@ function applyLanguage(lang){
   setHTML("contact-email", data.contactEmail);
   setHTML("contact-institutional-email", data.contactInstitutionalEmail);
   setHTML("contact-phone", data.contactPhone);
+
+  // Save choice
+  try {
+    localStorage.setItem("lang", lang);
+  } catch (_) {}
+
+  // Update active chip UI
+  setActiveChip(lang);
 }
 
-// ===== Language switcher UI state =====
-function setActiveChip(lang){
-  document.querySelectorAll('#lang-switcher .chip').forEach(btn=>{
-    btn.classList.toggle('is-active', btn.dataset.lang === lang);
+/* ===========================
+   Language Switcher Wiring
+   =========================== */
+function setActiveChip(lang) {
+  const chips = document.querySelectorAll("#lang-switcher .chip");
+  chips.forEach((btn) => {
+    const isActive = btn.getAttribute("data-lang") === lang;
+    btn.classList.toggle("is-active", isActive);
+    btn.setAttribute("aria-pressed", isActive ? "true" : "false");
   });
 }
 
-// ===== Init: bind buttons, restore saved lang, apply =====
-function initLanguageSwitcher(){
-  const container = document.getElementById('lang-switcher');
+function initLanguageSwitcher() {
+  const container = document.getElementById("lang-switcher");
   if (!container) return;
 
-  container.addEventListener('click', (e)=>{
-    const btn = e.target.closest('.chip');
-    if (!btn) return;
-    const lang = btn.dataset.lang;
-    localStorage.setItem('preferredLang', lang);
-    setActiveChip(lang);
-    applyLanguage(lang);
+  container.addEventListener("click", (e) => {
+    const target = e.target.closest(".chip[data-lang]");
+    if (!target) return;
+    const lang = target.getAttribute("data-lang");
+    changeLanguage(lang);
   });
 
-  const saved = localStorage.getItem('preferredLang') || 'en';
-  setActiveChip(saved);
-  applyLanguage(saved);
+  // Load saved language or fallback to English
+  let lang = "en";
+  try {
+    lang = localStorage.getItem("lang") || "en";
+  } catch (_) {}
+  changeLanguage(lang);
 }
 
-// Kick off
-document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
+/* ===========================
+   Init on DOM Ready
+   =========================== */
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initLanguageSwitcher);
+} else {
+  initLanguageSwitcher();
+}
