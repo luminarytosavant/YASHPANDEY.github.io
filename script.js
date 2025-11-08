@@ -298,20 +298,10 @@ const content = {
   /* ===== CHINESE (Simplified) ===== */
   zh: {
     docLang: "zh",
-    nav: {
-      about: "关于我",
-      education: "教育",
-      experience: "经历",
-      skills: "技能",
-      research: "研究",
-      volunteer: "志愿工作",
-      references: "推荐人",
-      contact: "联系方式"
-    },
+    nav: { about: "关于我", education: "教育", experience: "经历", skills: "技能", research: "研究", volunteer: "志愿工作", references: "推荐人", contact: "联系方式" },
     heroTitle: "欢迎来到 Yash Pandey 的作品集",
     heroSubtitle: "探索可持续能源及更多",
     heroCta: "了解更多",
-
     aboutTitle: "关于我",
     aboutText:
       "我是 Yash Pandey，日本静冈大学电气与电子工程博士生。研究方向为混合可再生能源微电网与农村电气化，结合 HOMER/MATLAB 与回归建模，面向可落地、可扩展的解决方案。",
@@ -327,7 +317,6 @@ const content = {
     ],
     aboutAddress:
       "<strong>现住址:</strong> 日本静冈县滨松市蜆冢，静冈大学曙宿舍102室",
-
     educationTitle: "教育",
     educationList: [
       "<strong>博士（电气与电子工程）</strong><br>静冈大学（滨松）<br><em>预计毕业:</em> 2028年9月<br><em>研究课题:</em> 面向农村电气化的自适应混合可再生能源微电网动态框架：融合社会经济增长、技术经济优化与韧性。",
@@ -337,7 +326,6 @@ const content = {
       "12年级（2016年5月，70%）— SPS 教育中心（坎普尔）",
       "10年级（2014年5月，CGPA 6.8）— PVN 学校（坎普尔）"
     ],
-
     experienceTitle: "经历",
     experienceList: [
       "<strong>研究助理（RA）</strong> — 静冈大学（至今）<br>混合微电网研究、HOMER 仿真、GHI/负荷数据分析、回归建模、论文图表与稿件支持。导师：Hitoshi Haga 教授。",
@@ -347,7 +335,6 @@ const content = {
       "暑期实习 — TATA POWER（2018/05–2018/06）",
       "研究实习 — KIIT 大学（2017/06–2018/08）"
     ],
-
     skillsTitle: "技能",
     skillsLanguagesTitle: "语言",
     skillsLanguagesList: ["英语", "日语（基础）", "印地语", "博杰普尔语", "孟加拉语", "奥里亚语"],
@@ -382,7 +369,6 @@ const content = {
       "印度中央监察委员会：诚信承诺",
       "印度劳工部：禁止童工承诺"
     ],
-
     researchTitle: "研究与出版物",
     researchPapersTitle: "论文",
     researchPublishedTitle: "已发表",
@@ -403,10 +389,8 @@ const content = {
       "JSES 2024（札幌市立大学）",
       "环境砷国际大会（KIIT，印度）"
     ],
-
     volunteerTitle: "志愿工作",
     volunteerText: "ATTAC NGO：网站内容建设、活动统筹与社媒管理。",
-
     referencesTitle: "推荐人",
     referencesList: [
       "Hitoshi Haga 教授（静冈大学）",
@@ -418,7 +402,6 @@ const content = {
       "Prof. Congo Tak Shing CHING（NCHU）",
       "Mr. Sanatan（印度技能发展与创业部）"
     ],
-
     contactTitle: "联系方式",
     contactEmail: "电子邮件: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
     contactInstitutionalEmail: "机构邮箱: pandey.yash.23@shizuoka.ac.jp",
@@ -441,7 +424,6 @@ const content = {
     heroTitle: "यश पांडे के पोर्टफोलियो में आपका स्वागत है",
     heroSubtitle: "सतत ऊर्जा और उससे आगे की खोज",
     heroCta: "देखें",
-
     aboutTitle: "मेरे बारे में",
     aboutText:
       "मैं यश पांडे, नेशनल शिज़ुओका यूनिवर्सिटी (जापान) में इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग का पीएचडी छात्र हूँ। मेरा शोध हाइब्रिड नवीकरणीय ऊर्जा माइक्रोग्रिड और ग्रामीण विद्युतीकरण पर केंद्रित है—HOMER/MATLAB व रिग्रेशन-आधारित मॉडलिंग के साथ।",
@@ -457,7 +439,6 @@ const content = {
     ],
     aboutAddress:
       "<strong>वर्तमान पता:</strong> कक्ष 102, अकेबोनो र्यो, शिज़ुओका यूनिवर्सिटी डॉर्मिटरी, शिज़िमिज़ुका, हमामात्सु, जापान",
-
     educationTitle: "शिक्षा",
     educationList: [
       "<strong>पीएचडी (इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग)</strong><br>नेशनल शिज़ुओका यूनिवर्सिटी, जापान — <em>उत्तीर्ण अपेक्षित:</em> सितम्बर 2028<br><em>विषय:</em> सामाजिक-आर्थिक वृद्धि, टेक्नो-इकॉनमिक ऑप्टिमाइज़ेशन और रेज़िलिएंस को समेकित करता अनुकूली हाइब्रिड नवीकरणीय माइक्रोग्रिड का डायनेमिक फ्रेमवर्क।",
@@ -467,7 +448,6 @@ const content = {
       "12वीं — SPS एजुकेशन सेंटर (मई 2016, 70%)",
       "10वीं — पुरनचंद्र विद्या निकेतन (मई 2014, CGPA 6.8)"
     ],
-
     experienceTitle: "अनुभव",
     experienceList: [
       "<strong>रिसर्च असिस्टेंट (RA)</strong> — शिज़ुओका यूनिवर्सिटी (<em>वर्तमान</em>)<br>PV/BESS/DG साइजिंग हेतु HOMER सिमुलेशन, GHI/लोड डेटा विश्लेषण, रिग्रेशन मॉडल; फ़िगर/मैनुस्क्रिप्ट/रिव्यूअर-रिप्लाई। पर्यवेक्षक: प्रो. हितोशी हागा।",
@@ -477,7 +457,6 @@ const content = {
       "समर इंटर्न — TATA POWER (05/2018 – 06/2018)",
       "रिसर्च इंटर्न — KIIT यूनिवर्सिटी (06/2017 – 08/2018)"
     ],
-
     skillsTitle: "कौशल",
     skillsLanguagesTitle: "भाषाएँ",
     skillsLanguagesList: ["अंग्रेज़ी","जापानी (मूल)","हिंदी","भोजपुरी","बंगाली","ओड़िया"],
@@ -512,7 +491,6 @@ const content = {
       "भारत CVC — इंटेगिरिटी प्लेज",
       "भारत श्रम मंत्रालय — नो-चाइल्ड-लेबर प्रतिज्ञा"
     ],
-
     researchTitle: "अनुसंधान व प्रकाशन",
     researchPapersTitle: "अनुसंधान पत्र",
     researchPublishedTitle: "प्रकाशित",
@@ -533,10 +511,8 @@ const content = {
       "JSES 2024 — सप्पोरो सिटी यूनिवर्सिटी",
       "Arsenic in the Environment — KIIT, India"
     ],
-
     volunteerTitle: "स्वयंसेवी कार्य",
     volunteerText: "ATTAC NGO: वेबसाइट कंटेंट निर्माण, कैंपेन समन्वय एवं सोशल-मीडिया प्रबंधन।",
-
     referencesTitle: "संदर्भ",
     referencesList: [
       "Prof. Hitoshi Haga — Shizuoka University",
@@ -548,7 +524,6 @@ const content = {
       "Prof. Congo Tak Shing CHING — NCHU",
       "Mr. Sanatan — Ministry of Skill Development & Entrepreneurship (India)"
     ],
-
     contactTitle: "संपर्क",
     contactEmail: "Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
     contactInstitutionalEmail: "Institutional Email: pandey.yash.23@shizuoka.ac.jp",
@@ -571,7 +546,6 @@ const content = {
     heroTitle: "야시 판데이의 포트폴리오에 오신 것을 환영합니다",
     heroSubtitle: "지속가능 에너지와 그 너머를 탐구하다",
     heroCta: "보러가기",
-
     aboutTitle: "소개",
     aboutText:
       "일본 시즈오카대학교 전자·전기공학 박사과정생 야시 판데이입니다. 하이브리드 재생에너지 마이크로그리드와 농촌 전력화 연구를 수행하며, HOMER/MATLAB 및 회귀모델을 활용해 실용적이고 확장 가능한 해법을 제시합니다.",
@@ -587,7 +561,6 @@ const content = {
     ],
     aboutAddress:
       "<strong>현 주소:</strong> 일본 시즈오카현 하마마쓰시 시지미즈카, 시즈오카대 아케보노 기숙사 102호",
-
     educationTitle: "학력",
     educationList: [
       "<strong>박사(전자·전기공학)</strong><br>시즈오카대학교(하마마쓰)<br><em>예정:</em> 2028년 9월<br><em>주제:</em> 사회·경제 성장, 경제성 최적화, 복원력을 통합한 적응형 하이브리드 재생에너지 마이크로그리드 동적 프레임워크",
@@ -597,7 +570,6 @@ const content = {
       "12학년 — SPS 교육센터(2016년 5월, 70%)",
       "10학년 — PVN(2014년 5월, CGPA 6.8)"
     ],
-
     experienceTitle: "경력",
     experienceList: [
       "<strong>연구조교(RA)</strong> — 시즈오카대학교(<em>재직</em>)<br>HOMER 기반 PV/BESS/DG 용량 산정, GHI/부하 데이터 분석, 회귀모델, 원고/피겨/리뷰 대응. 지도: Hitoshi Haga 교수.",
@@ -607,7 +579,6 @@ const content = {
       "하계 인턴 — TATA POWER(2018.05–2018.06)",
       "연구 인턴 — KIIT University(2017.06–2018.08)"
     ],
-
     skillsTitle: "보유 기술",
     skillsLanguagesTitle: "언어",
     skillsLanguagesList: ["영어", "일본어(기초)", "힌디어", "보즈푸리어", "벵골어", "오리아어"],
@@ -642,7 +613,6 @@ const content = {
       "인도 CVC — 청렴 서약",
       "인도 노동고용부 — 아동노동 금지 서약"
     ],
-
     researchTitle: "연구 및 출판",
     researchPapersTitle: "연구 논문",
     researchPublishedTitle: "게재됨",
@@ -663,10 +633,8 @@ const content = {
       "JSES 2024(삿포로 시립대)",
       "Arsenic in the Environment(KIIT, 인도)"
     ],
-
     volunteerTitle: "봉사 활동",
     volunteerText: "ATTAC NGO: 웹 콘텐츠 제작, 캠페인 코디네이션, SNS 운영",
-
     referencesTitle: "추천인",
     referencesList: [
       "Prof. Hitoshi Haga — Shizuoka University",
@@ -678,7 +646,6 @@ const content = {
       "Prof. Congo Tak Shing CHING — NCHU",
       "Mr. Sanatan — Government of India"
     ],
-
     contactTitle: "연락처",
     contactEmail: "이메일: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
     contactInstitutionalEmail: "기관 이메일: pandey.yash.23@shizuoka.ac.jp",
@@ -754,7 +721,9 @@ function setActiveChip(lang) {
   const wrap = document.getElementById("lang-switcher");
   if (!wrap) return;
   [...wrap.querySelectorAll(".chip")].forEach((btn) => {
-    btn.classList.toggle("is-active", btn.getAttribute("data-lang") === lang);
+    const active = btn.getAttribute("data-lang") === lang;
+    btn.classList.toggle("is-active", active);
+    btn.setAttribute("aria-pressed", active ? "true" : "false");
   });
 }
 
@@ -763,21 +732,55 @@ function changeLanguage(lang) {
   const key = content[lang] ? lang : "en";
   applyContent(content[key]);
   setActiveChip(key);
-
-  // Save only after explicit user action (we set a flag)
   try {
     if (sessionStorage.getItem("yp_allow_save") === "1") {
       localStorage.setItem("yp_lang", key);
     }
   } catch (e) {}
-
-  // Hash for deep links
   try { history.replaceState(null, "", "#" + key); } catch (e) {}
+}
+
+/* ---------- Build language selector if missing ---------- */
+function ensureLanguageSelector() {
+  let wrap = document.getElementById("lang-switcher");
+  if (wrap) return wrap;
+
+  wrap = document.createElement("div");
+  wrap.id = "lang-switcher";
+  wrap.className = "language-selector glass";
+  wrap.setAttribute("aria-label", "Language selector");
+
+  const langs = [
+    { code: "en", label: "English" },
+    { code: "ja", label: "日本語" },
+    { code: "zh", label: "中文" },
+    { code: "hi", label: "हिंदी" },
+    { code: "ko", label: "한국어" }
+  ];
+
+  langs.forEach(({ code, label }, idx) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "chip" + (idx === 0 ? " is-active" : "");
+    btn.setAttribute("data-lang", code);
+    btn.setAttribute("aria-pressed", idx === 0 ? "true" : "false");
+    btn.textContent = label;
+    wrap.appendChild(btn);
+  });
+
+  // Insert near top of body so it's visible/fixed
+  const body = document.body;
+  if (body.firstChild) {
+    body.insertBefore(wrap, body.firstChild);
+  } else {
+    body.appendChild(wrap);
+  }
+  return wrap;
 }
 
 /* ---------- Initialize switcher ---------- */
 function initLanguageSwitcher() {
-  const wrap = document.getElementById("lang-switcher");
+  const wrap = ensureLanguageSelector();
   if (!wrap) return;
 
   wrap.addEventListener("click", (e) => {
@@ -792,19 +795,27 @@ function initLanguageSwitcher() {
 /* ---------- Bootstrap ---------- */
 document.addEventListener("DOMContentLoaded", () => {
   // Determine initial language:
-  // 1) Hash takes priority if valid (#en/#ja/#zh/#hi/#ko)
-  // 2) Otherwise always start in English (ignore old saved junk like 'ko')
+  // Priority: hash (#en/#ja/#zh/#hi/#ko) > localStorage (only if user previously clicked) > "en"
   let initial = "en";
   const hash = (location.hash || "").replace("#", "").toLowerCase();
   if (content[hash]) initial = hash;
+  else {
+    try {
+      const saved = localStorage.getItem("yp_lang");
+      if (content[saved]) initial = saved;
+    } catch (e) {}
+  }
 
-  // Apply content (English default or hash)
+  // Build selector (if not already present in HTML)
+  ensureLanguageSelector();
+
+  // Apply content & sync selector
   applyContent(content[initial]);
   setActiveChip(initial);
 
-  // Only after user clicks will we honor saving
+  // Only after user clicks will we honor saving in this session
   try {
-    sessionStorage.removeItem("yp_allow_save"); // ensure fresh session behavior
+    sessionStorage.removeItem("yp_allow_save");
   } catch (e) {}
 
   // Wire the selector
