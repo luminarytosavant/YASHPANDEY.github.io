@@ -10,16 +10,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="style.css"/>
+
+  <!-- Minimal helper style to show the active language -->
+  <style>
+    .language-selector .chip { cursor: pointer; }
+    .language-selector .chip.is-active { outline: 2px solid currentColor; }
+  </style>
 </head>
 <body>
 
   <!-- Language Selector -->
-  <div class="language-selector glass">
-    <button class="chip" onclick="changeLanguage('en')">English</button>
-    <button class="chip" onclick="changeLanguage('ja')">日本語</button>
-    <button class="chip" onclick="changeLanguage('zh')">中文</button>
-    <button class="chip" onclick="changeLanguage('hi')">हिंदी</button>
-    <button class="chip" onclick="changeLanguage('ko')">한국어</button>
+  <div class="language-selector glass" id="lang-switcher">
+    <button class="chip is-active" data-lang="en">English</button>
+    <button class="chip" data-lang="ja">日本語</button>
+    <button class="chip" data-lang="zh">中文</button>
+    <button class="chip" data-lang="hi">हिंदी</button>
+    <button class="chip" data-lang="ko">한국어</button>
   </div>
 
   <!-- Navigation Bar -->
@@ -27,14 +33,14 @@
     <div class="nav-inner">
       <a class="brand" href="#hero" aria-label="Home">YP</a>
       <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#volunteer">Volunteer</a></li>
-        <li><a href="#references">References</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a id="nav-about" href="#about">About Me</a></li>
+        <li><a id="nav-education" href="#education">Education</a></li>
+        <li><a id="nav-experience" href="#experience">Experience</a></li>
+        <li><a id="nav-skills" href="#skills">Skills</a></li>
+        <li><a id="nav-research" href="#research">Research</a></li>
+        <li><a id="nav-volunteer" href="#volunteer">Volunteer</a></li>
+        <li><a id="nav-references" href="#references">References</a></li>
+        <li><a id="nav-contact" href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -199,5 +205,7 @@
 
   <!-- JS -->
   <script src="script.js"></script>
+  <!-- Make sure your script.js includes the language switcher wiring I sent:
+       initLanguageSwitcher(), setActiveChip(), setDocumentLang(), etc. -->
 </body>
 </html>
