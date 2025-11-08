@@ -1,10 +1,9 @@
-/* ===============================
-   Multi-language content & logic
-   for Yash Pandey Portfolio
-   Default: English
-   =============================== */
+/* ==========================================
+   Yash Pandey Portfolio — Multi-language UI
+   Default language: EN (English)
+   ========================================== */
 
-/** Helper: Safe setters **/
+/* ---------- Safe DOM helpers ---------- */
 function setHTML(id, html) {
   const el = document.getElementById(id);
   if (el && typeof html === "string") el.innerHTML = html;
@@ -19,13 +18,14 @@ function setList(id, items) {
     el.innerHTML = items.map((item) => `<li>${item}</li>`).join("");
   }
 }
+function setDocLang(lang) {
+  const html = document.documentElement;
+  if (html) html.setAttribute("lang", lang || "en");
+}
 
-/* ===============================
-   CONTENT: Full data in 5 languages
-   (matches your existing sections/IDs)
-   =============================== */
+/* ---------- Content in 5 languages ---------- */
 const content = {
-  /* -------- ENGLISH -------- */
+  /* ===== ENGLISH ===== */
   en: {
     docLang: "en",
     nav: {
@@ -160,14 +160,12 @@ const content = {
     ],
 
     contactTitle: "Contact",
-    contactEmail:
-      "Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
-    contactInstitutionalEmail:
-      "Institutional Email: pandey.yash.23@shizuoka.ac.jp",
+    contactEmail: "Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
+    contactInstitutionalEmail: "Institutional Email: pandey.yash.23@shizuoka.ac.jp",
     contactPhone: "Mobile: +81-7090976618, +91-9455918918"
   },
 
-  /* -------- JAPANESE -------- */
+  /* ===== JAPANESE ===== */
   ja: {
     docLang: "ja",
     nav: {
@@ -198,7 +196,7 @@ const content = {
       "Akamatsu Electric Company Limited（磐田、日本）"
     ],
     aboutAddress:
-      "<strong>現住所:</strong> 〒— 静岡大学 曙寮 102号室（静岡県浜松市蜆塚）",
+      "<strong>現住所:</strong> 静岡大学 曙寮 102号室（浜松市蜆塚）",
 
     educationTitle: "学歴",
     educationList: [
@@ -222,14 +220,7 @@ const content = {
 
     skillsTitle: "スキル",
     skillsLanguagesTitle: "言語",
-    skillsLanguagesList: [
-      "英語",
-      "日本語（基礎）",
-      "ヒンディー語",
-      "ボージュプリー語",
-      "ベンガル語",
-      "オディア語"
-    ],
+    skillsLanguagesList: ["英語", "日本語（基礎）", "ヒンディー語", "ボージュプリー語", "ベンガル語", "オディア語"],
     skillsCoursesTitle: "コース",
     skillsCoursesList: [
       "TCS iON：インパクトのあるプレゼン",
@@ -284,8 +275,7 @@ const content = {
     ],
 
     volunteerTitle: "ボランティア活動",
-    volunteerText:
-      "ATTAC NGO：Webコンテンツ作成、キャンペーン調整、SNS運用",
+    volunteerText: "ATTAC NGO：Webコンテンツ作成、キャンペーン調整、SNS運用",
 
     referencesTitle: "参考（推薦者）",
     referencesList: [
@@ -305,7 +295,7 @@ const content = {
     contactPhone: "携帯: +81-7090976618, +91-9455918918"
   },
 
-  /* -------- CHINESE (Simplified) -------- */
+  /* ===== CHINESE (Simplified) ===== */
   zh: {
     docLang: "zh",
     nav: {
@@ -415,8 +405,7 @@ const content = {
     ],
 
     volunteerTitle: "志愿工作",
-    volunteerText:
-      "ATTAC NGO：网站内容建设、活动统筹与社媒管理。",
+    volunteerText: "ATTAC NGO：网站内容建设、活动统筹与社媒管理。",
 
     referencesTitle: "推荐人",
     referencesList: [
@@ -436,7 +425,7 @@ const content = {
     contactPhone: "电话: +81-7090976618, +91-9455918918"
   },
 
-  /* -------- HINDI -------- */
+  /* ===== HINDI ===== */
   hi: {
     docLang: "hi",
     nav: {
@@ -472,7 +461,7 @@ const content = {
     educationTitle: "शिक्षा",
     educationList: [
       "<strong>पीएचडी (इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग)</strong><br>नेशनल शिज़ुओका यूनिवर्सिटी, जापान — <em>उत्तीर्ण अपेक्षित:</em> सितम्बर 2028<br><em>विषय:</em> सामाजिक-आर्थिक वृद्धि, टेक्नो-इकॉनमिक ऑप्टिमाइज़ेशन और रेज़िलिएंस को समेकित करता अनुकूली हाइब्रिड नवीकरणीय माइक्रोग्रिड का डायनेमिक फ्रेमवर्क।",
-      "<strong>एम.टेक./मास्टर्स (इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग)</strong><br>नेशनल शिज़ुओका यूनिवर्सिटी — <em>सितम्बर 2025</em> (GPA 2.9)<br><em>विषय:</em> लोड वैरिएबिलिटी व जलवायु क्षेत्रों के पार हाइब्रिड माइक्रोग्रिड द्वारा ग्रामीण विद्युतीकरण हेतु क्षमता-योजना अध्ययन।<br>ABP पूर्ण छात्रवृत्ति (2023–2025)।",
+      "<strong>मास्टर (इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग)</strong><br>नेशनल शिज़ुओका यूनिवर्सिटी — <em>सितम्बर 2025</em> (GPA 2.9)<br><em>विषय:</em> लोड वैरिएबिलिटी व जलवायु क्षेत्रों के पार हाइब्रिड माइक्रोग्रिड द्वारा ग्रामीण विद्युतीकरण हेतु क्षमता-योजना अध्ययन।<br>ABP पूर्ण छात्रवृत्ति (2023–2025)।",
       "<strong>एडवांस डिप्लोमा इन इंडस्ट्रियल सेफ़्टी (ADIS)</strong> — रीजनल लेबर इंस्टिट्यूट, कोलकाता (जून 2022, प्रथम श्रेणी)।",
       "<strong>बी.टेक. (इलेक्ट्रिकल इंजीनियरिंग)</strong> — KIIT यूनिवर्सिटी (जुलाई 2020, CGPA 7.77)।",
       "12वीं — SPS एजुकेशन सेंटर (मई 2016, 70%)",
@@ -482,7 +471,7 @@ const content = {
     experienceTitle: "अनुभव",
     experienceList: [
       "<strong>रिसर्च असिस्टेंट (RA)</strong> — शिज़ुओका यूनिवर्सिटी (<em>वर्तमान</em>)<br>PV/BESS/DG साइजिंग हेतु HOMER सिमुलेशन, GHI/लोड डेटा विश्लेषण, रिग्रेशन मॉडल; फ़िगर/मैनुस्क्रिप्ट/रिव्यूअर-रिप्लाई। पर्यवेक्षक: प्रो. हितोशी हागा।",
-      "<strong>टीचिंग असिस्टेंट (TA)</strong> — शिज़ुओका यूनिवर्सिटी (अगस्त 2023 – सितम्बर 2025)<br>बैचलर छात्रों को ग्लो व आर्क डिस्चार्ज पढ़ाया। पर्यवेक्षक: एसोशिएट प्रो. हिरोनोबु मात्सुओ।",
+      "<strong>टीचिंग असिस्टेंट (TA)</strong> — शिज़ुओका यूनिवर्सिटी (अगस्त 2023 – सितम्बर 2025)<br>बैचलर छात्रों को ग्लो व आर्क डिस्चार्ज पढ़ाया। पर्यवेक्षक: एसोसिएट प्रो. हिरोनोबु मात्सुओ।",
       "रिसर्च इंटर्न — नानहुआ यूनिवर्सिटी (09/2019 – 02/2020)",
       "रिसर्च इंटर्न — एशिया यूनिवर्सिटी (11/2019 – 12/2019)",
       "समर इंटर्न — TATA POWER (05/2018 – 06/2018)",
@@ -491,14 +480,7 @@ const content = {
 
     skillsTitle: "कौशल",
     skillsLanguagesTitle: "भाषाएँ",
-    skillsLanguagesList: [
-      "अंग्रेज़ी",
-      "जापानी (मूल)",
-      "हिंदी",
-      "भोजपुरी",
-      "बंगाली",
-      "ओड़िया"
-    ],
+    skillsLanguagesList: ["अंग्रेज़ी","जापानी (मूल)","हिंदी","भोजपुरी","बंगाली","ओड़िया"],
     skillsCoursesTitle: "पाठ्यक्रम",
     skillsCoursesList: [
       "TCS iON — प्रभावशाली प्रस्तुति",
@@ -513,20 +495,20 @@ const content = {
       "VV गिरी नेशनल लेबर इंस्टिट्यूट — OSH कोड",
       "— प्रवासन/ट्रैफिकिंग/बाल व बंधुआ श्रम संवेदनशीलता",
       "— बंधुआ/बाल-बंधुआ श्रम उन्मूलन ऑनलाइन कार्यक्रम",
-      "DGFASLI — हाउस-कीपिंग व स्वच्छता",
-      "— लेबर इंस्पेक्शन के माध्यम से सुशासन",
+      "DGFASLI — हाउसकीपिंग व स्वच्छता",
+      "— लेबर इंस्पेक्शन से गुड गवर्नेंस",
       "TATA-POWER समर इंटर्नशिप",
       "KITT FEST 2017",
-      "IIT कानपुर — फ्लाय ऐश",
+      "IIT कानपुर — फ्लाय ऐश प्रमाणपत्र",
       "Texas Instruments IICDC-2019",
       "नानहुआ यूनिवर्सिटी — सेमेस्टर पाठ्यक्रम",
       "ITRI ताइवान — इंडस्ट्री इंटरफ़ेस",
       "चुंग चेंग यूनिवर्सिटी — विंटर स्कूल",
       "नानहुआ — रिसर्च इंटर्नशिप",
       "NHU — ताइवान हाई-स्कूल टीचिंग",
-      "नानहुआ — लाइफ़ एजुकेशन अवार्ड",
+      "नानहुआ — लाइफ़ एजुकेशन अवॉर्ड",
       "नानहुआ — न्यू साउथबाउंड लाइफ़ एजुकेशन",
-      "IEEE — IoT/Graduate Member",
+      "IEEE — IoT; Graduate Member",
       "भारत CVC — इंटेगिरिटी प्लेज",
       "भारत श्रम मंत्रालय — नो-चाइल्ड-लेबर प्रतिज्ञा"
     ],
@@ -536,8 +518,8 @@ const content = {
     researchPublishedTitle: "प्रकाशित",
     researchPublishedList: [
       "Advancing Sustainable Energy — Wiley",
-      "Bridging Complexity & Accessibility — Elsevier e-Prime",
-      "Unified PV–BESS Capacity Framework — IEEE Xplore (in press)"
+      "Bridging Complexity and Accessibility — Elsevier e-Prime",
+      "Unified PV–BESS Capacity Estimation Framework — IEEE Xplore (in press)"
     ],
     researchUpcomingTitle: "समीक्षा में / आगामी",
     researchUpcomingList: [
@@ -549,12 +531,11 @@ const content = {
       "Nanhua University — Green Technology & Sustainability",
       "KOSMOS — AR/VR (काउशुंग)",
       "JSES 2024 — सप्पोरो सिटी यूनिवर्सिटी",
-      "Arsenic in the Environment — KIIT, इंडिया"
+      "Arsenic in the Environment — KIIT, India"
     ],
 
     volunteerTitle: "स्वयंसेवी कार्य",
-    volunteerText:
-      "ATTAC NGO: वेबसाइट कंटेंट निर्माण, कैंपेन समन्वय एवं सोशल-मीडिया प्रबंधन।",
+    volunteerText: "ATTAC NGO: वेबसाइट कंटेंट निर्माण, कैंपेन समन्वय एवं सोशल-मीडिया प्रबंधन।",
 
     referencesTitle: "संदर्भ",
     referencesList: [
@@ -574,7 +555,7 @@ const content = {
     contactPhone: "Mobile: +81-7090976618, +91-9455918918"
   },
 
-  /* -------- KOREAN -------- */
+  /* ===== KOREAN ===== */
   ko: {
     docLang: "ko",
     nav: {
@@ -684,8 +665,7 @@ const content = {
     ],
 
     volunteerTitle: "봉사 활동",
-    volunteerText:
-      "ATTAC NGO: 웹 콘텐츠 제작, 캠페인 코디네이션, SNS 운영",
+    volunteerText: "ATTAC NGO: 웹 콘텐츠 제작, 캠페인 코디네이션, SNS 운영",
 
     referencesTitle: "추천인",
     referencesList: [
@@ -706,16 +686,10 @@ const content = {
   }
 };
 
-/* ===============================
-   APPLY CONTENT TO DOM
-   =============================== */
-function changeLanguage(lang) {
-  const data = content[lang] || content.en;
+/* ---------- Apply content to DOM ---------- */
+function applyContent(data) {
+  setDocLang(data.docLang || "en");
 
-  // Document language
-  setDocumentLang(data.docLang || "en");
-
-  // NAV labels
   if (data.nav) {
     setText("nav-about", data.nav.about);
     setText("nav-education", data.nav.education);
@@ -727,12 +701,10 @@ function changeLanguage(lang) {
     setText("nav-contact", data.nav.contact);
   }
 
-  // Hero
   setHTML("hero-title", data.heroTitle);
   setHTML("hero-subtitle", data.heroSubtitle);
   setText("hero-cta", data.heroCta || "Explore");
 
-  // About
   setHTML("about-title", data.aboutTitle);
   setHTML("about-text", data.aboutText);
   setHTML("about-hobbies", data.aboutHobbies);
@@ -742,15 +714,12 @@ function changeLanguage(lang) {
   setList("about-freelance-list", data.aboutFreelanceList);
   setHTML("about-address", data.aboutAddress);
 
-  // Education
   setHTML("education-title", data.educationTitle);
   setList("education-list", data.educationList);
 
-  // Experience
   setHTML("experience-title", data.experienceTitle);
   setList("experience-list", data.experienceList);
 
-  // Skills
   setHTML("skills-title", data.skillsTitle);
   setHTML("skills-languages-title", data.skillsLanguagesTitle);
   setList("skills-languages-list", data.skillsLanguagesList);
@@ -759,7 +728,6 @@ function changeLanguage(lang) {
   setHTML("skills-certifications-title", data.skillsCertificationsTitle);
   setList("skills-certifications-list", data.skillsCertificationsList);
 
-  // Research
   setHTML("research-title", data.researchTitle);
   setHTML("research-papers-title", data.researchPapersTitle);
   setHTML("research-published-title", data.researchPublishedTitle);
@@ -769,41 +737,45 @@ function changeLanguage(lang) {
   setHTML("research-conferences-title", data.researchConferencesTitle);
   setList("research-conferences-list", data.researchConferencesList);
 
-  // Volunteer
   setHTML("volunteer-title", data.volunteerTitle);
   setHTML("volunteer-text", data.volunteerText);
 
-  // References
   setHTML("references-title", data.referencesTitle);
   setList("references-list", data.referencesList);
 
-  // Contact
   setHTML("contact-title", data.contactTitle);
   setHTML("contact-email", data.contactEmail);
   setHTML("contact-institutional-email", data.contactInstitutionalEmail);
   setHTML("contact-phone", data.contactPhone);
-
-  // Save preference
-  try {
-    localStorage.setItem("yp_lang", lang);
-  } catch (e) {}
 }
 
-/* ===============================
-   LANGUAGE SWITCHER WIRING
-   =============================== */
+/* ---------- Active chip UI ---------- */
 function setActiveChip(lang) {
   const wrap = document.getElementById("lang-switcher");
   if (!wrap) return;
   [...wrap.querySelectorAll(".chip")].forEach((btn) => {
-    const isActive = btn.getAttribute("data-lang") === lang;
-    btn.classList.toggle("is-active", isActive);
+    btn.classList.toggle("is-active", btn.getAttribute("data-lang") === lang);
   });
 }
-function setDocumentLang(lang) {
-  const html = document.documentElement;
-  if (html) html.setAttribute("lang", lang || "en");
+
+/* ---------- Language change ---------- */
+function changeLanguage(lang) {
+  const key = content[lang] ? lang : "en";
+  applyContent(content[key]);
+  setActiveChip(key);
+
+  // Save only after explicit user action (we set a flag)
+  try {
+    if (sessionStorage.getItem("yp_allow_save") === "1") {
+      localStorage.setItem("yp_lang", key);
+    }
+  } catch (e) {}
+
+  // Hash for deep links
+  try { history.replaceState(null, "", "#" + key); } catch (e) {}
 }
+
+/* ---------- Initialize switcher ---------- */
 function initLanguageSwitcher() {
   const wrap = document.getElementById("lang-switcher");
   if (!wrap) return;
@@ -812,24 +784,29 @@ function initLanguageSwitcher() {
     const btn = e.target.closest(".chip");
     if (!btn) return;
     const lang = btn.getAttribute("data-lang");
-    if (!lang) return;
+    try { sessionStorage.setItem("yp_allow_save", "1"); } catch (e2) {}
     changeLanguage(lang);
-    setActiveChip(lang);
   });
-
-  // Initial language: saved -> English default
-  let lang = "en";
-  try {
-    lang = localStorage.getItem("yp_lang") || "en";
-  } catch (e) {}
-
-  changeLanguage(lang);
-  setActiveChip(lang);
 }
 
-/* ===============================
-   BOOT
-   =============================== */
+/* ---------- Bootstrap ---------- */
 document.addEventListener("DOMContentLoaded", () => {
+  // Determine initial language:
+  // 1) Hash takes priority if valid (#en/#ja/#zh/#hi/#ko)
+  // 2) Otherwise always start in English (ignore old saved junk like 'ko')
+  let initial = "en";
+  const hash = (location.hash || "").replace("#", "").toLowerCase();
+  if (content[hash]) initial = hash;
+
+  // Apply content (English default or hash)
+  applyContent(content[initial]);
+  setActiveChip(initial);
+
+  // Only after user clicks will we honor saving
+  try {
+    sessionStorage.removeItem("yp_allow_save"); // ensure fresh session behavior
+  } catch (e) {}
+
+  // Wire the selector
   initLanguageSwitcher();
 });
