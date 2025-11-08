@@ -200,3 +200,25 @@ nav a:hover{ background: rgba(44,182,125,.14); transform: translateY(-1px); }
   .language-selector{ top:.75rem; right:.75rem; padding:5px 8px; }
   .language-selector .chip{ font-size:.9rem; padding:5px 8px; }
 }
+
+/* =================
+   Profile Photo Size Fix
+   ================= */
+#img-profile {
+  width: 220px;           /* Adjust 180–250px as preferred */
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+#img-profile:hover {
+  transform: scale(1.03);
+}
+@media (max-width: 768px) {
+  #img-profile {
+    width: 150px;
+  }
+}
