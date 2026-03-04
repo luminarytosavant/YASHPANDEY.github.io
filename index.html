@@ -6,20 +6,25 @@
   <title>Yash Pandey's Portfolio</title>
   <meta name="description" content="Exploring Sustainable Energy and Beyond"/>
 
+  <!-- Ownership meta tags (part of watermark) -->
+  <meta name="author" content="Yash Pandey"/>
+  <meta name="copyright" content="© 2025 Yash Pandey — Matsuo Lab, Shizuoka University"/>
+  <meta name="robots" content="index, follow"/>
+
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="style.css"/>
 
-  <!-- (Optional) Small helper styles for active chip ring -->
+  <!-- Active chip ring style -->
   <style>
-    .language-selector .chip.is-active{outline:2px solid currentColor;opacity:1}
+    .language-selector .chip.is-active { outline: 2px solid currentColor; opacity: 1; }
   </style>
 </head>
 <body>
 
-<!-- Language Selector -->
+<!-- ─── Language Selector ─── -->
 <div class="language-selector glass" id="lang-switcher">
   <button class="chip is-active" data-lang="en">English</button>
   <button class="chip" data-lang="ja">日本語</button>
@@ -28,184 +33,191 @@
   <button class="chip" data-lang="ko">한국어</button>
 </div>
 
+<!-- ─── Navigation Bar ─── -->
+<nav aria-label="Primary" class="glass">
+  <div class="nav-inner">
+    <a class="brand" href="#hero" aria-label="Home">YP</a>
+    <ul>
+      <li><a id="nav-about"      href="#about">About Me</a></li>
+      <li><a id="nav-education"  href="#education">Education</a></li>
+      <li><a id="nav-experience" href="#experience">Experience</a></li>
+      <li><a id="nav-skills"     href="#skills">Skills</a></li>
+      <li><a id="nav-research"   href="#research">Research</a></li>
+      <li><a id="nav-volunteer"  href="#volunteer">Volunteer</a></li>
+      <li><a id="nav-references" href="#references">References</a></li>
+      <li><a id="nav-contact"    href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
+<!-- ─── Hero ─── -->
+<section id="hero" class="section hero" data-animate>
+  <div class="starfield" aria-hidden="true"></div>
+  <div class="hero-content" data-parallax>
+    <h1 id="hero-title">Welcome to Yash Pandey's Portfolio</h1>
+    <p  id="hero-subtitle">Exploring Sustainable Energy and Beyond</p>
+    <a href="#about" class="cta3d" id="hero-cta">Explore</a>
+  </div>
+</section>
 
-  <!-- Navigation Bar -->
-  <nav aria-label="Primary" class="glass">
-    <div class="nav-inner">
-      <a class="brand" href="#hero" aria-label="Home">YP</a>
-      <ul>
-        <li><a id="nav-about" href="#about">About Me</a></li>
-        <li><a id="nav-education" href="#education">Education</a></li>
-        <li><a id="nav-experience" href="#experience">Experience</a></li>
-        <li><a id="nav-skills" href="#skills">Skills</a></li>
-        <li><a id="nav-research" href="#research">Research</a></li>
-        <li><a id="nav-volunteer" href="#volunteer">Volunteer</a></li>
-        <li><a id="nav-references" href="#references">References</a></li>
-        <li><a id="nav-contact" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<!-- ─── About ─── -->
+<section id="about" class="section" data-animate>
+  <div class="wrap">
+    <h2 id="about-title" class="section-title">About Me</h2>
+    <div class="about-grid">
 
-  <!-- Hero -->
-  <section id="hero" class="section hero" data-animate>
-    <div class="starfield" aria-hidden="true"></div>
-    <div class="hero-content" data-parallax>
-      <h1 id="hero-title">Welcome to Yash Pandey's Portfolio</h1>
-      <p id="hero-subtitle">Exploring Sustainable Energy and Beyond</p>
-      <a href="#about" class="cta3d" id="hero-cta">Explore</a>
-    </div>
-  </section>
+      <div class="profile card3d" data-tilt>
+        <img id="img-profile" src="My profile photo 3.JPG" alt="Profile photo of Yash Pandey"/>
+      </div>
 
-  <!-- About -->
-  <section id="about" class="section" data-animate>
-    <div class="wrap">
-      <h2 id="about-title" class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div class="profile card3d" data-tilt>
-          <img id="img-profile" src="My profile photo 3.JPG" alt="Profile photo of Yash Pandey"/>
-        </div>
-        <div class="about-text card3d" data-tilt>
-          <p id="about-text">
-            I am Yash Pandey, a Ph.D student in Electrical &amp; Electronic Engineering at National Shizuoka University…
-          </p>
-          <p id="about-hobbies"><strong>Hobbies:</strong> …</p>
+      <div class="about-text card3d" data-tilt>
+        <p id="about-text">
+          I am Yash Pandey, a Ph.D student in Electrical &amp; Electronic Engineering at National Shizuoka University…
+        </p>
+        <p id="about-hobbies"><strong>Hobbies:</strong> …</p>
 
-          <p id="about-affiliations"><strong>Affiliations:</strong></p>
-          <ul id="about-affiliations-list" class="nice-list"></ul>
+        <p id="about-affiliations"><strong>Affiliations:</strong></p>
+        <ul id="about-affiliations-list" class="nice-list"></ul>
 
-          <p id="about-freelance"><strong>Freelance Consulting:</strong></p>
-          <ul id="about-freelance-list" class="nice-list"></ul>
+        <p id="about-freelance"><strong>Freelance Consulting:</strong></p>
+        <ul id="about-freelance-list" class="nice-list"></ul>
 
-          <p id="about-address"><strong>Current Address:</strong> Room 102…</p>
-        </div>
+        <p id="about-address"><strong>Current Address:</strong> Room 102…</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Education -->
-  <section id="education" class="section alt" data-animate>
-    <div class="wrap">
-      <h2 id="education-title" class="section-title">Education</h2>
-      <div class="split">
-        <div class="card3d" data-tilt>
-          <ul id="education-list" class="nice-list"></ul>
-        </div>
-        <div class="img-wrap card3d" data-tilt>
-          <img id="img-edu" src="combined institution photo.png" alt="Education institutions collage"/>
-        </div>
+<!-- ─── Education ─── -->
+<section id="education" class="section alt" data-animate>
+  <div class="wrap">
+    <h2 id="education-title" class="section-title">Education</h2>
+    <div class="split">
+      <div class="card3d" data-tilt>
+        <ul id="education-list" class="nice-list"></ul>
+      </div>
+      <div class="img-wrap card3d" data-tilt>
+        <img id="img-edu" src="combined institution photo.png" alt="Education institutions collage"/>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Experience -->
-  <section id="experience" class="section" data-animate>
-    <div class="wrap">
-      <h2 id="experience-title" class="section-title">Experience</h2>
-      <div class="split">
-        <div class="card3d" data-tilt>
-          <ul id="experience-list" class="nice-list"></ul>
-        </div>
-        <div class="img-wrap card3d" data-tilt>
-          <img id="img-exp" src="Experiences photo.png" alt="Companies and universities collage"/>
-        </div>
+<!-- ─── Experience ─── -->
+<section id="experience" class="section" data-animate>
+  <div class="wrap">
+    <h2 id="experience-title" class="section-title">Experience</h2>
+    <div class="split">
+      <div class="card3d" data-tilt>
+        <ul id="experience-list" class="nice-list"></ul>
+      </div>
+      <div class="img-wrap card3d" data-tilt>
+        <img id="img-exp" src="Experiences photo.png" alt="Companies and universities collage"/>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Skills -->
-  <section id="skills" class="section alt" data-animate>
-    <div class="wrap">
-      <h2 id="skills-title" class="section-title">Skills</h2>
+<!-- ─── Skills ─── -->
+<section id="skills" class="section alt" data-animate>
+  <div class="wrap">
+    <h2 id="skills-title" class="section-title">Skills</h2>
+    <div class="grid-cards">
 
-      <div class="grid-cards">
-        <div class="category card3d" data-tilt>
-          <h3 id="skills-languages-title">Languages</h3>
-          <ul id="skills-languages-list" class="bullet-list"></ul>
+      <div class="category card3d" data-tilt>
+        <h3 id="skills-languages-title">Languages</h3>
+        <ul id="skills-languages-list" class="bullet-list"></ul>
+      </div>
+
+      <div class="category card3d" data-tilt>
+        <h3 id="skills-courses-title">Courses</h3>
+        <ul id="skills-courses-list" class="bullet-list"></ul>
+      </div>
+
+      <div class="category card3d" data-tilt>
+        <h3 id="skills-certifications-title">Certifications</h3>
+        <ul id="skills-certifications-list" class="bullet-list"></ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Research ─── -->
+<section id="research" class="section" data-animate>
+  <div class="wrap">
+    <h2 id="research-title" class="section-title">Research and Publications</h2>
+    <div class="grid-cards">
+
+      <div class="category card3d" data-tilt>
+        <h3 id="research-papers-title">Research Papers</h3>
+        <div class="sub-category">
+          <h4 id="research-published-title">Published</h4>
+          <ul id="research-published-list" class="bullet-list"></ul>
         </div>
-
-        <div class="category card3d" data-tilt>
-          <h3 id="skills-courses-title">Courses</h3>
-          <ul id="skills-courses-list" class="bullet-list"></ul>
-        </div>
-
-        <div class="category card3d" data-tilt>
-          <h3 id="skills-certifications-title">Certifications</h3>
-          <ul id="skills-certifications-list" class="bullet-list"></ul>
+        <div class="sub-category">
+          <h4 id="research-upcoming-title">Upcoming</h4>
+          <ul id="research-upcoming-list" class="bullet-list"></ul>
         </div>
       </div>
+
+      <div class="category card3d" data-tilt>
+        <h3 id="research-conferences-title">Conferences</h3>
+        <ul id="research-conferences-list" class="bullet-list"></ul>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Research -->
-  <section id="research" class="section" data-animate>
-    <div class="wrap">
-      <h2 id="research-title" class="section-title">Research and Publications</h2>
+<!-- ─── Volunteer ─── -->
+<section id="volunteer" class="section alt" data-animate>
+  <div class="wrap">
+    <h2 id="volunteer-title" class="section-title">Volunteer Work</h2>
+    <p id="volunteer-text" class="card3d" data-tilt>
+      ATTAC NGO: Build Web Site Content and worked as a Campaign Coordinator and Social Media Manager.
+    </p>
+  </div>
+</section>
 
-      <div class="grid-cards">
-        <div class="category card3d" data-tilt>
-          <h3 id="research-papers-title">Research Papers</h3>
+<!-- ─── References ─── -->
+<section id="references" class="section" data-animate>
+  <div class="wrap">
+    <h2 id="references-title" class="section-title">References</h2>
+    <ul id="references-list" class="nice-list card3d" data-tilt></ul>
+  </div>
+</section>
 
-          <div class="sub-category">
-            <h4 id="research-published-title">Published</h4>
-            <ul id="research-published-list" class="bullet-list"></ul>
-          </div>
-
-          <div class="sub-category">
-            <h4 id="research-upcoming-title">Upcoming</h4>
-            <ul id="research-upcoming-list" class="bullet-list"></ul>
-          </div>
-        </div>
-
-        <div class="category card3d" data-tilt>
-          <h3 id="research-conferences-title">Conferences</h3>
-          <ul id="research-conferences-list" class="bullet-list"></ul>
-        </div>
+<!-- ─── Contact ─── -->
+<section id="contact" class="section contact" data-animate>
+  <div class="wrap">
+    <h2 id="contact-title" class="section-title">Contact</h2>
+    <div class="footer-grid">
+      <div class="footer-card glass card3d" data-tilt>
+        <p id="contact-email">Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com</p>
+        <p id="contact-institutional-email">Institutional Email: pandey.yash.23@shizuoka.ac.jp</p>
+        <p id="contact-phone">Mobile: +81-7090976618, +91-9455918918</p>
+        <p id="contact-website">
+          Website:
+          <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/"
+             target="_blank" rel="noopener" class="link-white">
+            luminarytosavant.github.io/YASHPANDEY.github.io
+          </a>
+          <br/>
+          <span class="rights">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Volunteer -->
-  <section id="volunteer" class="section alt" data-animate>
-    <div class="wrap">
-      <h2 id="volunteer-title" class="section-title">Volunteer Work</h2>
-      <p id="volunteer-text" class="card3d" data-tilt>
-        ATTAC NGO: Build Web Site Content and worked as a Campaign Coordinator and Social Media Manager.
-      </p>
-    </div>
-  </section>
+<!-- ═══════════════════════════════════════════════
+     SCRIPTS — order matters:
+     1. script.js   → content & language switching
+     2. protect.js  → all 7 protection modules
+     ═══════════════════════════════════════════════ -->
+<script src="script.js?v=7"></script>
+<script src="protect.js"></script>
 
-  <!-- References -->
-  <section id="references" class="section" data-animate>
-    <div class="wrap">
-      <h2 id="references-title" class="section-title">References</h2>
-      <ul id="references-list" class="nice-list card3d" data-tilt></ul>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section contact" data-animate>
-    <div class="wrap">
-      <h2 id="contact-title" class="section-title">Contact</h2>
-      <div class="footer-grid">
-        <div class="footer-card glass card3d" data-tilt>
-          <p id="contact-email">Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com</p>
-          <p id="contact-institutional-email">Institutional Email: pandey.yash.23@shizuoka.ac.jp</p>
-          <p id="contact-phone">Mobile: +81-7090976618, +91-9455918918</p>
-          <p id="contact-website">
-            Website:
-            <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" class="link-white">
-              luminarytosavant.github.io/YASHPANDEY.github.io
-            </a>
-            <br/>
-            <span class="rights">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- JS -->
-  <script src="script.js?v=7"></script>
 </body>
 </html>
