@@ -1,6 +1,6 @@
 /* ==========================================
-   Yash Pandey Portfolio — Multi-language UI
-   Default language: EN (English)
+   Yash Pandey Portfolio — Enhanced Futuristic
+   Multi-language + Animations + Particles
    ========================================== */
 
 /* ---------- Safe DOM helpers ---------- */
@@ -23,13 +23,15 @@ function setDocLang(lang) {
   if (html) html.setAttribute("lang", lang || "en");
 }
 
-/* ---------- Content in 5 languages ---------- */
+/* ================================================
+   CONTENT — 5 LANGUAGES
+   ================================================ */
 const content = {
   /* ===== ENGLISH ===== */
   en: {
     docLang: "en",
     nav: {
-      about: "About Me",
+      about: "About",
       education: "Education",
       experience: "Experience",
       skills: "Skills",
@@ -38,9 +40,19 @@ const content = {
       references: "References",
       contact: "Contact"
     },
-    heroTitle: "Welcome to Yash Pandey's Portfolio",
+    heroTitle: "Yash Pandey",
     heroSubtitle: "Exploring Sustainable Energy and Beyond",
-    heroCta: "Explore",
+    heroCta: "Explore My Work",
+    stats: {
+      publications: "6+",
+      publicationsLabel: "Publications",
+      countries: "4",
+      countriesLabel: "Countries",
+      projects: "10+",
+      projectsLabel: "Projects",
+      years: "6+",
+      yearsLabel: "Years Research"
+    },
 
     aboutTitle: "About Me",
     aboutText:
@@ -63,7 +75,7 @@ const content = {
     educationTitle: "Education",
     educationList: [
       "<strong>Ph.D. in Electrical & Electronic Engineering</strong><br>National University Corporation Shizuoka University, Hamamatsu, Japan<br><em>Expected Graduation:</em> September 2028<br><em>Research Topic:</em> A Dynamic Framework for Adaptive Hybrid Renewable Energy Microgrids: Integrating Socio-Economic Growth, Techno-Economic Optimization, and Resilience in Rural Electrification.",
-      "<strong>Master’s degree in Electrical & Electronic Engineering</strong><br>National University Corporation Shizuoka University, Hamamatsu, Japan<br><em>Graduation:</em> September 2025<br><em>Research Topic:</em> A Study of Optimal Capacity and Planning for Rural Electrification using Hybrid Microgrid Across Load Variability and Climatic Zones.<br><em>Remarks:</em> Recipient of ABP Full Scholarship (2023–2025), GPA: 2.9.",
+      "<strong>Master's degree in Electrical & Electronic Engineering</strong><br>National University Corporation Shizuoka University, Hamamatsu, Japan<br><em>Graduation:</em> September 2025<br><em>Research Topic:</em> A Study of Optimal Capacity and Planning for Rural Electrification using Hybrid Microgrid Across Load Variability and Climatic Zones.<br><em>Remarks:</em> Recipient of ABP Full Scholarship (2023–2025), GPA: 2.9.",
       "<strong>Advance Diploma in Industrial Safety (ADIS)</strong><br>Regional Labour Institute, Kolkata, India — June 2022 (1st Class).",
       "<strong>B.Tech. in Electrical Engineering</strong><br>Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar, India — July 2020 (CGPA: 7.77).",
       "<strong>12th Standard (SSCE)</strong><br>Sir Padampat Singhania Education Centre, Kanpur, India — May 2016 (70%).",
@@ -73,7 +85,7 @@ const content = {
     experienceTitle: "Experience",
     experienceList: [
       "<strong>Research Assistant (RA)</strong><br>National Shizuoka University — <em>Current</em><br>Hybrid renewable energy microgrids research: HOMER Pro simulations for PV/BESS/DG sizing, analysis of GHI & load datasets, regression models; figures, manuscript drafting, reviewer responses. School of Electrical & Electronic Engineering. Reporting Supervisor: Prof. Hitoshi Haga.",
-      "<strong>Teaching Assistant (TA)</strong><br>National Shizuoka University — Aug 2023 – Sep 2025<br>Taught Glow Discharge and Arc Discharge to bachelor’s students. Reporting Supervisor: Assoc. Prof. Hironobu Matsuo.",
+      "<strong>Teaching Assistant (TA)</strong><br>National Shizuoka University — Aug 2023 – Sep 2025<br>Taught Glow Discharge and Arc Discharge to bachelor's students. Reporting Supervisor: Assoc. Prof. Hironobu Matsuo.",
       "<strong>Research Intern</strong><br>Nanhua University, Taiwan — Sep 2019 – Feb 2020 (Prof. Shin Chi Lai).",
       "<strong>Research Intern</strong><br>Asia University, Taiwan — Nov 2019 – Dec 2019 (Prof. T. Chen).",
       "<strong>Summer Intern</strong><br>TATA POWER, Odisha, India — May 2018 – Jun 2018.",
@@ -82,14 +94,7 @@ const content = {
 
     skillsTitle: "Skills",
     skillsLanguagesTitle: "Languages",
-    skillsLanguagesList: [
-      "English",
-      "Japanese (Basic)",
-      "Hindi",
-      "Bhojpuri",
-      "Bengali",
-      "Odia"
-    ],
+    skillsLanguagesList: ["English", "Japanese (Basic)", "Hindi", "Bhojpuri", "Bengali", "Odia"],
     skillsCoursesTitle: "Courses",
     skillsCoursesList: [
       "TCS iON — Making Impactful Presentations",
@@ -122,7 +127,7 @@ const content = {
       "Ministry of Labour & Employment (India) — No Child Labour Pledge"
     ],
 
-    researchTitle: "Research and Publications",
+    researchTitle: "Research & Publications",
     researchPapersTitle: "Research Papers",
     researchPublishedTitle: "Published",
     researchPublishedList: [
@@ -168,36 +173,19 @@ const content = {
   /* ===== JAPANESE ===== */
   ja: {
     docLang: "ja",
-    nav: {
-      about: "私について",
-      education: "学歴",
-      experience: "経験",
-      skills: "スキル",
-      research: "研究",
-      volunteer: "ボランティア",
-      references: "参考",
-      contact: "連絡先"
-    },
-    heroTitle: "ヤシュ・パンディのポートフォリオへようこそ",
+    nav: { about: "私について", education: "学歴", experience: "経験", skills: "スキル", research: "研究", volunteer: "ボランティア", references: "参考", contact: "連絡先" },
+    heroTitle: "ヤシュ・パンディ",
     heroSubtitle: "持続可能なエネルギーとその先を探求する",
     heroCta: "もっと見る",
-
+    stats: { publications: "6+", publicationsLabel: "出版物", countries: "4", countriesLabel: "国", projects: "10+", projectsLabel: "プロジェクト", years: "6+", yearsLabel: "年の研究" },
     aboutTitle: "私について",
-    aboutText:
-      "私はヤシュ・パンディです。静岡大学 工学部 電子物質科学専攻（電気電子工学）博士課程在籍。ハイブリッド再生可能エネルギーによる農村電化を研究し、HOMER/MATLABと回帰モデルを用いて、実装可能でスケーラブルな計画を提案しています。",
-    aboutHobbies:
-      "<strong>趣味:</strong> サッカー、詩の執筆、ギター、読書、旅行、写真、料理",
+    aboutText: "私はヤシュ・パンディです。静岡大学 工学部 電子物質科学専攻（電気電子工学）博士課程在籍。ハイブリッド再生可能エネルギーによる農村電化を研究し、HOMER/MATLABと回帰モデルを用いて、実装可能でスケーラブルな計画を提案しています。",
+    aboutHobbies: "<strong>趣味:</strong> サッカー、詩の執筆、ギター、読書、旅行、写真、料理",
     aboutAffiliations: "<strong>所属:</strong>",
     aboutAffiliationsList: ["IAAM（国際先端材料協会・スウェーデン）"],
     aboutFreelance: "<strong>フリーランスコンサルティング:</strong>",
-    aboutFreelanceList: [
-      "Japan Development Private Limited（ラクナウ、インド）",
-      "SALA Energy Corporation（浜松、日本）",
-      "Akamatsu Electric Company Limited（磐田、日本）"
-    ],
-    aboutAddress:
-      "<strong>現住所:</strong> 静岡大学 曙寮 102号室（浜松市蜆塚）",
-
+    aboutFreelanceList: ["Japan Development Private Limited（ラクナウ、インド）", "SALA Energy Corporation（浜松、日本）", "Akamatsu Electric Company Limited（磐田、日本）"],
+    aboutAddress: "<strong>現住所:</strong> 静岡大学 曙寮 102号室（浜松市蜆塚）",
     educationTitle: "学歴",
     educationList: [
       "<strong>博士（電気電子工学）</strong><br>国立大学法人 静岡大学（浜松）<br><em>修了見込:</em> 2028年9月<br><em>研究課題:</em> 社会経済成長・経済最適化・レジリエンスを統合した適応型ハイブリッド再エネ・マイクログリッドの動的フレームワーク。",
@@ -207,7 +195,6 @@ const content = {
       "12年生（2016年5月、70%） — Sir Padampat Singhania Education Centre（カンプル）",
       "10年生（2014年5月、CGPA 6.8） — Puranchandra Vidya Niketan（カンプル）"
     ],
-
     experienceTitle: "経験",
     experienceList: [
       "<strong>研究補助員（RA）</strong><br>静岡大学 — <em>在籍中</em><br>再エネハイブリッドMG研究、HOMERシミュレーション、GHI/負荷データ解析、回帰モデル、図表作成・論文執筆補助。指導：芳賀仁志 教授。",
@@ -217,106 +204,47 @@ const content = {
       "サマーインターン — TATA POWER（2018年5月–2018年6月）",
       "研究インターン — KIIT大学（2017年6月–2018年8月、B. B. Kar教授）"
     ],
-
     skillsTitle: "スキル",
     skillsLanguagesTitle: "言語",
     skillsLanguagesList: ["英語", "日本語（基礎）", "ヒンディー語", "ボージュプリー語", "ベンガル語", "オディア語"],
     skillsCoursesTitle: "コース",
-    skillsCoursesList: [
-      "TCS iON：インパクトのあるプレゼン",
-      "TCS iON：コーポレート・エチケット",
-      "TCS iON：効果的なメール作成",
-      "TCS iON：グループディスカッション対策",
-      "TCS iON：業界が求めるソフトスキル",
-      "IITカンプール：フライアッシュ活用とポリマー様構造"
-    ],
+    skillsCoursesList: ["TCS iON：インパクトのあるプレゼン", "TCS iON：コーポレート・エチケット", "TCS iON：効果的なメール作成", "TCS iON：グループディスカッション対策", "TCS iON：業界が求めるソフトスキル", "IITカンプール：フライアッシュ活用とポリマー様構造"],
     skillsCertificationsTitle: "認定・証明",
-    skillsCertificationsList: [
-      "VV Giri 国立労働研究所：労働安全衛生関連",
-      "同：移住・人身取引・児童/債務労働の脆弱性対応",
-      "同：児童/債務労働の防止オンライン研修",
-      "DGFASLI：ハウスキーピング／清潔研修",
-      "同：労働検査によるガバナンス強化",
-      "TATA-POWER サマーインターン証明",
-      "KITT FEST 2017 証明",
-      "IITカンプール：フライアッシュ活用",
-      "Texas Instruments IICDC-2019 ビジネステスト",
-      "南華大学 セメスター修了証",
-      "ITRI 台湾：インダストリ・インターフェース",
-      "中正大学 ウィンタースクール修了証",
-      "南華大学 研究インターン修了証",
-      "NHU：台湾高校での指導証明",
-      "南華大学：ライフ教育 優秀者・国家賞",
-      "南華大学：ニューサウスバウンド ライフ教育",
-      "IEEE：IoTの範囲と利点・Graduate Member",
-      "インド中央信義委員会：インテグリティ宣誓",
-      "インド労働雇用省：児童労働反対誓約"
-    ],
-
+    skillsCertificationsList: ["VV Giri 国立労働研究所：労働安全衛生関連", "同：移住・人身取引・児童/債務労働の脆弱性対応", "同：児童/債務労働の防止オンライン研修", "DGFASLI：ハウスキーピング／清潔研修", "同：労働検査によるガバナンス強化", "TATA-POWER サマーインターン証明", "KITT FEST 2017 証明", "IITカンプール：フライアッシュ活用", "Texas Instruments IICDC-2019 ビジネステスト", "南華大学 セメスター修了証", "ITRI 台湾：インダストリ・インターフェース", "中正大学 ウィンタースクール修了証", "南華大学 研究インターン修了証", "NHU：台湾高校での指導証明", "南華大学：ライフ教育 優秀者・国家賞", "南華大学：ニューサウスバウンド ライフ教育", "IEEE：IoTの範囲と利点・Graduate Member", "インド中央信義委員会：インテグリティ宣誓", "インド労働雇用省：児童労働反対誓約"],
     researchTitle: "研究と出版物",
     researchPapersTitle: "研究論文",
     researchPublishedTitle: "掲載済み",
-    researchPublishedList: [
-      "持続可能エネルギーの推進：グリーントランジションの新境地 — Wiley",
-      "農村MGのPV・BESS容量推定：複雑性とアクセス性の橋渡し — Elsevier e-Prime",
-      "農村MGのPV–BESS統一推定フレームワーク — IEEE Xplore（印刷中）"
-    ],
+    researchPublishedList: ["持続可能エネルギーの推進：グリーントランジションの新境地 — Wiley", "農村MGのPV・BESS容量推定：複雑性とアクセス性の橋渡し — Elsevier e-Prime", "農村MGのPV–BESS統一推定フレームワーク — IEEE Xplore（印刷中）"],
     researchUpcomingTitle: "査読中・予定",
-    researchUpcomingList: [
-      "エネルギーハーベスティングのための圧電メタマテリアル（査読中）",
-      "再エネへの世界的移行を加速する戦略（拡張要旨）"
-    ],
+    researchUpcomingList: ["エネルギーハーベスティングのための圧電メタマテリアル（査読中）", "再エネへの世界的移行を加速する戦略（拡張要旨）"],
     researchConferencesTitle: "学会・会議",
-    researchConferencesList: [
-      "南華大学：Green Technology & Sustainability",
-      "KOSMOS：AR/VR（高雄）",
-      "JSES 2024（札幌市立大学）",
-      "Arsenic in the Environment（KIIT, インド）"
-    ],
-
+    researchConferencesList: ["南華大学：Green Technology & Sustainability", "KOSMOS：AR/VR（高雄）", "JSES 2024（札幌市立大学）", "Arsenic in the Environment（KIIT, インド）"],
     volunteerTitle: "ボランティア活動",
     volunteerText: "ATTAC NGO：Webコンテンツ作成、キャンペーン調整、SNS運用",
-
     referencesTitle: "参考（推薦者）",
-    referencesList: [
-      "芳賀仁志 教授（静岡大学）",
-      "松尾弘信 准教授（静岡大学）",
-      "Dr. Sushil Yadav Yamamoto（MAFF登録コンサルタント）",
-      "Prof. Satyendra Patnaik（KIIT & KISS）",
-      "Prof. Jyoti Prakash Maity（NCCU / KIIT）",
-      "Prof. Byomkesh Nayak（KIIT）",
-      "Prof. Congo Tak Shing CHING（NCHU）",
-      "Mr. Sanatan（インド政府技能開発省）"
-    ],
-
+    referencesList: ["芳賀仁志 教授（静岡大学）", "松尾弘信 准教授（静岡大学）", "Dr. Sushil Yadav Yamamoto（MAFF登録コンサルタント）", "Prof. Satyendra Patnaik（KIIT & KISS）", "Prof. Jyoti Prakash Maity（NCCU / KIIT）", "Prof. Byomkesh Nayak（KIIT）", "Prof. Congo Tak Shing CHING（NCHU）", "Mr. Sanatan（インド政府技能開発省）"],
     contactTitle: "連絡先",
     contactEmail: "メール: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
     contactInstitutionalEmail: "学内メール: pandey.yash.23@shizuoka.ac.jp",
     contactPhone: "携帯: +81-7090976618, +91-9455918918"
   },
 
-  /* ===== CHINESE (Simplified) ===== */
+  /* ===== CHINESE ===== */
   zh: {
     docLang: "zh",
     nav: { about: "关于我", education: "教育", experience: "经历", skills: "技能", research: "研究", volunteer: "志愿工作", references: "推荐人", contact: "联系方式" },
-    heroTitle: "欢迎来到 Yash Pandey 的作品集",
+    heroTitle: "Yash Pandey",
     heroSubtitle: "探索可持续能源及更多",
     heroCta: "了解更多",
+    stats: { publications: "6+", publicationsLabel: "出版物", countries: "4", countriesLabel: "国家", projects: "10+", projectsLabel: "项目", years: "6+", yearsLabel: "年研究" },
     aboutTitle: "关于我",
-    aboutText:
-      "我是 Yash Pandey，日本静冈大学电气与电子工程博士生。研究方向为混合可再生能源微电网与农村电气化，结合 HOMER/MATLAB 与回归建模，面向可落地、可扩展的解决方案。",
-    aboutHobbies:
-      "<strong>爱好:</strong> 踢足球、写诗、弹吉他、读小说、旅行、摄影、烹饪",
+    aboutText: "我是 Yash Pandey，日本静冈大学电气与电子工程博士生。研究方向为混合可再生能源微电网与农村电气化，结合 HOMER/MATLAB 与回归建模，面向可落地、可扩展的解决方案。",
+    aboutHobbies: "<strong>爱好:</strong> 踢足球、写诗、弹吉他、读小说、旅行、摄影、烹饪",
     aboutAffiliations: "<strong>隶属关系:</strong>",
     aboutAffiliationsList: ["IAAM：国际先进材料协会（瑞典）"],
     aboutFreelance: "<strong>自由咨询:</strong>",
-    aboutFreelanceList: [
-      "Japan Development Private Limited（勒克瑙，印度）",
-      "SALA Energy Corporation（滨松，日本）",
-      "Akamatsu Electric Company Limited（磐田，日本）"
-    ],
-    aboutAddress:
-      "<strong>现住址:</strong> 日本静冈县滨松市蜆冢，静冈大学曙宿舍102室",
+    aboutFreelanceList: ["Japan Development Private Limited（勒克瑙，印度）", "SALA Energy Corporation（滨松，日本）", "Akamatsu Electric Company Limited（磐田，日本）"],
+    aboutAddress: "<strong>现住址:</strong> 日本静冈县滨松市蜆冢，静冈大学曙宿舍102室",
     educationTitle: "教育",
     educationList: [
       "<strong>博士（电气与电子工程）</strong><br>静冈大学（滨松）<br><em>预计毕业:</em> 2028年9月<br><em>研究课题:</em> 面向农村电气化的自适应混合可再生能源微电网动态框架：融合社会经济增长、技术经济优化与韧性。",
@@ -339,69 +267,21 @@ const content = {
     skillsLanguagesTitle: "语言",
     skillsLanguagesList: ["英语", "日语（基础）", "印地语", "博杰普尔语", "孟加拉语", "奥里亚语"],
     skillsCoursesTitle: "课程",
-    skillsCoursesList: [
-      "TCS iON：高影响力演示",
-      "TCS iON：商务礼仪",
-      "TCS iON：高效邮件写作",
-      "TCS iON：小组讨论准备",
-      "TCS iON：行业软技能",
-      "IIT 坎普尔：粉煤灰的潜在用途与聚合物结构"
-    ],
+    skillsCoursesList: ["TCS iON：高影响力演示", "TCS iON：商务礼仪", "TCS iON：高效邮件写作", "TCS iON：小组讨论准备", "TCS iON：行业软技能", "IIT 坎普尔：粉煤灰的潜在用途与聚合物结构"],
     skillsCertificationsTitle: "认证",
-    skillsCertificationsList: [
-      "VV Giri 国家劳动研究所：职业安全与工作条件",
-      "同：迁徙/拐卖/童工与债务劳动脆弱性",
-      "同：消除童工与债务劳动在线课程",
-      "DGFASLI：保洁与清洁培训",
-      "同：劳动监察治理提升",
-      "TATA-POWER 暑期实习证书",
-      "KITT FEST 2017 证书",
-      "IIT 坎普尔 粉煤灰应用证书",
-      "TI IICDC-2019 商业测试证书",
-      "南华大学 学期课程结业证",
-      "台湾工研院（ITRI）接口证书",
-      "中正大学 冬季学校证书",
-      "南华大学 研究实习证书",
-      "NHU 台湾高中授课证书",
-      "南华大学 生活教育优秀人员奖",
-      "南华大学 新南向生活教育证书",
-      "IEEE：IoT 证书；毕业会员",
-      "印度中央监察委员会：诚信承诺",
-      "印度劳工部：禁止童工承诺"
-    ],
+    skillsCertificationsList: ["VV Giri 国家劳动研究所：职业安全与工作条件", "同：迁徙/拐卖/童工与债务劳动脆弱性", "同：消除童工与债务劳动在线课程", "DGFASLI：保洁与清洁培训", "同：劳动监察治理提升", "TATA-POWER 暑期实习证书", "KITT FEST 2017 证书", "IIT 坎普尔 粉煤灰应用证书", "TI IICDC-2019 商业测试证书", "南华大学 学期课程结业证", "台湾工研院（ITRI）接口证书", "中正大学 冬季学校证书", "南华大学 研究实习证书", "NHU 台湾高中授课证书", "南华大学 生活教育优秀人员奖", "南华大学 新南向生活教育证书", "IEEE：IoT 证书；毕业会员", "印度中央监察委员会：诚信承诺", "印度劳工部：禁止童工承诺"],
     researchTitle: "研究与出版物",
     researchPapersTitle: "论文",
     researchPublishedTitle: "已发表",
-    researchPublishedList: [
-      "推进可持续能源：绿色转型的新前沿 — Wiley",
-      "农村微电网 PV/BESS 容量估算新模型 — Elsevier e-Prime",
-      "农村微电网 PV–BESS 统一估算框架 — IEEE Xplore（待刊）"
-    ],
+    researchPublishedList: ["推进可持续能源：绿色转型的新前沿 — Wiley", "农村微电网 PV/BESS 容量估算新模型 — Elsevier e-Prime", "农村微电网 PV–BESS 统一估算框架 — IEEE Xplore（待刊）"],
     researchUpcomingTitle: "在审 / 即将发表",
-    researchUpcomingList: [
-      "用于能量采集的压电超材料（审稿中）",
-      "加速全球可再生能源转型的战略路径（扩展摘要）"
-    ],
+    researchUpcomingList: ["用于能量采集的压电超材料（审稿中）", "加速全球可再生能源转型的战略路径（扩展摘要）"],
     researchConferencesTitle: "会议",
-    researchConferencesList: [
-      "南华大学：绿色技术与可持续性",
-      "KOSMOS：AR/VR（高雄）",
-      "JSES 2024（札幌市立大学）",
-      "环境砷国际大会（KIIT，印度）"
-    ],
+    researchConferencesList: ["南华大学：绿色技术与可持续性", "KOSMOS：AR/VR（高雄）", "JSES 2024（札幌市立大学）", "环境砷国际大会（KIIT，印度）"],
     volunteerTitle: "志愿工作",
     volunteerText: "ATTAC NGO：网站内容建设、活动统筹与社媒管理。",
     referencesTitle: "推荐人",
-    referencesList: [
-      "Hitoshi Haga 教授（静冈大学）",
-      "Hironobu Matsuo 副教授（静冈大学）",
-      "Dr. Sushil Yadav Yamamoto（日本农林水产省顾问）",
-      "Prof. Satyendra Patnaik（KIIT & KISS）",
-      "Prof. Jyoti Prakash Maity（NCCU / KIIT）",
-      "Prof. Byomkesh Nayak（KIIT）",
-      "Prof. Congo Tak Shing CHING（NCHU）",
-      "Mr. Sanatan（印度技能发展与创业部）"
-    ],
+    referencesList: ["Hitoshi Haga 教授（静冈大学）", "Hironobu Matsuo 副教授（静冈大学）", "Dr. Sushil Yadav Yamamoto（日本农林水产省顾问）", "Prof. Satyendra Patnaik（KIIT & KISS）", "Prof. Jyoti Prakash Maity（NCCU / KIIT）", "Prof. Byomkesh Nayak（KIIT）", "Prof. Congo Tak Shing CHING（NCHU）", "Mr. Sanatan（印度技能发展与创业部）"],
     contactTitle: "联系方式",
     contactEmail: "电子邮件: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
     contactInstitutionalEmail: "机构邮箱: pandey.yash.23@shizuoka.ac.jp",
@@ -411,34 +291,19 @@ const content = {
   /* ===== HINDI ===== */
   hi: {
     docLang: "hi",
-    nav: {
-      about: "मेरे बारे में",
-      education: "शिक्षा",
-      experience: "अनुभव",
-      skills: "कौशल",
-      research: "अनुसंधान",
-      volunteer: "स्वयंसेवा",
-      references: "संदर्भ",
-      contact: "संपर्क"
-    },
-    heroTitle: "यश पांडे के पोर्टफोलियो में आपका स्वागत है",
+    nav: { about: "मेरे बारे में", education: "शिक्षा", experience: "अनुभव", skills: "कौशल", research: "अनुसंधान", volunteer: "स्वयंसेवा", references: "संदर्भ", contact: "संपर्क" },
+    heroTitle: "यश पांडे",
     heroSubtitle: "सतत ऊर्जा और उससे आगे की खोज",
     heroCta: "देखें",
+    stats: { publications: "6+", publicationsLabel: "प्रकाशन", countries: "4", countriesLabel: "देश", projects: "10+", projectsLabel: "परियोजनाएँ", years: "6+", yearsLabel: "वर्ष अनुसंधान" },
     aboutTitle: "मेरे बारे में",
-    aboutText:
-      "मैं यश पांडे, नेशनल शिज़ुओका यूनिवर्सिटी (जापान) में इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग का पीएचडी छात्र हूँ। मेरा शोध हाइब्रिड नवीकरणीय ऊर्जा माइक्रोग्रिड और ग्रामीण विद्युतीकरण पर केंद्रित है—HOMER/MATLAB व रिग्रेशन-आधारित मॉडलिंग के साथ।",
-    aboutHobbies:
-      "<strong>शौक:</strong> फ़ुटबॉल, कविता, गिटार, उपन्यास, यात्रा, फ़ोटोग्राफ़ी, कुकिंग",
+    aboutText: "मैं यश पांडे, नेशनल शिज़ुओका यूनिवर्सिटी (जापान) में इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग का पीएचडी छात्र हूँ। मेरा शोध हाइब्रिड नवीकरणीय ऊर्जा माइक्रोग्रिड और ग्रामीण विद्युतीकरण पर केंद्रित है—HOMER/MATLAB व रिग्रेशन-आधारित मॉडलिंग के साथ।",
+    aboutHobbies: "<strong>शौक:</strong> फ़ुटबॉल, कविता, गिटार, उपन्यास, यात्रा, फ़ोटोग्राफ़ी, कुकिंग",
     aboutAffiliations: "<strong>संबद्धताएँ:</strong>",
     aboutAffiliationsList: ["IAAM: इंटरनेशनल एसोसिएशन ऑफ़ एडवांस्ड मैटेरियल्स (स्वीडन)"],
     aboutFreelance: "<strong>फ्रीलांस कंसल्टिंग:</strong>",
-    aboutFreelanceList: [
-      "Japan Development Private Limited, लखनऊ, भारत",
-      "SALA Energy Corporation, हमामात्सु, जापान",
-      "Akamatsu Electric Company Limited, इवाता, जापान"
-    ],
-    aboutAddress:
-      "<strong>वर्तमान पता:</strong> कक्ष 102, अकेबोनो र्यो, शिज़ुओका यूनिवर्सिटी डॉर्मिटरी, शिज़िमिज़ुका, हमामात्सु, जापान",
+    aboutFreelanceList: ["Japan Development Private Limited, लखनऊ, भारत", "SALA Energy Corporation, हमामात्सु, जापान", "Akamatsu Electric Company Limited, इवाता, जापान"],
+    aboutAddress: "<strong>वर्तमान पता:</strong> कक्ष 102, अकेबोनो र्यो, शिज़ुओका यूनिवर्सिटी डॉर्मिटरी, शिज़िमिज़ुका, हमामात्सु, जापान",
     educationTitle: "शिक्षा",
     educationList: [
       "<strong>पीएचडी (इलेक्ट्रिकल एवं इलेक्ट्रॉनिक इंजीनियरिंग)</strong><br>नेशनल शिज़ुओका यूनिवर्सिटी, जापान — <em>उत्तीर्ण अपेक्षित:</em> सितम्बर 2028<br><em>विषय:</em> सामाजिक-आर्थिक वृद्धि, टेक्नो-इकॉनमिक ऑप्टिमाइज़ेशन और रेज़िलिएंस को समेकित करता अनुकूली हाइब्रिड नवीकरणीय माइक्रोग्रिड का डायनेमिक फ्रेमवर्क।",
@@ -461,69 +326,21 @@ const content = {
     skillsLanguagesTitle: "भाषाएँ",
     skillsLanguagesList: ["अंग्रेज़ी","जापानी (मूल)","हिंदी","भोजपुरी","बंगाली","ओड़िया"],
     skillsCoursesTitle: "पाठ्यक्रम",
-    skillsCoursesList: [
-      "TCS iON — प्रभावशाली प्रस्तुति",
-      "TCS iON — कॉर्पोरेट एटीकेट",
-      "TCS iON — प्रभावी ईमेल लेखन",
-      "TCS iON — समूह चर्चा तैयारी",
-      "TCS iON — इंडस्ट्री-उन्मुख सॉफ्ट-स्किल्स",
-      "IIT कानपुर — फ्लाय ऐश की उपयोगिता व पॉलिमर-सदृश संरचनाएँ"
-    ],
+    skillsCoursesList: ["TCS iON — प्रभावशाली प्रस्तुति", "TCS iON — कॉर्पोरेट एटीकेट", "TCS iON — प्रभावी ईमेल लेखन", "TCS iON — समूह चर्चा तैयारी", "TCS iON — इंडस्ट्री-उन्मुख सॉफ्ट-स्किल्स", "IIT कानपुर — फ्लाय ऐश की उपयोगिता व पॉलिमर-सदृश संरचनाएँ"],
     skillsCertificationsTitle: "प्रमाणपत्र",
-    skillsCertificationsList: [
-      "VV गिरी नेशनल लेबर इंस्टिट्यूट — OSH कोड",
-      "— प्रवासन/ट्रैफिकिंग/बाल व बंधुआ श्रम संवेदनशीलता",
-      "— बंधुआ/बाल-बंधुआ श्रम उन्मूलन ऑनलाइन कार्यक्रम",
-      "DGFASLI — हाउसकीपिंग व स्वच्छता",
-      "— लेबर इंस्पेक्शन से गुड गवर्नेंस",
-      "TATA-POWER समर इंटर्नशिप",
-      "KITT FEST 2017",
-      "IIT कानपुर — फ्लाय ऐश प्रमाणपत्र",
-      "Texas Instruments IICDC-2019",
-      "नानहुआ यूनिवर्सिटी — सेमेस्टर पाठ्यक्रम",
-      "ITRI ताइवान — इंडस्ट्री इंटरफ़ेस",
-      "चुंग चेंग यूनिवर्सिटी — विंटर स्कूल",
-      "नानहुआ — रिसर्च इंटर्नशिप",
-      "NHU — ताइवान हाई-स्कूल टीचिंग",
-      "नानहुआ — लाइफ़ एजुकेशन अवॉर्ड",
-      "नानहुआ — न्यू साउथबाउंड लाइफ़ एजुकेशन",
-      "IEEE — IoT; Graduate Member",
-      "भारत CVC — इंटेगिरिटी प्लेज",
-      "भारत श्रम मंत्रालय — नो-चाइल्ड-लेबर प्रतिज्ञा"
-    ],
+    skillsCertificationsList: ["VV गिरी नेशनल लेबर इंस्टिट्यूट — OSH कोड", "— प्रवासन/ट्रैफिकिंग/बाल व बंधुआ श्रम संवेदनशीलता", "— बंधुआ/बाल-बंधुआ श्रम उन्मूलन ऑनलाइन कार्यक्रम", "DGFASLI — हाउसकीपिंग व स्वच्छता", "— लेबर इंस्पेक्शन से गुड गवर्नेंस", "TATA-POWER समर इंटर्नशिप", "KITT FEST 2017", "IIT कानपुर — फ्लाय ऐश प्रमाणपत्र", "Texas Instruments IICDC-2019", "नानहुआ यूनिवर्सिटी — सेमेस्टर पाठ्यक्रम", "ITRI ताइवान — इंडस्ट्री इंटरफ़ेस", "चुंग चेंग यूनिवर्सिटी — विंटर स्कूल", "नानहुआ — रिसर्च इंटर्नशिप", "NHU — ताइवान हाई-स्कूल टीचिंग", "नानहुआ — लाइफ़ एजुकेशन अवॉर्ड", "नानहुआ — न्यू साउथबाउंड लाइफ़ एजुकेशन", "IEEE — IoT; Graduate Member", "भारत CVC — इंटेगिरिटी प्लेज", "भारत श्रम मंत्रालय — नो-चाइल्ड-लेबर प्रतिज्ञा"],
     researchTitle: "अनुसंधान व प्रकाशन",
     researchPapersTitle: "अनुसंधान पत्र",
     researchPublishedTitle: "प्रकाशित",
-    researchPublishedList: [
-      "Advancing Sustainable Energy — Wiley",
-      "Bridging Complexity and Accessibility — Elsevier e-Prime",
-      "Unified PV–BESS Capacity Estimation Framework — IEEE Xplore (in press)"
-    ],
+    researchPublishedList: ["Advancing Sustainable Energy — Wiley", "Bridging Complexity and Accessibility — Elsevier e-Prime", "Unified PV–BESS Capacity Estimation Framework — IEEE Xplore (in press)"],
     researchUpcomingTitle: "समीक्षा में / आगामी",
-    researchUpcomingList: [
-      "Piezoelectric metamaterials for energy harvesting (समीक्षा में)",
-      "Accelerating the Global Shift to Renewable Energy (विस्तारित सार)"
-    ],
+    researchUpcomingList: ["Piezoelectric metamaterials for energy harvesting (समीक्षा में)", "Accelerating the Global Shift to Renewable Energy (विस्तारित सार)"],
     researchConferencesTitle: "सम्मेलन",
-    researchConferencesList: [
-      "Nanhua University — Green Technology & Sustainability",
-      "KOSMOS — AR/VR (काउशुंग)",
-      "JSES 2024 — सप्पोरो सिटी यूनिवर्सिटी",
-      "Arsenic in the Environment — KIIT, India"
-    ],
+    researchConferencesList: ["Nanhua University — Green Technology & Sustainability", "KOSMOS — AR/VR (काउशुंग)", "JSES 2024 — सप्पोरो सिटी यूनिवर्सिटी", "Arsenic in the Environment — KIIT, India"],
     volunteerTitle: "स्वयंसेवी कार्य",
     volunteerText: "ATTAC NGO: वेबसाइट कंटेंट निर्माण, कैंपेन समन्वय एवं सोशल-मीडिया प्रबंधन।",
     referencesTitle: "संदर्भ",
-    referencesList: [
-      "Prof. Hitoshi Haga — Shizuoka University",
-      "Assoc. Prof. Hironobu Matsuo — Shizuoka University",
-      "Dr. Sushil Yadav Yamamoto — MAFF (Japan)",
-      "Prof. Satyendra Patnaik — KIIT & KISS",
-      "Prof. Jyoti Prakash Maity — NCCU / KIIT",
-      "Prof. Byomkesh Nayak — KIIT",
-      "Prof. Congo Tak Shing CHING — NCHU",
-      "Mr. Sanatan — Ministry of Skill Development & Entrepreneurship (India)"
-    ],
+    referencesList: ["Prof. Hitoshi Haga — Shizuoka University", "Assoc. Prof. Hironobu Matsuo — Shizuoka University", "Dr. Sushil Yadav Yamamoto — MAFF (Japan)", "Prof. Satyendra Patnaik — KIIT & KISS", "Prof. Jyoti Prakash Maity — NCCU / KIIT", "Prof. Byomkesh Nayak — KIIT", "Prof. Congo Tak Shing CHING — NCHU", "Mr. Sanatan — Ministry of Skill Development & Entrepreneurship (India)"],
     contactTitle: "संपर्क",
     contactEmail: "Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
     contactInstitutionalEmail: "Institutional Email: pandey.yash.23@shizuoka.ac.jp",
@@ -533,34 +350,19 @@ const content = {
   /* ===== KOREAN ===== */
   ko: {
     docLang: "ko",
-    nav: {
-      about: "소개",
-      education: "학력",
-      experience: "경력",
-      skills: "보유 기술",
-      research: "연구",
-      volunteer: "봉사",
-      references: "추천인",
-      contact: "연락처"
-    },
-    heroTitle: "야시 판데이의 포트폴리오에 오신 것을 환영합니다",
+    nav: { about: "소개", education: "학력", experience: "경력", skills: "보유 기술", research: "연구", volunteer: "봉사", references: "추천인", contact: "연락처" },
+    heroTitle: "야시 판데이",
     heroSubtitle: "지속가능 에너지와 그 너머를 탐구하다",
     heroCta: "보러가기",
+    stats: { publications: "6+", publicationsLabel: "출판물", countries: "4", countriesLabel: "국가", projects: "10+", projectsLabel: "프로젝트", years: "6+", yearsLabel: "연구 경력" },
     aboutTitle: "소개",
-    aboutText:
-      "일본 시즈오카대학교 전자·전기공학 박사과정생 야시 판데이입니다. 하이브리드 재생에너지 마이크로그리드와 농촌 전력화 연구를 수행하며, HOMER/MATLAB 및 회귀모델을 활용해 실용적이고 확장 가능한 해법을 제시합니다.",
-    aboutHobbies:
-      "<strong>취미:</strong> 축구, 시 쓰기, 기타, 소설, 여행, 사진, 요리",
+    aboutText: "일본 시즈오카대학교 전자·전기공학 박사과정생 야시 판데이입니다. 하이브리드 재생에너지 마이크로그리드와 농촌 전력화 연구를 수행하며, HOMER/MATLAB 및 회귀모델을 활용해 실용적이고 확장 가능한 해법을 제시합니다.",
+    aboutHobbies: "<strong>취미:</strong> 축구, 시 쓰기, 기타, 소설, 여행, 사진, 요리",
     aboutAffiliations: "<strong>소속:</strong>",
     aboutAffiliationsList: ["IAAM: 국제선진재료협회(스웨덴)"],
     aboutFreelance: "<strong>프리랜스 컨설팅:</strong>",
-    aboutFreelanceList: [
-      "Japan Development Private Limited(럭나우, 인도)",
-      "SALA Energy Corporation(하마마쓰, 일본)",
-      "Akamatsu Electric Company Limited(이와타, 일본)"
-    ],
-    aboutAddress:
-      "<strong>현 주소:</strong> 일본 시즈오카현 하마마쓰시 시지미즈카, 시즈오카대 아케보노 기숙사 102호",
+    aboutFreelanceList: ["Japan Development Private Limited(럭나우, 인도)", "SALA Energy Corporation(하마마쓰, 일본)", "Akamatsu Electric Company Limited(이와타, 일본)"],
+    aboutAddress: "<strong>현 주소:</strong> 일본 시즈오카현 하마마쓰시 시지미즈카, 시즈오카대 아케보노 기숙사 102호",
     educationTitle: "학력",
     educationList: [
       "<strong>박사(전자·전기공학)</strong><br>시즈오카대학교(하마마쓰)<br><em>예정:</em> 2028년 9월<br><em>주제:</em> 사회·경제 성장, 경제성 최적화, 복원력을 통합한 적응형 하이브리드 재생에너지 마이크로그리드 동적 프레임워크",
@@ -583,69 +385,21 @@ const content = {
     skillsLanguagesTitle: "언어",
     skillsLanguagesList: ["영어", "일본어(기초)", "힌디어", "보즈푸리어", "벵골어", "오리아어"],
     skillsCoursesTitle: "이수 과정",
-    skillsCoursesList: [
-      "TCS iON — 임팩트 있는 프레젠테이션",
-      "TCS iON — 기업 에티켓",
-      "TCS iON — 효과적인 이메일 작성",
-      "TCS iON — 그룹 토론 대비",
-      "TCS iON — 산업 수요형 소프트스킬",
-      "IIT 칸푸르 — 플라이애시 활용·폴리머 유사 구조"
-    ],
+    skillsCoursesList: ["TCS iON — 임팩트 있는 프레젠테이션", "TCS iON — 기업 에티켓", "TCS iON — 효과적인 이메일 작성", "TCS iON — 그룹 토론 대비", "TCS iON — 산업 수요형 소프트스킬", "IIT 칸푸르 — 플라이애시 활용·폴리머 유사 구조"],
     skillsCertificationsTitle: "자격/인증",
-    skillsCertificationsList: [
-      "VV Giri 국립노동연구소 — 산업안전/근로환경",
-      "— 이주/인신매매/아동·채무노동 취약성",
-      "— 아동/채무노동 예방 온라인",
-      "DGFASLI — 하우스키핑·청결 교육",
-      "— 노동감사 기반 거버넌스",
-      "TATA-POWER 하계 인턴 수료",
-      "KITT FEST 2017",
-      "IIT 칸푸르 — 플라이애시",
-      "Texas Instruments IICDC-2019",
-      "난화대 학기 과정 수료",
-      "ITRI 대만 — 인터페이스",
-      "중정대 윈터스쿨 수료",
-      "난화대 연구 인턴 수료",
-      "NHU 대만 고등학교 강의",
-      "난화대 라이프에듀케이션 수상",
-      "난화대 New Southbound 라이프에듀케이션",
-      "IEEE — IoT/Graduate Member",
-      "인도 CVC — 청렴 서약",
-      "인도 노동고용부 — 아동노동 금지 서약"
-    ],
+    skillsCertificationsList: ["VV Giri 국립노동연구소 — 산업안전/근로환경", "— 이주/인신매매/아동·채무노동 취약성", "— 아동/채무노동 예방 온라인", "DGFASLI — 하우스키핑·청결 교육", "— 노동감사 기반 거버넌스", "TATA-POWER 하계 인턴 수료", "KITT FEST 2017", "IIT 칸푸르 — 플라이애시", "Texas Instruments IICDC-2019", "난화대 학기 과정 수료", "ITRI 대만 — 인터페이스", "중정대 윈터스쿨 수료", "난화대 연구 인턴 수료", "NHU 대만 고등학교 강의", "난화대 라이프에듀케이션 수상", "난화대 New Southbound 라이프에듀케이션", "IEEE — IoT/Graduate Member", "인도 CVC — 청렴 서약", "인도 노동고용부 — 아동노동 금지 서약"],
     researchTitle: "연구 및 출판",
     researchPapersTitle: "연구 논문",
     researchPublishedTitle: "게재됨",
-    researchPublishedList: [
-      "지속가능 에너지의 진전 — Wiley",
-      "농촌 MG의 PV·BESS 추정 모델 — Elsevier e-Prime",
-      "PV–BESS 통합 추정 프레임워크 — IEEE Xplore(게재 예정)"
-    ],
+    researchPublishedList: ["지속가능 에너지의 진전 — Wiley", "농촌 MG의 PV·BESS 추정 모델 — Elsevier e-Prime", "PV–BESS 통합 추정 프레임워크 — IEEE Xplore(게재 예정)"],
     researchUpcomingTitle: "심사 중/예정",
-    researchUpcomingList: [
-      "에너지 하베스팅용 압전 메타물질(심사 중)",
-      "재생에너지 전환 가속 전략(확장 초록)"
-    ],
+    researchUpcomingList: ["에너지 하베스팅용 압전 메타물질(심사 중)", "재생에너지 전환 가속 전략(확장 초록)"],
     researchConferencesTitle: "학회/컨퍼런스",
-    researchConferencesList: [
-      "난화대: Green Tech & Sustainability",
-      "KOSMOS: AR/VR(가오슝)",
-      "JSES 2024(삿포로 시립대)",
-      "Arsenic in the Environment(KIIT, 인도)"
-    ],
+    researchConferencesList: ["난화대: Green Tech & Sustainability", "KOSMOS: AR/VR(가오슝)", "JSES 2024(삿포로 시립대)", "Arsenic in the Environment(KIIT, 인도)"],
     volunteerTitle: "봉사 활동",
     volunteerText: "ATTAC NGO: 웹 콘텐츠 제작, 캠페인 코디네이션, SNS 운영",
     referencesTitle: "추천인",
-    referencesList: [
-      "Prof. Hitoshi Haga — Shizuoka University",
-      "Assoc. Prof. Hironobu Matsuo — Shizuoka University",
-      "Dr. Sushil Yadav Yamamoto — MAFF",
-      "Prof. Satyendra Patnaik — KIIT & KISS",
-      "Prof. Jyoti Prakash Maity — NCCU / KIIT",
-      "Prof. Byomkesh Nayak — KIIT",
-      "Prof. Congo Tak Shing CHING — NCHU",
-      "Mr. Sanatan — Government of India"
-    ],
+    referencesList: ["Prof. Hitoshi Haga — Shizuoka University", "Assoc. Prof. Hironobu Matsuo — Shizuoka University", "Dr. Sushil Yadav Yamamoto — MAFF", "Prof. Satyendra Patnaik — KIIT & KISS", "Prof. Jyoti Prakash Maity — NCCU / KIIT", "Prof. Byomkesh Nayak — KIIT", "Prof. Congo Tak Shing CHING — NCHU", "Mr. Sanatan — Government of India"],
     contactTitle: "연락처",
     contactEmail: "이메일: yashpdelhi@gmail.com, yashpjapan@yahoo.com",
     contactInstitutionalEmail: "기관 이메일: pandey.yash.23@shizuoka.ac.jp",
@@ -653,7 +407,9 @@ const content = {
   }
 };
 
-/* ---------- Apply content to DOM ---------- */
+/* ================================================
+   APPLY CONTENT TO DOM
+   ================================================ */
 function applyContent(data) {
   setDocLang(data.docLang || "en");
 
@@ -671,6 +427,18 @@ function applyContent(data) {
   setHTML("hero-title", data.heroTitle);
   setHTML("hero-subtitle", data.heroSubtitle);
   setText("hero-cta", data.heroCta || "Explore");
+
+  // Stats
+  if (data.stats) {
+    setText("stat-publications", data.stats.publications);
+    setText("stat-publications-label", data.stats.publicationsLabel);
+    setText("stat-countries", data.stats.countries);
+    setText("stat-countries-label", data.stats.countriesLabel);
+    setText("stat-projects", data.stats.projects);
+    setText("stat-projects-label", data.stats.projectsLabel);
+    setText("stat-years", data.stats.years);
+    setText("stat-years-label", data.stats.yearsLabel);
+  }
 
   setHTML("about-title", data.aboutTitle);
   setHTML("about-text", data.aboutText);
@@ -716,7 +484,9 @@ function applyContent(data) {
   setHTML("contact-phone", data.contactPhone);
 }
 
-/* ---------- Active chip UI ---------- */
+/* ================================================
+   LANGUAGE SWITCHER
+   ================================================ */
 function setActiveChip(lang) {
   const wrap = document.getElementById("lang-switcher");
   if (!wrap) return;
@@ -727,94 +497,198 @@ function setActiveChip(lang) {
   });
 }
 
-/* ---------- Language change ---------- */
 function changeLanguage(lang) {
   const key = content[lang] ? lang : "en";
   applyContent(content[key]);
   setActiveChip(key);
-  try {
-    if (sessionStorage.getItem("yp_allow_save") === "1") {
-      localStorage.setItem("yp_lang", key);
-    }
-  } catch (e) {}
   try { history.replaceState(null, "", "#" + key); } catch (e) {}
 }
 
-/* ---------- Build language selector if missing ---------- */
-function ensureLanguageSelector() {
-  let wrap = document.getElementById("lang-switcher");
-  if (wrap) return wrap;
-
-  wrap = document.createElement("div");
-  wrap.id = "lang-switcher";
-  wrap.className = "language-selector glass";
-  wrap.setAttribute("aria-label", "Language selector");
-
-  const langs = [
-    { code: "en", label: "English" },
-    { code: "ja", label: "日本語" },
-    { code: "zh", label: "中文" },
-    { code: "hi", label: "हिंदी" },
-    { code: "ko", label: "한국어" }
-  ];
-
-  langs.forEach(({ code, label }, idx) => {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "chip" + (idx === 0 ? " is-active" : "");
-    btn.setAttribute("data-lang", code);
-    btn.setAttribute("aria-pressed", idx === 0 ? "true" : "false");
-    btn.textContent = label;
-    wrap.appendChild(btn);
-  });
-
-  // Insert near top of body so it's visible/fixed
-  const body = document.body;
-  if (body.firstChild) {
-    body.insertBefore(wrap, body.firstChild);
-  } else {
-    body.appendChild(wrap);
-  }
-  return wrap;
-}
-
-/* ---------- Initialize switcher ---------- */
 function initLanguageSwitcher() {
-  const wrap = ensureLanguageSelector();
+  const wrap = document.getElementById("lang-switcher");
   if (!wrap) return;
-
   wrap.addEventListener("click", (e) => {
     const btn = e.target.closest(".chip");
     if (!btn) return;
-    const lang = btn.getAttribute("data-lang");
-    try { sessionStorage.setItem("yp_allow_save", "1"); } catch (e2) {}
-    changeLanguage(lang);
+    changeLanguage(btn.getAttribute("data-lang"));
   });
 }
 
-/* ---------- Bootstrap (force EN unless hash) ---------- */
-document.addEventListener("DOMContentLoaded", () => {
-  // 1) Always prefer URL hash if present
-  const hash = (location.hash || "").replace("#", "").toLowerCase();
-  let initial = content[hash] ? hash : "en";
+/* ================================================
+   PARTICLE SYSTEM — energy nodes & connections
+   ================================================ */
+function initParticles() {
+  const canvas = document.getElementById("particles-canvas");
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+  let w, h, particles = [], mouse = { x: -999, y: -999 };
+  const PARTICLE_COUNT = 70;
+  const CONNECT_DIST = 160;
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // 2) One-time cleanup: if an old saved language exists, remove it
-  try {
-    if (localStorage.getItem("yp_lang")) {
-      localStorage.removeItem("yp_lang");
+  if (reducedMotion) return;
+
+  function resize() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener("resize", resize);
+
+  document.addEventListener("mousemove", (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
+  document.addEventListener("mouseleave", () => { mouse.x = -999; mouse.y = -999; });
+
+  for (let i = 0; i < PARTICLE_COUNT; i++) {
+    particles.push({
+      x: Math.random() * w, y: Math.random() * h,
+      vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4,
+      r: Math.random() * 2 + 1,
+      color: Math.random() > 0.5 ? "rgba(0,232,123," : "rgba(0,200,255,"
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, w, h);
+
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x = w; if (p.x > w) p.x = 0;
+      if (p.y < 0) p.y = h; if (p.y > h) p.y = 0;
+
+      // Mouse attraction
+      const dx = mouse.x - p.x, dy = mouse.y - p.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < 200) {
+        p.vx += dx * 0.00008;
+        p.vy += dy * 0.00008;
+      }
+      // Dampen
+      p.vx *= 0.999; p.vy *= 0.999;
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = p.color + "0.6)";
+      ctx.fill();
+
+      // Connections
+      for (let j = i + 1; j < particles.length; j++) {
+        const p2 = particles[j];
+        const ddx = p.x - p2.x, ddy = p.y - p2.y;
+        const d = Math.sqrt(ddx * ddx + ddy * ddy);
+        if (d < CONNECT_DIST) {
+          const alpha = (1 - d / CONNECT_DIST) * 0.15;
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.strokeStyle = "rgba(0,232,123," + alpha + ")";
+          ctx.lineWidth = 0.6;
+          ctx.stroke();
+        }
+      }
     }
-  } catch (e) {}
+    requestAnimationFrame(draw);
+  }
+  draw();
+}
 
-  // Build selector (if not already present in HTML)
-  ensureLanguageSelector();
+/* ================================================
+   SCROLL REVEAL
+   ================================================ */
+function initScrollReveal() {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reducedMotion) {
+    document.querySelectorAll(".reveal,.reveal-left,.reveal-right").forEach(el => el.classList.add("visible"));
+    return;
+  }
 
-  // Apply content & sync selector
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+
+  document.querySelectorAll(".reveal,.reveal-left,.reveal-right").forEach(el => observer.observe(el));
+}
+
+/* ================================================
+   SCROLL PROGRESS BAR
+   ================================================ */
+function initScrollProgress() {
+  const bar = document.getElementById("scroll-progress");
+  if (!bar) return;
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (scrollTop / docHeight * 100) + "%";
+  }, { passive: true });
+}
+
+/* ================================================
+   BACK TO TOP BUTTON
+   ================================================ */
+function initBackToTop() {
+  const btn = document.getElementById("back-to-top");
+  if (!btn) return;
+  window.addEventListener("scroll", () => {
+    btn.classList.toggle("show", window.scrollY > 600);
+  }, { passive: true });
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+/* ================================================
+   MOBILE NAV TOGGLE
+   ================================================ */
+function initMobileNav() {
+  const toggle = document.getElementById("nav-toggle");
+  const menu = document.getElementById("nav-menu");
+  if (!toggle || !menu) return;
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("open");
+  });
+  // Close on link click
+  menu.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => menu.classList.remove("open"));
+  });
+}
+
+/* ================================================
+   NAV ACTIVE STATE on scroll
+   ================================================ */
+function initNavHighlight() {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll("nav a[href^='#']");
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(sec => {
+      if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute("href") === "#" + current ? "var(--accent)" : "";
+    });
+  }, { passive: true });
+}
+
+/* ================================================
+   BOOTSTRAP
+   ================================================ */
+document.addEventListener("DOMContentLoaded", () => {
+  const hash = (location.hash || "").replace("#", "").toLowerCase();
+  const initial = content[hash] ? hash : "en";
+
   applyContent(content[initial]);
   setActiveChip(initial);
-
-  // Only after user clicks will we honor saving in this session
-  try { sessionStorage.removeItem("yp_allow_save"); } catch (e) {}
-
-  // Wire the selector
   initLanguageSwitcher();
+
+  // Animations
+  initParticles();
+  initScrollReveal();
+  initScrollProgress();
+  initBackToTop();
+  initMobileNav();
+  initNavHighlight();
 });
