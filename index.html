@@ -3,153 +3,188 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yash Pandey's Portfolio</title>
-  <meta name="description" content="Exploring Sustainable Energy and Beyond"/>
-
-  <!-- Ownership meta tags (part of watermark) -->
+  <title>Yash Pandey — Energy Engineer &amp; Researcher</title>
+  <meta name="description" content="Portfolio of Yash Pandey — Ph.D. researcher in Hybrid Renewable Energy Microgrids, Shizuoka University, Japan."/>
   <meta name="author" content="Yash Pandey"/>
   <meta name="copyright" content="© 2025 Yash Pandey — Matsuo Lab, Shizuoka University"/>
   <meta name="robots" content="index, follow"/>
+  <meta name="theme-color" content="#070b14"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="style.css"/>
-
-  <!-- Active chip ring style -->
-  <style>
-    .language-selector .chip.is-active { outline: 2px solid currentColor; opacity: 1; }
-  </style>
 </head>
 <body>
 
+<!-- Scroll Progress Bar -->
+<div id="scroll-progress"></div>
+
+<!-- Particle Background -->
+<canvas id="particles-canvas"></canvas>
+
 <!-- ─── Language Selector ─── -->
-<div class="language-selector glass" id="lang-switcher">
-  <button class="chip is-active" data-lang="en">English</button>
-  <button class="chip" data-lang="ja">日本語</button>
-  <button class="chip" data-lang="zh">中文</button>
-  <button class="chip" data-lang="hi">हिंदी</button>
-  <button class="chip" data-lang="ko">한국어</button>
+<div class="language-selector glass" id="lang-switcher" aria-label="Language selector">
+  <button class="chip is-active" data-lang="en" aria-pressed="true">EN</button>
+  <button class="chip" data-lang="ja" aria-pressed="false">日本語</button>
+  <button class="chip" data-lang="zh" aria-pressed="false">中文</button>
+  <button class="chip" data-lang="hi" aria-pressed="false">हिंदी</button>
+  <button class="chip" data-lang="ko" aria-pressed="false">한국어</button>
 </div>
 
-<!-- ─── Navigation Bar ─── -->
-<nav aria-label="Primary" class="glass">
+<!-- ─── Navigation ─── -->
+<nav aria-label="Primary">
   <div class="nav-inner">
     <a class="brand" href="#hero" aria-label="Home">YP</a>
-    <ul>
-      <li><a id="nav-about"      href="#about">About Me</a></li>
-      <li><a id="nav-education"  href="#education">Education</a></li>
-      <li><a id="nav-experience" href="#experience">Experience</a></li>
-      <li><a id="nav-skills"     href="#skills">Skills</a></li>
-      <li><a id="nav-research"   href="#research">Research</a></li>
-      <li><a id="nav-volunteer"  href="#volunteer">Volunteer</a></li>
-      <li><a id="nav-references" href="#references">References</a></li>
-      <li><a id="nav-contact"    href="#contact">Contact</a></li>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-menu">
+      <li><a id="nav-about"      href="#about">About</a></li>
+      <li><a id="nav-education"   href="#education">Education</a></li>
+      <li><a id="nav-experience"  href="#experience">Experience</a></li>
+      <li><a id="nav-skills"      href="#skills">Skills</a></li>
+      <li><a id="nav-research"    href="#research">Research</a></li>
+      <li><a id="nav-volunteer"   href="#volunteer">Volunteer</a></li>
+      <li><a id="nav-references"  href="#references">References</a></li>
+      <li><a id="nav-contact"     href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ─── Hero ─── -->
-<section id="hero" class="section hero" data-animate>
-  <div class="starfield" aria-hidden="true"></div>
-  <div class="hero-content" data-parallax>
-    <h1 id="hero-title">Welcome to Yash Pandey's Portfolio</h1>
-    <p  id="hero-subtitle">Exploring Sustainable Energy and Beyond</p>
-    <a href="#about" class="cta3d" id="hero-cta">Explore</a>
-  </div>
-</section>
-
-<!-- ─── About ─── -->
-<section id="about" class="section" data-animate>
-  <div class="wrap">
-    <h2 id="about-title" class="section-title">About Me</h2>
-    <div class="about-grid">
-
-      <div class="profile card3d" data-tilt>
-        <img id="img-profile" src="My profile photo 3.JPG" alt="Profile photo of Yash Pandey"/>
+<!-- ═══════════════════════════════════
+     HERO
+     ═══════════════════════════════════ -->
+<section id="hero" class="section hero">
+  <div class="energy-orb orb-1"></div>
+  <div class="energy-orb orb-2"></div>
+  <div class="hero-content">
+    <h1 id="hero-title">Yash Pandey</h1>
+    <p id="hero-subtitle">Exploring Sustainable Energy and Beyond</p>
+    <a href="#about" class="cta3d" id="hero-cta">
+      Explore My Work
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+    </a>
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-num" id="stat-publications">6+</span>
+        <span class="stat-label" id="stat-publications-label">Publications</span>
       </div>
-
-      <div class="about-text card3d" data-tilt>
-        <p id="about-text">
-          I am Yash Pandey, a Ph.D student in Electrical &amp; Electronic Engineering at National Shizuoka University…
-        </p>
-        <p id="about-hobbies"><strong>Hobbies:</strong> …</p>
-
-        <p id="about-affiliations"><strong>Affiliations:</strong></p>
-        <ul id="about-affiliations-list" class="nice-list"></ul>
-
-        <p id="about-freelance"><strong>Freelance Consulting:</strong></p>
-        <ul id="about-freelance-list" class="nice-list"></ul>
-
-        <p id="about-address"><strong>Current Address:</strong> Room 102…</p>
+      <div class="stat-item">
+        <span class="stat-num" id="stat-countries">4</span>
+        <span class="stat-label" id="stat-countries-label">Countries</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" id="stat-projects">10+</span>
+        <span class="stat-label" id="stat-projects-label">Projects</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" id="stat-years">6+</span>
+        <span class="stat-label" id="stat-years-label">Years Research</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── Education ─── -->
-<section id="education" class="section alt" data-animate>
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════ -->
+<section id="about" class="section">
   <div class="wrap">
-    <h2 id="education-title" class="section-title">Education</h2>
+    <h2 id="about-title" class="section-title reveal">About Me</h2>
+    <div class="about-grid">
+      <div class="profile card3d reveal-left">
+        <img id="img-profile" src="My profile photo 3.JPG" alt="Profile photo of Yash Pandey"/>
+      </div>
+      <div class="about-text card3d reveal-right">
+        <p id="about-text"></p>
+        <p id="about-hobbies"></p>
+        <p id="about-affiliations"></p>
+        <ul id="about-affiliations-list" class="nice-list"></ul>
+        <p id="about-freelance"></p>
+        <ul id="about-freelance-list" class="nice-list"></ul>
+        <p id="about-address"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════
+     EDUCATION
+     ═══════════════════════════════════ -->
+<section id="education" class="section">
+  <div class="wrap">
+    <h2 id="education-title" class="section-title reveal">Education</h2>
     <div class="split">
-      <div class="card3d" data-tilt>
+      <div class="card3d reveal-left">
         <ul id="education-list" class="nice-list"></ul>
       </div>
-      <div class="img-wrap card3d" data-tilt>
+      <div class="img-wrap card3d reveal-right">
         <img id="img-edu" src="combined institution photo.png" alt="Education institutions collage"/>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── Experience ─── -->
-<section id="experience" class="section" data-animate>
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════
+     EXPERIENCE
+     ═══════════════════════════════════ -->
+<section id="experience" class="section">
   <div class="wrap">
-    <h2 id="experience-title" class="section-title">Experience</h2>
+    <h2 id="experience-title" class="section-title reveal">Experience</h2>
     <div class="split">
-      <div class="card3d" data-tilt>
+      <div class="card3d reveal-left">
         <ul id="experience-list" class="nice-list"></ul>
       </div>
-      <div class="img-wrap card3d" data-tilt>
+      <div class="img-wrap card3d reveal-right">
         <img id="img-exp" src="Experiences photo.png" alt="Companies and universities collage"/>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── Skills ─── -->
-<section id="skills" class="section alt" data-animate>
-  <div class="wrap">
-    <h2 id="skills-title" class="section-title">Skills</h2>
-    <div class="grid-cards">
+<div class="section-divider"></div>
 
-      <div class="category card3d" data-tilt>
+<!-- ═══════════════════════════════════
+     SKILLS
+     ═══════════════════════════════════ -->
+<section id="skills" class="section">
+  <div class="wrap">
+    <h2 id="skills-title" class="section-title reveal">Skills</h2>
+    <div class="grid-cards stagger-children reveal">
+      <div class="category card3d">
         <h3 id="skills-languages-title">Languages</h3>
         <ul id="skills-languages-list" class="bullet-list"></ul>
       </div>
-
-      <div class="category card3d" data-tilt>
+      <div class="category card3d">
         <h3 id="skills-courses-title">Courses</h3>
         <ul id="skills-courses-list" class="bullet-list"></ul>
       </div>
-
-      <div class="category card3d" data-tilt>
+      <div class="category card3d">
         <h3 id="skills-certifications-title">Certifications</h3>
         <ul id="skills-certifications-list" class="bullet-list"></ul>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ─── Research ─── -->
-<section id="research" class="section" data-animate>
-  <div class="wrap">
-    <h2 id="research-title" class="section-title">Research and Publications</h2>
-    <div class="grid-cards">
+<div class="section-divider"></div>
 
-      <div class="category card3d" data-tilt>
+<!-- ═══════════════════════════════════
+     RESEARCH
+     ═══════════════════════════════════ -->
+<section id="research" class="section">
+  <div class="wrap">
+    <h2 id="research-title" class="section-title reveal">Research &amp; Publications</h2>
+    <div class="grid-cards stagger-children reveal">
+      <div class="category card3d">
         <h3 id="research-papers-title">Research Papers</h3>
         <div class="sub-category">
           <h4 id="research-published-title">Published</h4>
@@ -160,43 +195,51 @@
           <ul id="research-upcoming-list" class="bullet-list"></ul>
         </div>
       </div>
-
-      <div class="category card3d" data-tilt>
+      <div class="category card3d">
         <h3 id="research-conferences-title">Conferences</h3>
         <ul id="research-conferences-list" class="bullet-list"></ul>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ─── Volunteer ─── -->
-<section id="volunteer" class="section alt" data-animate>
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════
+     VOLUNTEER
+     ═══════════════════════════════════ -->
+<section id="volunteer" class="section">
   <div class="wrap">
-    <h2 id="volunteer-title" class="section-title">Volunteer Work</h2>
-    <p id="volunteer-text" class="card3d" data-tilt>
-      ATTAC NGO: Build Web Site Content and worked as a Campaign Coordinator and Social Media Manager.
-    </p>
+    <h2 id="volunteer-title" class="section-title reveal">Volunteer Work</h2>
+    <p id="volunteer-text" class="card3d reveal" style="padding:2rem"></p>
   </div>
 </section>
 
-<!-- ─── References ─── -->
-<section id="references" class="section" data-animate>
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════
+     REFERENCES
+     ═══════════════════════════════════ -->
+<section id="references" class="section">
   <div class="wrap">
-    <h2 id="references-title" class="section-title">References</h2>
-    <ul id="references-list" class="nice-list card3d" data-tilt></ul>
+    <h2 id="references-title" class="section-title reveal">References</h2>
+    <ul id="references-list" class="nice-list card3d reveal"></ul>
   </div>
 </section>
 
-<!-- ─── Contact ─── -->
-<section id="contact" class="section contact" data-animate>
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════ -->
+<section id="contact" class="section">
   <div class="wrap">
-    <h2 id="contact-title" class="section-title">Contact</h2>
+    <h2 id="contact-title" class="section-title reveal">Contact</h2>
     <div class="footer-grid">
-      <div class="footer-card glass card3d" data-tilt>
-        <p id="contact-email">Email: yashpdelhi@gmail.com, yashpjapan@yahoo.com</p>
-        <p id="contact-institutional-email">Institutional Email: pandey.yash.23@shizuoka.ac.jp</p>
-        <p id="contact-phone">Mobile: +81-7090976618, +91-9455918918</p>
+      <div class="footer-card glass card3d reveal">
+        <p id="contact-email"></p>
+        <p id="contact-institutional-email"></p>
+        <p id="contact-phone"></p>
         <p id="contact-website">
           Website:
           <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/"
@@ -211,12 +254,11 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
-     SCRIPTS — order matters:
-     1. script.js   → content & language switching
-     2. protect.js  → all 7 protection modules
-     ═══════════════════════════════════════════════ -->
-<script src="script.js?v=7"></script>
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- Scripts -->
+<script src="script.js?v=8"></script>
 <script src="protect.js"></script>
 
 </body>
