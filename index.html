@@ -4,27 +4,22 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yash Pandey — Energy Engineer &amp; Researcher</title>
-  <meta name="description" content="Portfolio of Yash Pandey — Ph.D. researcher in Hybrid Renewable Energy Microgrids, Shizuoka University, Japan."/>
+  <meta name="description" content="Ph.D. researcher in Hybrid Renewable Energy Microgrids at Shizuoka University, Japan. 7 publications, 47 citations."/>
   <meta name="author" content="Yash Pandey"/>
   <meta name="copyright" content="© 2025 Yash Pandey — Matsuo Lab, Shizuoka University"/>
   <meta name="robots" content="index, follow"/>
-  <meta name="theme-color" content="#070b14"/>
-
+  <meta name="theme-color" content="#0c1524"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
-
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<!-- Scroll Progress Bar -->
 <div id="scroll-progress"></div>
-
-<!-- Particle Background -->
 <canvas id="particles-canvas"></canvas>
 
-<!-- ─── Language Selector ─── -->
+<!-- Language Selector -->
 <div class="language-selector glass" id="lang-switcher" aria-label="Language selector">
   <button class="chip is-active" data-lang="en" aria-pressed="true">EN</button>
   <button class="chip" data-lang="ja" aria-pressed="false">日本語</button>
@@ -33,71 +28,79 @@
   <button class="chip" data-lang="ko" aria-pressed="false">한국어</button>
 </div>
 
-<!-- ─── Navigation ─── -->
+<!-- Navigation -->
 <nav aria-label="Primary">
   <div class="nav-inner">
     <a class="brand" href="#hero" aria-label="Home">YP</a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     <ul id="nav-menu">
-      <li><a id="nav-about"      href="#about">About</a></li>
-      <li><a id="nav-education"   href="#education">Education</a></li>
-      <li><a id="nav-experience"  href="#experience">Experience</a></li>
-      <li><a id="nav-skills"      href="#skills">Skills</a></li>
-      <li><a id="nav-research"    href="#research">Research</a></li>
-      <li><a id="nav-volunteer"   href="#volunteer">Volunteer</a></li>
-      <li><a id="nav-references"  href="#references">References</a></li>
-      <li><a id="nav-contact"     href="#contact">Contact</a></li>
+      <li><a id="nav-about" href="#about">About</a></li>
+      <li><a id="nav-education" href="#education">Education</a></li>
+      <li><a id="nav-experience" href="#experience">Experience</a></li>
+      <li><a id="nav-skills" href="#skills">Skills</a></li>
+      <li><a id="nav-research" href="#research">Research</a></li>
+      <li><a id="nav-volunteer" href="#volunteer">Volunteer</a></li>
+      <li><a id="nav-references" href="#references">References</a></li>
+      <li><a id="nav-contact" href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ═══════════════════════════════════
-     HERO
-     ═══════════════════════════════════ -->
+<!-- ═══ HERO ═══ -->
 <section id="hero" class="section hero">
   <div class="energy-orb orb-1"></div>
   <div class="energy-orb orb-2"></div>
   <div class="hero-content">
+    <div class="hero-eyebrow" id="hero-eyebrow">Ph.D. Researcher · Shizuoka University, Japan</div>
     <h1 id="hero-title">Yash Pandey</h1>
-    <p id="hero-subtitle">Exploring Sustainable Energy and Beyond</p>
-    <a href="#about" class="cta3d" id="hero-cta">
-      Explore My Work
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-    </a>
+    <p id="hero-subtitle">Engineering sustainable energy solutions through hybrid renewable microgrids, AI-driven optimization, and data-driven rural electrification</p>
+
+    <div class="cta-row">
+      <a href="#about" class="cta3d" id="hero-cta">
+        Explore My Work
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+      </a>
+      <a href="https://scholar.google.com/citations?user=XkFi_YgAAAAJ&hl=en" target="_blank" rel="noopener" class="cta-outline" id="hero-cta-scholar">
+        Google Scholar
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-row">
+      <a href="https://scholar.google.com/citations?user=XkFi_YgAAAAJ&hl=en" target="_blank" rel="noopener" class="social-link" aria-label="Google Scholar" title="Google Scholar">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-3a4 4 0 100-8 4 4 0 000 8z"/><path d="M1 10L12 1l11 9h-4v2h-2v-3.5L12 4.5 6 8.5V12H4v-2z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/yash-pandey-51b181162/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://www.researchgate.net/profile/Yash-Pandey-6" target="_blank" rel="noopener" class="social-link" aria-label="ResearchGate" title="ResearchGate">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.586 0c-2.032 0-4.48.504-6.293 3.136C11.479.504 9.032 0 6.998 0 3.547 0 .998 2.082.998 5.648c0 3.952 3.326 7.098 7.577 7.098.792 0 1.566-.102 2.297-.3-.152.606-.222 1.244-.222 1.9 0 1.492.47 2.67 1.136 3.584-4.5.312-8.788 2.168-8.788 5.57C2.998 26 6.998 27 10.998 27c5.322 0 8.004-3.053 8.004-6.282 0-2.492-1.476-3.862-3.072-5.35.568-.392 1.188-.94 1.188-2.156 0-.824-.368-1.382-.738-1.914 1.768-.508 3.618-2.288 3.618-5.318C19.998 2.098 19.998 0 19.586 0zM11 20.5c0 2.2-1.8 3.5-4 3.5s-4-1.3-4-3.5S5.8 17 8 17c.6 0 1.1.1 1.6.3C10.4 18.3 11 19.3 11 20.5zM16 6c0 2.2-1 4-2.5 4S11 8.2 11 6s1-4 2.5-4S16 3.8 16 6z"/></svg>
+      </a>
+      <a href="mailto:yashpdelhi@gmail.com" class="social-link" aria-label="Email" title="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+
+    <!-- Stats -->
     <div class="stats-bar">
-      <div class="stat-item">
-        <span class="stat-num" id="stat-publications">6+</span>
-        <span class="stat-label" id="stat-publications-label">Publications</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" id="stat-countries">4</span>
-        <span class="stat-label" id="stat-countries-label">Countries</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" id="stat-projects">10+</span>
-        <span class="stat-label" id="stat-projects-label">Projects</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" id="stat-years">6+</span>
-        <span class="stat-label" id="stat-years-label">Years Research</span>
-      </div>
+      <div class="stat-item"><span class="stat-num" id="stat-pubs">7</span><span class="stat-label" id="stat-pubs-l">Publications</span></div>
+      <div class="stat-item"><span class="stat-num" id="stat-citations">47</span><span class="stat-label" id="stat-citations-l">Citations</span></div>
+      <div class="stat-item"><span class="stat-num" id="stat-countries">4</span><span class="stat-label" id="stat-countries-l">Countries</span></div>
+      <div class="stat-item"><span class="stat-num" id="stat-years">6+</span><span class="stat-label" id="stat-years-l">Years Research</span></div>
     </div>
   </div>
 </section>
 
 <div class="section-divider"></div>
 
-<!-- ═══════════════════════════════════
-     ABOUT
-     ═══════════════════════════════════ -->
+<!-- ═══ ABOUT ═══ -->
 <section id="about" class="section">
   <div class="wrap">
     <h2 id="about-title" class="section-title reveal">About Me</h2>
     <div class="about-grid">
       <div class="profile card3d reveal-left">
-        <img id="img-profile" src="My profile photo 3.JPG" alt="Profile photo of Yash Pandey"/>
+        <img id="img-profile" src="My profile photo 3.JPG" alt="Yash Pandey"/>
       </div>
       <div class="about-text card3d reveal-right">
         <p id="about-text"></p>
@@ -114,100 +117,102 @@
 
 <div class="section-divider"></div>
 
-<!-- ═══════════════════════════════════
-     EDUCATION
-     ═══════════════════════════════════ -->
+<!-- ═══ EDUCATION ═══ -->
 <section id="education" class="section">
   <div class="wrap">
     <h2 id="education-title" class="section-title reveal">Education</h2>
     <div class="split">
-      <div class="card3d reveal-left">
-        <ul id="education-list" class="nice-list"></ul>
-      </div>
-      <div class="img-wrap card3d reveal-right">
-        <img id="img-edu" src="combined institution photo.png" alt="Education institutions collage"/>
-      </div>
+      <div class="card3d reveal-left"><ul id="education-list" class="nice-list"></ul></div>
+      <div class="img-wrap card3d reveal-right"><img id="img-edu" src="combined institution photo.png" alt="Education institutions"/></div>
     </div>
   </div>
 </section>
 
 <div class="section-divider"></div>
 
-<!-- ═══════════════════════════════════
-     EXPERIENCE
-     ═══════════════════════════════════ -->
+<!-- ═══ EXPERIENCE ═══ -->
 <section id="experience" class="section">
   <div class="wrap">
     <h2 id="experience-title" class="section-title reveal">Experience</h2>
     <div class="split">
-      <div class="card3d reveal-left">
-        <ul id="experience-list" class="nice-list"></ul>
-      </div>
-      <div class="img-wrap card3d reveal-right">
-        <img id="img-exp" src="Experiences photo.png" alt="Companies and universities collage"/>
-      </div>
+      <div class="card3d reveal-left"><ul id="experience-list" class="nice-list"></ul></div>
+      <div class="img-wrap card3d reveal-right"><img id="img-exp" src="Experiences photo.png" alt="Experience collage"/></div>
     </div>
   </div>
 </section>
 
 <div class="section-divider"></div>
 
-<!-- ═══════════════════════════════════
-     SKILLS
-     ═══════════════════════════════════ -->
+<!-- ═══ SKILLS ═══ -->
 <section id="skills" class="section">
   <div class="wrap">
     <h2 id="skills-title" class="section-title reveal">Skills</h2>
     <div class="grid-cards stagger-children reveal">
-      <div class="category card3d">
-        <h3 id="skills-languages-title">Languages</h3>
-        <ul id="skills-languages-list" class="bullet-list"></ul>
-      </div>
-      <div class="category card3d">
-        <h3 id="skills-courses-title">Courses</h3>
-        <ul id="skills-courses-list" class="bullet-list"></ul>
-      </div>
-      <div class="category card3d">
-        <h3 id="skills-certifications-title">Certifications</h3>
-        <ul id="skills-certifications-list" class="bullet-list"></ul>
-      </div>
+      <div class="category card3d"><h3 id="skills-languages-title">Languages</h3><ul id="skills-languages-list" class="bullet-list"></ul></div>
+      <div class="category card3d"><h3 id="skills-courses-title">Courses</h3><ul id="skills-courses-list" class="bullet-list"></ul></div>
+      <div class="category card3d"><h3 id="skills-certifications-title">Certifications</h3><ul id="skills-certifications-list" class="bullet-list"></ul></div>
     </div>
   </div>
 </section>
 
 <div class="section-divider"></div>
 
-<!-- ═══════════════════════════════════
-     RESEARCH
-     ═══════════════════════════════════ -->
+<!-- ═══ RESEARCH & PUBLICATIONS ═══ -->
 <section id="research" class="section">
   <div class="wrap">
     <h2 id="research-title" class="section-title reveal">Research &amp; Publications</h2>
-    <div class="grid-cards stagger-children reveal">
-      <div class="category card3d">
-        <h3 id="research-papers-title">Research Papers</h3>
-        <div class="sub-category">
-          <h4 id="research-published-title">Published</h4>
-          <ul id="research-published-list" class="bullet-list"></ul>
-        </div>
-        <div class="sub-category">
-          <h4 id="research-upcoming-title">Upcoming</h4>
-          <ul id="research-upcoming-list" class="bullet-list"></ul>
-        </div>
+
+    <!-- Research Area Visual Cards -->
+    <h3 id="research-areas-title" class="reveal" style="text-align:center;font-size:1rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:2px;margin-bottom:1.2rem">Research Areas</h3>
+    <div class="research-visuals reveal">
+      <div class="rv-card">
+        <div class="rv-icon">☀️</div>
+        <div class="rv-label">Solar PV Systems</div>
       </div>
-      <div class="category card3d">
-        <h3 id="research-conferences-title">Conferences</h3>
-        <ul id="research-conferences-list" class="bullet-list"></ul>
+      <div class="rv-card">
+        <div class="rv-icon">🔋</div>
+        <div class="rv-label">Battery Energy Storage</div>
       </div>
+      <div class="rv-card">
+        <div class="rv-icon">⚡</div>
+        <div class="rv-label">Hybrid Microgrids</div>
+      </div>
+      <div class="rv-card">
+        <div class="rv-icon">🤖</div>
+        <div class="rv-label">AI Optimization</div>
+      </div>
+      <div class="rv-card">
+        <div class="rv-icon">🏘️</div>
+        <div class="rv-label">Rural Electrification</div>
+      </div>
+      <div class="rv-card">
+        <div class="rv-icon">🌍</div>
+        <div class="rv-label">Net-Zero Pathways</div>
+      </div>
+    </div>
+
+    <!-- Publications (rendered by JS) -->
+    <div class="card3d reveal" style="margin-bottom:2rem">
+      <h3 style="margin-bottom:1rem;font-size:1.05rem">
+        All Publications
+        <span style="font-size:.8rem;color:var(--text-muted);font-weight:400;margin-left:8px">
+          — <a href="https://scholar.google.com/citations?user=XkFi_YgAAAAJ&hl=en" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">View on Google Scholar ↗</a>
+        </span>
+      </h3>
+      <div id="publications-list"></div>
+    </div>
+
+    <!-- Conferences -->
+    <div class="card3d reveal">
+      <h3 id="conferences-title">Conferences</h3>
+      <ul id="conferences-list" class="bullet-list"></ul>
     </div>
   </div>
 </section>
 
 <div class="section-divider"></div>
 
-<!-- ═══════════════════════════════════
-     VOLUNTEER
-     ═══════════════════════════════════ -->
+<!-- ═══ VOLUNTEER ═══ -->
 <section id="volunteer" class="section">
   <div class="wrap">
     <h2 id="volunteer-title" class="section-title reveal">Volunteer Work</h2>
@@ -217,9 +222,7 @@
 
 <div class="section-divider"></div>
 
-<!-- ═══════════════════════════════════
-     REFERENCES
-     ═══════════════════════════════════ -->
+<!-- ═══ REFERENCES ═══ -->
 <section id="references" class="section">
   <div class="wrap">
     <h2 id="references-title" class="section-title reveal">References</h2>
@@ -229,9 +232,7 @@
 
 <div class="section-divider"></div>
 
-<!-- ═══════════════════════════════════
-     CONTACT
-     ═══════════════════════════════════ -->
+<!-- ═══ CONTACT ═══ -->
 <section id="contact" class="section">
   <div class="wrap">
     <h2 id="contact-title" class="section-title reveal">Contact</h2>
@@ -240,26 +241,24 @@
         <p id="contact-email"></p>
         <p id="contact-institutional-email"></p>
         <p id="contact-phone"></p>
+        <p style="margin-top:1rem">
+          <a href="https://scholar.google.com/citations?user=XkFi_YgAAAAJ&hl=en" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;margin-right:16px">Google Scholar ↗</a>
+          <a href="https://www.linkedin.com/in/yash-pandey-51b181162/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;margin-right:16px">LinkedIn ↗</a>
+          <a href="https://www.researchgate.net/profile/Yash-Pandey-6" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">ResearchGate ↗</a>
+        </p>
         <p id="contact-website">
           Website:
-          <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/"
-             target="_blank" rel="noopener" class="link-white">
-            luminarytosavant.github.io/YASHPANDEY.github.io
-          </a>
-          <br/>
-          <span class="rights">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>
+          <a href="https://luminarytosavant.github.io/YASHPANDEY.github.io/" target="_blank" rel="noopener" class="link-white">luminarytosavant.github.io/YASHPANDEY.github.io</a>
+          <br/><span class="rights">© All rights reserved — Matsuo Labs &amp; Shizuoka University</span>
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Back to Top -->
 <button id="back-to-top" aria-label="Back to top">↑</button>
 
-<!-- Scripts -->
-<script src="script.js?v=8"></script>
+<script src="script.js?v=9"></script>
 <script src="protect.js"></script>
-
 </body>
 </html>
